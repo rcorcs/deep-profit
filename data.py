@@ -69,6 +69,7 @@ def readLangs(filename,exclude,include,lang):
               continue
           if len(include)>0 and line[1:].strip() not in include:
               skip = True
+              continue
           print(line)
           continue
         if skip:
@@ -132,15 +133,16 @@ def prepareData(filename, exclude, include, lang):
     return lang, pairs
 
 
-def load(filename, exclude=[], include=[]):
+def load(filename, exclude=[], include=[], cache=True):
   lang = None
   if os.path.exists(filename+'.lang.pkl'):
     with open(filename+'.lang.pkl','rb') as f:
       lang = pickle.load(f)
   lang, pairs = prepareData(filename,exclude,include,lang)
-  print('Caching Data')
-  with open(filename+'.lang.pkl','wb') as f:
-    pickle.dump(lang,f)
+  if cache:
+    print('Caching Data')
+    with open(filename+'.lang.pkl','wb') as f:
+      pickle.dump(lang,f)
   #with open(filename+'.data.pkl','wb') as f:
   #  pickle.dump(pairs,f)
   return lang, pairs
