@@ -120,9 +120,9 @@ if __name__=='__main__':
   print('Ignoring:',sys.argv[2:])
   lang, entries = data.load(sys.argv[1],exclude=sys.argv[2:])
   
-  #n_iters = 200000
-  #dataset = data.balanced(entries, n_iters)
-  dataset=entries
+  n_iters = 100
+  dataset = data.balanced(entries, n_iters)
+  #dataset=entries
 
   print('Training')
 

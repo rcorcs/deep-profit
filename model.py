@@ -65,18 +65,20 @@ class Classifier(nn.Module):
     def __init__(self, hidden_size, output_size):
         super(Classifier, self).__init__()
         
-        self.fc1 = nn.Linear(hidden_size * 2, hidden_size * 2)
-        self.fc2 = nn.Linear(hidden_size * 2, hidden_size)
-        self.fc3 = nn.Linear(hidden_size, int(hidden_size/2))
-        self.fc4 = nn.Linear(int(hidden_size/2), output_size)
+        self.fc1 = nn.Linear(hidden_size * 2, hidden_size)
+        self.relu1 = nn.ReLU()
+        self.fc2 = nn.Linear(hidden_size, hidden_size)
+        self.relu2 = nn.ReLU()
+        self.fc3 = nn.Linear(int(hidden_size), output_size)
         self.softmax = nn.LogSoftmax(dim=1)
 
     def forward(self, input1, input2):
         input = torch.cat( (input1,input2) , dim=1 )
         output = self.fc1(input)
+        output = self.relu1(output)
         output = self.fc2(output)
+        output = self.relu2(output)
         output = self.fc3(output)
-        output = self.fc4(output)
         output = self.softmax(output)
         return output
 

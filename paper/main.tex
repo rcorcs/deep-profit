@@ -1,0 +1,238 @@
+%\documentclass[sigplan,review,anonymous,10pt]{acmart}\settopmatter{printfolios=false,printccs=false,printacmref=false}
+\documentclass[sigplan,10pt,screen]{acmart}%\settopmatter{printfolios=false,printccs=false,printacmref=false}
+
+% CGO Format:
+% 10 Pages excluding references
+% 10pt Font
+
+%\usepackage[firstpage]{draftwatermark}
+%\SetWatermarkText{\hspace*{6in}\raisebox{9.5in}{\includegraphics[width=0.8in]{ae.pdf}}}
+%\SetWatermarkAngle{0}
+
+%\setlength{\droptitle}{1in}
+
+\input{src/preamble}
+
+%\usepackage{flushend}
+\usepackage{balance}
+
+\newcommand{\cL}{{\cal L}}
+
+\newcommand{\ProjName}{{SalSSA}\xspace} %Sequence ALignment in the SSA form
+
+\begin{CCSXML}
+<ccs2012>
+<concept>
+<concept_id>10011007.10011006.10011041</concept_id>
+<concept_desc>Software and its engineering~Compilers</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Software and its engineering~Compilers}
+
+%%% The following is specific to PLDI '20 and the paper
+%%% 'Effective Function Merging in the SSA Form'
+%%% by Rodrigo C. O. Rocha, Pavlos Petoumenos, Zheng Wang, Murray Cole, and Hugh Leather.
+%%%
+\setcopyright{acmcopyright}
+\acmPrice{15.00}
+\acmDOI{10.1145/3385412.3386030}
+\acmYear{2020}
+\copyrightyear{2020}
+\acmISBN{978-1-4503-7613-6/20/06}
+\acmConference[PLDI '20]{Proceedings of the 41st ACM SIGPLAN International Conference on Programming Language Design and Implementation}{June 15--20, 2020}{London, UK}
+\acmBooktitle{Proceedings of the 41st ACM SIGPLAN International Conference on Programming Language Design and Implementation (PLDI '20), June 15--20, 2020, London, UK}
+
+
+%% Bibliography style
+\bibliographystyle{ACM-Reference-Format}
+%% Citation style
+%% Note: author/year citations are required for papers published as an
+%% issue of PACMPL.
+%\citestyle{acmauthoryear}   %% For author/year citations
+
+\begin{document}
+
+%\special{papersize=8.5in,11in}
+%\setlength{\pdfpageheight}{\paperheight}
+%\setlength{\pdfpagewidth}{\paperwidth}
+
+%\conferenceinfo{CONF 'yy}{Month d--d, 20yy, City, ST, Country}
+%\copyrightyear{20yy}
+%\copyrightdata{978-1-nnnn-nnnn-n/yy/mm}
+%\doi{nnnnnnn.nnnnnnn}
+
+\hypersetup{
+  colorlinks,
+  breaklinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  anchorcolor=black,
+  citecolor=black,
+  pdftitle={},
+  pdfauthor={}
+}
+
+%\subtitle{}
+\title{Title}
+
+
+%\authorinfo{}
+
+%Rodrigo Rocha, Pavlos Petoumenos, Murray Cole, Zheng Wang, Hugh Leather
+
+
+%\authorinfo{\text{Rodrigo Rocha, $\,$ Pavlos Petoumenos}}
+%           {University of Edinburgh, UK}
+%           {\url{r.rocha@ed.ac.uk}, \url{ppetoume@inf.ed.ac.uk}}
+
+%\authorinfo{Rodrigo C. O. Rocha}
+%           {University of Edinburgh, UK}
+%           {\url{r.rocha@ed.ac.uk}}
+
+%\authorinfo{Pavlos Petoumenos}
+%           {University of Manchester, UK}
+%           {\url{pavlos.petoumenos@manchester.ac.uk}}
+
+%\authorinfo{Zheng Wang}
+%           {University of Leeds, UK}
+%           {\url{z.wang5@leeds.ac.uk}}
+
+%\authorinfo{Murray Cole}
+%           {University of Edinburgh, UK}
+%           {\url{mic@inf.ed.ac.uk}}
+%
+%\authorinfo{Hugh Leather}
+%           {University of Edinburgh, UK}
+%           {\url{hleather@inf.ed.ac.uk}}
+
+%\authorinfo{Murray Cole, $\,$ Hugh Leather}
+%           {University of Edinburgh, UK}
+%           {\url{mic@inf.ed.ac.uk}, \url{hleather@inf.ed.ac.uk}}
+
+
+% \author{
+% \begin{tabular}{c c c}
+% \large{ Rodrigo C. O. Rocha } & \large{ Pavlos Petoumenos } & \large{ Zheng Wang }\\
+% \emph{ University of Edinburgh, UK } & \emph{ University of Manchester, UK } & \emph{ University of Leeds, UK }\\
+% \url{r.rocha@ed.ac.uk} & \url{pavlos.petoumenos@manchester.ac.uk} & \url{z.wang5@leeds.ac.uk}
+% \end{tabular}
+% \\
+% \\
+% \begin{tabular}{c c}
+% \large Murray Cole & \large Hugh Leather\\
+% \emph{ University of Edinburgh, UK } & \emph{ University of Edinburgh, UK }\\
+% \url{mic@inf.ed.ac.uk} & \url{hleather@inf.ed.ac.uk}
+% \end{tabular}
+% }
+
+
+\author{Rodrigo Rocha}
+\affiliation{
+ \institution{University of Edinburgh, UK}
+ %\streetaddress{}
+ %\city{}
+ %\state{}
+ %\country{UK}
+}
+\email{r.rocha@ed.ac.uk}
+
+\author{Pavlos Petoumenos}
+\affiliation{
+ \institution{University of Manchester, UK}
+ %\streetaddress{}
+ %\city{}
+ %\state{}
+ %\country{UK}
+}
+\email{pavlos.petoumenos@manchester.ac.uk}
+
+\author{Zheng Wang}
+\affiliation{
+ \institution{University of Leeds, UK}
+ %\streetaddress{}
+ %\city{}
+ %\state{}
+ %\country{UK}
+}
+\email{z.wang5@leeds.ac.uk}
+
+\author{Murray Cole}
+\affiliation{
+ \institution{University of Edinburgh, UK}
+ %\streetaddress{}
+ %\city{}
+ %\state{}
+ %\country{UK}
+}
+\email{mic@inf.ed.ac.uk}
+
+\author{Hugh Leather}
+\affiliation{
+ \institution{University of Edinburgh, UK}
+ %\streetaddress{}
+ %\city{}
+ %\state{}
+ %\country{UK}
+}
+\email{hleather@inf.ed.ac.uk}
+
+
+\input{src/abstract}
+
+\keywords{Code Size Reduction, Function Merging, LTO.}
+
+\maketitle
+
+
+
+%% \category{CR-number}{subcategory}{third-level}
+
+% general terms are not compulsory anymore,
+% you may leave them out
+%% \terms
+%% term1, term2
+
+%\keywords
+%Code Size, Function Merging, IPO, LTO %, Sequence Alignment
+
+\input{src/introduction}
+\input{src/background}
+\input{src/motivation}
+\input{src/contribution}
+\input{src/results}
+\input{src/related}
+\input{src/conclusion}
+
+%\input{src/artifact}
+
+
+\section*{Acknowledgment}
+This work has been supported in part by the UK Engineering and Physical Sciences Research Council (EPSRC) under grants EP/L01503X/1 (CDT in
+Pervasive Parallelism), EP/P003915/1 (SUMMER) and EP/M01567X/1 (SANDeRs).  This work was supported by the Royal Academy of Engineering
+under the Research Fellowship scheme.
+
+
+%\bibliographystyle{abbrvnat}
+
+%\bibliographystyle{IEEEtran}
+
+
+% The bibliography should be embedded for final submission.
+
+%% \begin{thebibliography}{}
+%% \softraggedright
+
+%% \bibitem[Smith et~al.(2009)Smith, Jones]{smith02}
+%% P. Q. Smith, and X. Y. Jones. ...reference text...
+
+\balance
+
+\bibliography{bib/refs}
+
+%\clearpage
+%\balance
+%
+\end{document}

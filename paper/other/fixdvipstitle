@@ -1,0 +1,36 @@
+#!/bin/bash
+# Author: Vasileios Porpodas
+# GPLv3 Licensed.
+#
+# Based on https://github.com/zeehio/sergioller.com/blob/master/2011-07-07-gnuplot-breaks-LaTeX-pdf-title.md
+#
+# Fix the .ps file by removing the unwanted SDict section, caused by gnuplot
+# 
+
+usage()
+{
+    printf "This script fixes .ps files from the unwanted \"SDict\" section\n"
+    printf "that ends up in the .ps file due to gnuplot\n"
+    printf "\n"
+    printf "Usage: ${0} input-broken.ps output-fixed.ps\n"
+    exit 1
+}
+
+main()
+{
+    if [ ${#} -ne 2 ]; then
+	usage
+    fi
+
+    local input=${1}
+    local output=${2}
+    if [ ! -f ${input} ]; then
+	printf "Input file ${input} does not exist\n"
+	exit 1
+    fi
+
+    sed '/^SDict begin \[$/,/^end$/d' ${input} > ${output}
+    exit 0
+}
+
+main ${@}
