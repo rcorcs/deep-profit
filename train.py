@@ -117,17 +117,19 @@ if __name__=='__main__':
 
   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
   print('Loading data')
+  print(device)
   print('Ignoring:',sys.argv[2:])
-  lang, entries = data.load(sys.argv[1],exclude=sys.argv[2:])
+  lang, entries = data.load(sys.argv[1],exclude=sys.argv[2:],cache=False)
   
-  n_iters = 100
+  n_iters = 20000
   dataset = data.balanced(entries, n_iters)
   #dataset=entries
 
   print('Training')
 
-  hidden_size = 256
-  encoder1 = model.Encoder(lang.n_words, hidden_size, 3).to(device)
+  embedded_size = 64
+  hidden_size = 128
+  encoder1 = model.Encoder(lang.n_words, embedded_size, hidden_size, 3).to(device)
   classifier1 = model.Classifier(hidden_size,2).to(device)
 
   train(dataset, encoder1, classifier1, device=device, print_every=2000)

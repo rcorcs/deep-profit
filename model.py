@@ -26,13 +26,13 @@ import model
 #
 
 class Encoder(nn.Module):
-    def __init__(self, input_size, hidden_size, num_layers):
+    def __init__(self, input_size, embedding_size, hidden_size, num_layers):
         super(Encoder, self).__init__()
         self.num_layers = num_layers
         self.hidden_size = hidden_size
 
-        self.embedding = nn.Embedding(input_size, hidden_size)
-        self.gru = nn.GRU(hidden_size, hidden_size, num_layers=num_layers)
+        self.embedding = nn.Embedding(input_size, embedding_size)
+        self.gru = nn.GRU(embedding_size, hidden_size, num_layers=num_layers)
 
     def forward(self, input, hidden):
         embedded = self.embedding(input).view(1, 1, -1)

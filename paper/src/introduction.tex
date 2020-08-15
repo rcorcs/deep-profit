@@ -1,14 +1,12 @@
 \section{Introduction}
 \label{sec:introduction}
 
-
-Chapter~\ref{chp:opt-strategy} describes our strategy for ranking the function candidates that are more likely to be profitably merged.
+The state of the art has a search strategy based on ranking the function candidates that are more likely to be profitably merged.
 However, most of the merged functions are actually unprofitable candidates, since many functions are unique enough to have no profitable paring.
-Even if we consider only the top candidate functions, only about 13\% result in a profitable merge operation.
+Even if we consider only the top-ranked candidate functions, only about 13\% actually result in a profitable merge operation.
 
-Since the function merging operation is computationally expensive, ideally we need to focus our effort only to those are most likely to be profitable and avoid wastefully merging unprofitable pairs of functions.
-In this chapter, we describe our heuristic model based on deep-learning to predict whether a pair of functions can be
-profitably merged or not.
-This allows us to avoid merging pairs of functions that are unlikely to result in a profitable merge operation.
+Since the function merging operation is computationally expensive, ideally the compiler would avoid wastefully merging unprofitable pairs of functions and focus its efforts only on those that are the most likely to be profitable.
+In this paper, we describe our heuristic model based on deep-learning that predicts whether or not a pair of functions can be profitably merged, avoiding wasteful merge operations.
+%This allows us to avoid merging pairs of functions that are unlikely to result in a profitable merge operation.
 
 
