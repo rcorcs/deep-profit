@@ -60,6 +60,7 @@ def readLangs(filename,exclude,include,lang):
       f1 = []
       f2 = []
       inF1 = True
+      skip = False
       for line in f:
         line = line.strip()
         if line.startswith('#'):
@@ -132,6 +133,14 @@ def prepareData(filename, exclude, include, lang):
     print(lang.n_words)
     return lang, pairs
 
+def loadLang(filename, exclude=[], include=[], cache=True):
+  lang = None
+  if os.path.exists(filename+'.lang.pkl'):
+    with open(filename+'.lang.pkl','rb') as f:
+      lang = pickle.load(f)
+  else:
+    lang, _ = prepareData(filename,exclude,include,lang)
+  return lang
 
 def load(filename, exclude=[], include=[], cache=True):
   lang = None
