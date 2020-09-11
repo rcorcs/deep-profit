@@ -38,7 +38,7 @@ class Lang:
 # flag to reverse the pairs.
 #
 
-MAX_LENGTH = 120
+MAX_LENGTH = 150
 
 def filterPair(p):
     return len(p[0]) < MAX_LENGTH and \
@@ -46,7 +46,7 @@ def filterPair(p):
 
 
 def readLangs(filename,exclude,include,lang):
-    print("Reading lines...")
+    #print("Reading lines...")
 
     if lang==None:
       lang = Lang()
@@ -93,8 +93,8 @@ def readLangs(filename,exclude,include,lang):
             f1.append(EOS_token)
             f2.append(EOS_token)
             pair = [f1,f2,label]
-            if filterPair(pair):
-              pairs.append( pair )
+            #if filterPair(pair):
+            pairs.append( pair )
             f1 = []
             f2 = []
           else:
@@ -128,9 +128,9 @@ def filterPairs(pairs):
 
 def prepareData(filename, exclude, include, lang):
     lang, pairs = readLangs(filename, exclude, include, lang)
-    print("Profitable: %d" % sum(p[2] for p in pairs),'/',len(pairs))
-    print("Counted words:")
-    print(lang.n_words)
+    #print("Profitable: %d" % sum(p[2] for p in pairs),'/',len(pairs))
+    #print("Counted words:")
+    #print(lang.n_words)
     return lang, pairs
 
 def loadLang(filename, exclude=[], include=[], cache=True):

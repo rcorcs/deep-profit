@@ -46,15 +46,10 @@ def evaluateAll(dataset, encoder, classifier, device):
 if __name__=='__main__':
 
   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-  print('Loading data')
-  print('Including:',sys.argv[2])
   lang = data.loadLang(sys.argv[1],include=[sys.argv[2]],cache=False)
   
-  _, entries = data.prepareData(sys.argv[3],lang)
+  _, entries = data.prepareData(sys.argv[3],[],[],lang)
 
-  print('Testing')
-
-  encoder1 = torch.load(sys.argv[2]+'/encoder.pt')
-  classifier1 = torch.load(sys.argv[2]+'/classifier.pt')
-
+  encoder1 = torch.load('/home/rodrigo/ml/deepopt/test2/'+sys.argv[2]+'/encoder.pt')
+  classifier1 = torch.load('/home/rodrigo/ml/deepopt/test2/'+sys.argv[2]+'/classifier.pt')
   evaluateAll(entries, encoder1, classifier1, device)
