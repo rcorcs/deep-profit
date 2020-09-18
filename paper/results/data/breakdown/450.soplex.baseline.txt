@@ -1,0 +1,12 @@
+src/example.cc:522:7: warning: delete called on 'soplex::SPxSimplifier' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+      delete simplifier;
+      ^
+1 warning generated.
+src/mpsinput.cc:165:13: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+            else if (!strcmp(m_f3, "'INTEND'"))
+            ^
+src/mpsinput.cc:181:13: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+            else if (!strcmp(m_f4, "'INTEND'"))
+            ^
+2 warnings generated.
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

@@ -1,0 +1,37 @@
+Removing FuncId
+Timer:PredictionGains: 0.000000e+00
+Timer:Total: 9.613934e-01
+Timer:Unprofitable: 9.423203e-01
+Timer:Align: 1.713972e-01
+Timer:Param: 1.119852e-03
+Timer:CodeGen: 6.029701e-02
+Timer:Simplify: 6.239991e-01
+Timer:PreProcess: 1.667023e-03
+Timer:Lin: 2.637386e-03
+Timer:Rank: 1.134610e-02
+Timer:Update: 1.394510e-03
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---Wall Time---  --- Name ---
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       Total
+
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

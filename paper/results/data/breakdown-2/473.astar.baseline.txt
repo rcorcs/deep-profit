@@ -1,0 +1,37 @@
+src/Way_.cpp:274:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+      else
+      ^
+src/Way_.cpp:293:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+      else
+      ^
+src/Way_.cpp:312:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+      else
+      ^
+src/Way_.cpp:331:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+      else
+      ^
+src/Way_.cpp:350:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+      else
+      ^
+src/Way_.cpp:369:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+      else
+      ^
+src/Way_.cpp:388:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+      else
+      ^
+src/Way_.cpp:407:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+      else                                   
+      ^
+8 warnings generated.
+src/Way2_.cpp:77:9: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+src/Way2_.cpp:189:11: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+          else
+          ^
+2 warnings generated.
+src/CreateWay_.cpp:633:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+    else
+    ^
+1 warning generated.
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

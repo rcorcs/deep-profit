@@ -1,0 +1,321 @@
+Merged: @_ZN3pov11Where_ErrorEP9POVMSData, @_ZN3pov13Where_WarningEP9POVMSData = @_ZN3pov11Where_ErrorEP9POVMSData
+Merged: @_Z27POVMSStream_ReadDataOrderedPhS_Pii, @_Z28POVMSStream_WriteDataOrderedPhS_Pii = @_Z27POVMSStream_ReadDataOrderedPhS_Pii
+Merged: @_ZN3pov23Compute_IsoSurface_BBoxEPNS_17IsoSurface_StructE, @_ZN3pov23Compute_Parametric_BBoxEPNS_17Parametric_StructE = @_ZN3pov23Compute_IsoSurface_BBoxEPNS_17IsoSurface_StructE
+Merged: @_ZN12pov_frontend13MessageOutput5ErrorEP9POVMSDataS2_i, @_ZN12pov_frontend13MessageOutput7WarningEP9POVMSDataS2_i = @_ZN12pov_frontend13MessageOutput5ErrorEP9POVMSDataS2_i
+Merged: @_ZN10POVMS_List6SetNthEiR15POVMS_Attribute, @_ZN10POVMS_List6SetNthEiRS_ = @_ZN10POVMS_List6SetNthEiR15POVMS_Attribute
+Merged: @_ZN10POVMS_List6SetNthEiR12POVMS_Object, @_ZN10POVMS_List6SetNthEiR15POVMS_Attribute = @_ZN10POVMS_List6SetNthEiR12POVMS_Object
+Merged: @_ZN12POVMS_Object3SetEjR10POVMS_List, @_ZN12POVMS_Object3SetEjR15POVMS_Attribute = @_ZN12POVMS_Object3SetEjR10POVMS_List
+Merged: @_ZN12POVMS_Object3SetEjR10POVMS_List, @_ZN12POVMS_Object3SetEjRS_ = @_ZN12POVMS_Object3SetEjR10POVMS_List
+Merged: @_ZN3pov16Compute_Sor_BBoxEPNS_10Sor_StructE, @_ZN3pov18Compute_Lathe_BBoxEPNS_12Lathe_StructE = @_ZN3pov16Compute_Sor_BBoxEPNS_10Sor_StructE
+Merged: @_ZN3pov13F_Bound_JuliaEPNS_10Ray_StructEPNS_14Fractal_StructEPdS4_, @_ZN3pov14F_Bound_HComplEPNS_10Ray_StructEPNS_14Fractal_StructEPdS4_ = @_ZN3pov13F_Bound_JuliaEPNS_10Ray_StructEPNS_14Fractal_StructEPdS4_
+Merged: @_ZN12POVMS_ObjectaSERS_, @_ZN13POVMS_MessageaSERS_ = @_ZN12POVMS_ObjectaSERS_
+Merged: @_ZN13POVMS_MessageC2ER12POVMS_Object, @_ZN13POVMS_MessageC2ERS_ = @_ZN13POVMS_MessageC2ER12POVMS_Object
+Merged: @_ZN3pov11Targa_Image4LineEv, @_ZN3pov9PPM_Image4LineEv = @_ZN3pov11Targa_Image4LineEv
+Merged: @_ZN3pov11Targa_Image5WidthEv, @_ZN3pov9PPM_Image5WidthEv = @_ZN3pov11Targa_Image5WidthEv
+Merged: @_ZN3pov11Targa_Image6HeightEv, @_ZN3pov9PPM_Image6HeightEv = @_ZN3pov11Targa_Image6HeightEv
+Merged: @_ZN3pov10VAddScaledEPdPKddS2_, @_ZN3pov12VEvaluateRayEPdPKddS2_ = @_ZN3pov10VAddScaledEPdPKddS2_
+Merged: @_ZN3pov16Compute_Box_BBoxEPNS_10Box_StructE, @_ZN3pov19Compute_HField_BBoxEPNS_13HField_StructE = @_ZN3pov16Compute_Box_BBoxEPNS_10Box_StructE
+Merged: @_ZN3povL11Comp_IsectsEPvS0_, @_ZN3povL9compdistsEPvS0_ = @_ZN3povL11Comp_IsectsEPvS0_
+Merged: @_ZN3povL12Invert_LatheEPNS_13Object_StructE, @_ZN3povL12Invert_TorusEPNS_13Object_StructE = @_ZN3povL12Invert_LatheEPNS_13Object_StructE
+Merged: @_ZN3povL11Invert_BlobEPNS_13Object_StructE, @_ZN3povL12Invert_LatheEPNS_13Object_StructE = @_ZN3povL11Invert_BlobEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_SorEPNS_13Object_StructE, @_ZN3povL11Invert_BlobEPNS_13Object_StructE = @_ZN3povL10Invert_SorEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_SorEPNS_13Object_StructE, @_ZN3povL11Invert_PolyEPNS_13Object_StructE = @_ZN3povL10Invert_SorEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_SorEPNS_13Object_StructE, @_ZN3povL11Invert_MeshEPNS_13Object_StructE = @_ZN3povL10Invert_SorEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_SorEPNS_13Object_StructE, @_ZN3povL11Invert_ConeEPNS_13Object_StructE = @_ZN3povL10Invert_SorEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_SorEPNS_13Object_StructE, @_ZN3povL10Invert_TTFEPNS_13Object_StructE = @_ZN3povL10Invert_SorEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_SorEPNS_13Object_StructE, @_ZN3povL13Invert_SphereEPNS_13Object_StructE = @_ZN3povL10Invert_SorEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_BoxEPNS_13Object_StructE, @_ZN3povL10Invert_SorEPNS_13Object_StructE = @_ZN3povL10Invert_BoxEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_BoxEPNS_13Object_StructE, @_ZN3povL17Invert_IsoSurfaceEPNS_13Object_StructE = @_ZN3povL10Invert_BoxEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_BoxEPNS_13Object_StructE, @_ZN3povL12Invert_PrismEPNS_13Object_StructE = @_ZN3povL10Invert_BoxEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_BoxEPNS_13Object_StructE, @_ZN3povL19Invert_Sphere_SweepEPNS_13Object_StructE = @_ZN3povL10Invert_BoxEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_BoxEPNS_13Object_StructE, @_ZN3povL21Invert_SuperellipsoidEPNS_13Object_StructE = @_ZN3povL10Invert_BoxEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_BoxEPNS_13Object_StructE, @_ZN3povL13Invert_HFieldEPNS_13Object_StructE = @_ZN3povL10Invert_BoxEPNS_13Object_StructE
+Merged: @_ZN3povL10Invert_BoxEPNS_13Object_StructE, @_ZN3povL11Invert_DiscEPNS_13Object_StructE = @_ZN3povL10Invert_BoxEPNS_13Object_StructE
+Merged: @_ZN8pov_base7IStreamD0Ev, @_ZN8pov_base7OStreamD0Ev = @_ZN8pov_base7IStreamD0Ev
+Merged: @_ZN3pov17Compute_Poly_BBoxEPNS_11Poly_StructE, @_ZN3pov18Compute_Plane_BBoxEPNS_12Plane_StructE = @_ZN3pov17Compute_Poly_BBoxEPNS_11Poly_StructE
+Merged: @_ZN15POVMS_ContainerD0Ev, @_ZN8pov_base19DefaultPlatformBaseD0Ev = @_ZN15POVMS_ContainerD0Ev
+Merged: @_ZN10POVMS_List6AppendER15POVMS_Attribute, @_ZN10POVMS_List6AppendERS_ = @_ZN10POVMS_List6AppendER15POVMS_Attribute
+Merged: @_ZN10POVMS_List6AppendER12POVMS_Object, @_ZN10POVMS_List6AppendER15POVMS_Attribute = @_ZN10POVMS_List6AppendER12POVMS_Object
+Merged: @_Z29POVMSStream_ReadDataUnorderedPhS_i, @_Z30POVMSStream_WriteDataUnorderedPhS_i = @_Z29POVMSStream_ReadDataUnorderedPhS_i
+Merged: @_ZN3povL14Polygon_NormalEPdPNS_13Object_StructEPNS_10istk_entryE, @_ZN3povL15Triangle_NormalEPdPNS_13Object_StructEPNS_10istk_entryE = @_ZN3povL14Polygon_NormalEPdPNS_13Object_StructEPNS_10istk_entryE
+Merged: @_ZN3povL10TTF_NormalEPdPNS_13Object_StructEPNS_10istk_entryE, @_ZN3povL20Bicubic_Patch_NormalEPdPNS_13Object_StructEPNS_10istk_entryE = @_ZN3povL10TTF_NormalEPdPNS_13Object_StructEPNS_10istk_entryE
+Merged: @_ZN3povL10TTF_NormalEPdPNS_13Object_StructEPNS_10istk_entryE, @_ZN3povL14Fractal_NormalEPdPNS_13Object_StructEPNS_10istk_entryE = @_ZN3povL10TTF_NormalEPdPNS_13Object_StructEPNS_10istk_entryE
+Merged: @_ZN3povL10TTF_NormalEPdPNS_13Object_StructEPNS_10istk_entryE, @_ZN3povL19Sphere_Sweep_NormalEPdPNS_13Object_StructEPNS_10istk_entryE = @_ZN3povL10TTF_NormalEPdPNS_13Object_StructEPNS_10istk_entryE
+Merged: @_ZN3pov10Copy_ImageEPNS_12Image_StructE, @_ZN3pov21Copy_Interior_PointerEPNS_15Interior_StructE = @_ZN3pov10Copy_ImageEPNS_12Image_StructE
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Timer:PredictionGains: 0.000000e+00
+Timer:Total: 5.189800e+00
+Timer:Unprofitable: 3.863367e+00
+Timer:Align: 6.826792e-01
+Timer:Param: 1.608682e-02
+Timer:CodeGen: 4.193184e-01
+Timer:Simplify: 2.354247e+00
+Timer:PreProcess: 1.523709e-02
+Timer:Lin: 2.789211e-02
+Timer:Rank: 1.118853e+00
+Timer:Update: 2.456474e-02
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---Wall Time---  --- Name ---
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       Total
+
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

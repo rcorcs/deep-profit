@@ -1,0 +1,18 @@
+src/com_vanilla.c:843:13: warning: cast to 'char *' from smaller integer type 'int' [-Wint-to-pointer-cast]
+    return( F_PT( neighbor[direction][s-lattice], field ) );
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/macros.h:45:29: note: expanded from macro 'F_PT'
+#define F_PT( site , fo )  ((char *)( site ) + (fo)) 
+                            ^~~~~~~~~~~~~~~~
+1 warning generated.
+src/io_lat4.c:195:11: warning: cast to smaller integer type 'int' from 'char *' [-Wpointer-to-int-cast]
+    len = (int) q - (int) line;
+          ^~~~~~~
+src/io_lat4.c:195:21: warning: cast to smaller integer type 'int' from 'char *' [-Wpointer-to-int-cast]
+    len = (int) q - (int) line;
+                    ^~~~~~~~~~
+src/io_lat4.c:1334:37: warning: cast to 'char *' from smaller integer type 'int32type' (aka 'int') [-Wint-to-pointer-cast]
+                     (char *)GAUGE_VERSION_NUMBER,(char *)tmp);
+                                                  ^~~~~~~~~~~
+3 warnings generated.
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

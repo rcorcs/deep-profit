@@ -1,12 +1,36 @@
 \section{Introduction}
 \label{sec:introduction}
 
-The state of the art has a search strategy based on ranking the function candidates that are more likely to be profitably merged.
-However, most of the merged functions are actually unprofitable candidates, since many functions are unique enough to have no profitable paring.
-Even if we consider only the top-ranked candidate functions, only about 13\% actually result in a profitable merge operation.
 
-Since the function merging operation is computationally expensive, ideally the compiler would avoid wastefully merging unprofitable pairs of functions and focus its efforts only on those that are the most likely to be profitable.
+In recent years, the market for mobile and embedded systems has been rapidly growing.
+These systems must often run on inexpensive and resource-constrained devices, with limited memory, storage, CPU caches. %and their applications are designed with different goals compared to traditional computing systems.
+Applications for these systems are designed and built with different goals compared to traditional computing systems since their binaries must fit in a budget memory size.
+%One way to deal with limited memory is to develop compilation techniques which generate small binaries.
+Hence, compilation techniques must be primarily focused on optimising for binary size.
+
+
+One important optimisation capable of reducing code size is function merging.
+In its simplest form, function merging reduces replicated code by combining multiple identical functions into a single one~\cite{llvm-fm,livska14}.
+More advanced approaches can identify similar, but not necessarily identical, functions and replace them with a single function that combines the functionality of the original functions while eliminating redundant code.
+At a high level, the way this works is that code specific to only one input function is added to the merged function but made conditional to a function identifier, while code found in both input functions is added only once and executed regardless of the function identifier.
+
+Recent work has generalized function merging to any arbitrary pair of functions.
+The state-of-the-art~\cite{rocha19, rocha20} first represents functions as nothing more
+than linear sequences of instructions and labels.
+Then it applies a sequence alignment algorithm, developed for bioinformatics, to discover
+the optimal way to create pairs of mergeable instructions from the two input
+sequences.
+Finally, it generates the merged function where aligned pairs of matching
+instructions are merged to a single instruction, while non-matching instructions are simply copied into the merged function.
+
+The state of the art optimization has a search strategy based on ranking the function candidates with higher similarity.
+However, because this strategy is unable to decide which one of those pairs are actually worth merging,
+most of the  functions are actually unprofitable candidates.
+As a result, most of the merged function produced are thrown away and the original functions kept.
+Even if we consider only the top-ranked candidate functions, about 82\% of the top ranked candidate functions are actually unprofitably merged.
+
+Since the function merging operation is computationally expensive, we should avoid wasting time with unprofitable merged functions, freeing the compiler to focus more its efforts optimizing code that more likely to be profitable.
+
 In this paper, we describe our heuristic model based on deep-learning that predicts whether or not a pair of functions can be profitably merged, avoiding wasteful merge operations.
 %This allows us to avoid merging pairs of functions that are unlikely to result in a profitable merge operation.
-
 

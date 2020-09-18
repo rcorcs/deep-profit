@@ -1,0 +1,14 @@
+src/lbm.c:663:38: warning: format specifies type 'double *' but the argument has type 'float *' [-Wformat]
+                                                fscanf( file, "%lf %lf %lf\n", &fileUx, &fileUy, &fileUz );
+                                                               ~~~             ^~~~~~~
+                                                               %f
+src/lbm.c:663:47: warning: format specifies type 'double *' but the argument has type 'float *' [-Wformat]
+                                                fscanf( file, "%lf %lf %lf\n", &fileUx, &fileUy, &fileUz );
+                                                                   ~~~                  ^~~~~~~
+                                                                   %f
+src/lbm.c:663:56: warning: format specifies type 'double *' but the argument has type 'float *' [-Wformat]
+                                                fscanf( file, "%lf %lf %lf\n", &fileUx, &fileUy, &fileUz );
+                                                                       ~~~                       ^~~~~~~
+                                                                       %f
+3 warnings generated.
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

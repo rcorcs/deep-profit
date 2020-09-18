@@ -1,0 +1,86 @@
+Merged: @get_mem_bwmincost, @get_mem_mincost = @get_mem_bwmincost
+Merged: @free_mem_bwmincost, @free_mem_mincost = @free_mem_bwmincost
+Merged: @delete_contexts_MotionInfo, @delete_contexts_TextureInfo = @delete_contexts_MotionInfo
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Removing FuncId
+Timer:PredictionGains: 0.000000e+00
+Timer:Total: 3.553527e+00
+Timer:Unprofitable: 3.310378e+00
+Timer:Align: 7.564228e-01
+Timer:Param: 5.810976e-03
+Timer:CodeGen: 2.534938e-01
+Timer:Simplify: 2.000028e+00
+Timer:PreProcess: 8.503675e-03
+Timer:Lin: 1.494837e-02
+Timer:Rank: 1.898091e-01
+Timer:Update: 6.632328e-03
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---Wall Time---  --- Name ---
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       Total
+
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

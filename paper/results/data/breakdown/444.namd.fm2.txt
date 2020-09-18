@@ -1,0 +1,49 @@
+Merged: @_ZN11PairComputeD0Ev, @_ZN11SelfComputeD0Ev = @_ZN11PairComputeD0Ev
+Removing FuncId
+Timer:PredictionGains: 0.000000e+00
+Timer:Total: 2.217600e+00
+Timer:Unprofitable: 9.859836e-01
+Timer:Align: 9.562190e-01
+Timer:Param: 3.494978e-03
+Timer:CodeGen: 1.846464e-01
+Timer:Simplify: 9.679377e-01
+Timer:PreProcess: 3.874540e-03
+Timer:Lin: 8.254528e-03
+Timer:Rank: 1.136756e-02
+Timer:Update: 1.474595e-02
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---Wall Time---  --- Name ---
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       Total
+
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

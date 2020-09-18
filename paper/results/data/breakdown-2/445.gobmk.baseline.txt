@@ -1,0 +1,102 @@
+In file included from src/engine/worm.c:30:
+./src/include/patterns.h:52:9: warning: 'GRID_OPT' macro redefined [-Wmacro-redefined]
+#define GRID_OPT 0
+        ^
+./src/include/config.h:27:9: note: previous definition is here
+#define GRID_OPT 1
+        ^
+1 warning generated.
+In file included from src/engine/reading.c:32:
+./src/include/patterns.h:52:9: warning: 'GRID_OPT' macro redefined [-Wmacro-redefined]
+#define GRID_OPT 0
+        ^
+./src/include/config.h:27:9: note: previous definition is here
+#define GRID_OPT 1
+        ^
+1 warning generated.
+In file included from src/engine/owl.c:53:
+./src/include/patterns.h:52:9: warning: 'GRID_OPT' macro redefined [-Wmacro-redefined]
+#define GRID_OPT 0
+        ^
+./src/include/config.h:27:9: note: previous definition is here
+#define GRID_OPT 1
+        ^
+1 warning generated.
+In file included from src/engine/influence.c:31:
+./src/include/patterns.h:52:9: warning: 'GRID_OPT' macro redefined [-Wmacro-redefined]
+#define GRID_OPT 0
+        ^
+./src/include/config.h:27:9: note: previous definition is here
+#define GRID_OPT 1
+        ^
+1 warning generated.
+In file included from src/engine/matchpat.c:31:
+./src/include/patterns.h:52:9: warning: 'GRID_OPT' macro redefined [-Wmacro-redefined]
+#define GRID_OPT 0
+        ^
+./src/include/config.h:27:9: note: previous definition is here
+#define GRID_OPT 1
+        ^
+1 warning generated.
+In file included from src/engine/fuseki.c:29:
+./src/include/patterns.h:52:9: warning: 'GRID_OPT' macro redefined [-Wmacro-redefined]
+#define GRID_OPT 0
+        ^
+./src/include/config.h:27:9: note: previous definition is here
+#define GRID_OPT 1
+        ^
+1 warning generated.
+In file included from src/engine/combination.c:34:
+./src/include/patterns.h:52:9: warning: 'GRID_OPT' macro redefined [-Wmacro-redefined]
+#define GRID_OPT 0
+        ^
+./src/include/config.h:27:9: note: previous definition is here
+#define GRID_OPT 1
+        ^
+1 warning generated.
+In file included from src/engine/shapes.c:29:
+./src/include/patterns.h:52:9: warning: 'GRID_OPT' macro redefined [-Wmacro-redefined]
+#define GRID_OPT 0
+        ^
+./src/include/config.h:27:9: note: previous definition is here
+#define GRID_OPT 1
+        ^
+1 warning generated.
+In file included from src/engine/handicap.c:26:
+./src/include/patterns.h:52:9: warning: 'GRID_OPT' macro redefined [-Wmacro-redefined]
+#define GRID_OPT 0
+        ^
+./src/include/config.h:27:9: note: previous definition is here
+#define GRID_OPT 1
+        ^
+1 warning generated.
+src/patterns/dfa.c:399:14: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+  fprintf(f, line);
+             ^~~~
+src/patterns/dfa.c:399:14: note: treat the string as an argument to avoid this
+  fprintf(f, line);
+             ^
+             "%s", 
+src/patterns/dfa.c:406:14: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+  fprintf(f, line);
+             ^~~~
+src/patterns/dfa.c:406:14: note: treat the string as an argument to avoid this
+  fprintf(f, line);
+             ^
+             "%s", 
+src/patterns/dfa.c:411:14: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+  fprintf(f, line);
+             ^~~~
+src/patterns/dfa.c:411:14: note: treat the string as an argument to avoid this
+  fprintf(f, line);
+             ^
+             "%s", 
+src/patterns/dfa.c:429:14: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+  fprintf(f, line);
+             ^~~~
+src/patterns/dfa.c:429:14: note: treat the string as an argument to avoid this
+  fprintf(f, line);
+             ^
+             "%s", 
+4 warnings generated.
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

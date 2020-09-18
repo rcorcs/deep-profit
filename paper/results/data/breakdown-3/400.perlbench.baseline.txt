@@ -1,0 +1,128 @@
+src/dump.c:652:7: warning: logical not is only applied to the left hand side of this bitwise operator [-Wlogical-not-parentheses]
+        if ( ! PL_op->op_flags & OPf_SPECIAL) { /* not lexical */
+             ^                 ~
+src/dump.c:652:7: note: add parentheses after the '!' to evaluate the bitwise operator first
+        if ( ! PL_op->op_flags & OPf_SPECIAL) { /* not lexical */
+             ^
+               (                            )
+src/dump.c:652:7: note: add parentheses around left hand side expression to silence this warning
+        if ( ! PL_op->op_flags & OPf_SPECIAL) { /* not lexical */
+             ^
+             (                )
+1 warning generated.
+src/stdio.c:26:27: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+  return fprintf( stream, text );
+                          ^~~~
+src/stdio.c:26:27: note: treat the string as an argument to avoid this
+  return fprintf( stream, text );
+                          ^
+                          "%s", 
+1 warning generated.
+src/util.c:3927:1: warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+1 warning generated.
+src/pp_ctl.c:1055:33: warning: implicit conversion from 'long' to 'double' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-int-float-conversion]
+                (SvOK(right) && SvNV(right) > IV_MAX))
+                                            ~ ^~~~~~
+src/perl.h:1357:20: note: expanded from macro 'IV_MAX'
+#    define IV_MAX PERL_LONG_MAX
+                   ^~~~~~~~~~~~~
+src/perl.h:1969:26: note: expanded from macro 'PERL_LONG_MAX'
+#  define PERL_LONG_MAX ((long)LONG_MAX)
+                         ^~~~~~~~~~~~~~
+src/pp_ctl.c:1419:9: warning: multiple unsequenced modifications to 'PL_Xpv' [-Wunsequenced]
+    if (SvTRUE(left) != SvTRUE(right))
+        ^               ~~~~~~~~~~~~~
+src/sv.h:1090:15: note: expanded from macro 'SvTRUE'
+        ?   ((PL_Xpv = (XPV*)SvANY(sv)) &&                      \
+                     ^
+src/pp_ctl.c:1740:38: warning: implicit conversion from 'long' to 'double' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-int-float-conversion]
+                    (SvOK(right) && SvNV(right) >= IV_MAX))
+                                                ~~ ^~~~~~
+src/perl.h:1357:20: note: expanded from macro 'IV_MAX'
+#    define IV_MAX PERL_LONG_MAX
+                   ^~~~~~~~~~~~~
+src/perl.h:1969:26: note: expanded from macro 'PERL_LONG_MAX'
+#  define PERL_LONG_MAX ((long)LONG_MAX)
+                         ^~~~~~~~~~~~~~
+3 warnings generated.
+src/regexec.c:3275:4: warning: converting the result of '<<' to a boolean always evaluates to true [-Wtautological-constant-compare]
+                        CACHEsayYES;    /* All done. */
+                        ^
+src/regexec.c:2249:30: note: expanded from macro 'CACHEsayYES'
+            PL_reg_poscache[0] |= (1<<POSCACHE_SUCCESS) || (1<<POSCACHE_SEEN); \
+                                    ^
+src/regexec.c:3275:4: warning: converting the result of '<<' to a boolean always evaluates to true [-Wtautological-constant-compare]
+src/regexec.c:2249:55: note: expanded from macro 'CACHEsayYES'
+            PL_reg_poscache[0] |= (1<<POSCACHE_SUCCESS) || (1<<POSCACHE_SEEN); \
+                                                             ^
+src/regexec.c:3307:4: warning: converting the result of '<<' to a boolean always evaluates to true [-Wtautological-constant-compare]
+                        CACHEsayYES;
+                        ^
+src/regexec.c:2249:30: note: expanded from macro 'CACHEsayYES'
+            PL_reg_poscache[0] |= (1<<POSCACHE_SUCCESS) || (1<<POSCACHE_SEEN); \
+                                    ^
+src/regexec.c:3307:4: warning: converting the result of '<<' to a boolean always evaluates to true [-Wtautological-constant-compare]
+src/regexec.c:2249:55: note: expanded from macro 'CACHEsayYES'
+            PL_reg_poscache[0] |= (1<<POSCACHE_SUCCESS) || (1<<POSCACHE_SEEN); \
+                                                             ^
+src/regexec.c:3325:4: warning: converting the result of '<<' to a boolean always evaluates to true [-Wtautological-constant-compare]
+                        CACHEsayYES;
+                        ^
+src/regexec.c:2249:30: note: expanded from macro 'CACHEsayYES'
+            PL_reg_poscache[0] |= (1<<POSCACHE_SUCCESS) || (1<<POSCACHE_SEEN); \
+                                    ^
+src/regexec.c:3325:4: warning: converting the result of '<<' to a boolean always evaluates to true [-Wtautological-constant-compare]
+src/regexec.c:2249:55: note: expanded from macro 'CACHEsayYES'
+            PL_reg_poscache[0] |= (1<<POSCACHE_SUCCESS) || (1<<POSCACHE_SEEN); \
+                                                             ^
+src/regexec.c:3349:7: warning: converting the result of '<<' to a boolean always evaluates to true [-Wtautological-constant-compare]
+                    CACHEsayYES;
+                    ^
+src/regexec.c:2249:30: note: expanded from macro 'CACHEsayYES'
+            PL_reg_poscache[0] |= (1<<POSCACHE_SUCCESS) || (1<<POSCACHE_SEEN); \
+                                    ^
+src/regexec.c:3349:7: warning: converting the result of '<<' to a boolean always evaluates to true [-Wtautological-constant-compare]
+src/regexec.c:2249:55: note: expanded from macro 'CACHEsayYES'
+            PL_reg_poscache[0] |= (1<<POSCACHE_SUCCESS) || (1<<POSCACHE_SEEN); \
+                                                             ^
+8 warnings generated.
+src/sv.c:2147:14: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                (SvNVX(sv) == (NV) SvUVX(sv))
+                 ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+src/sv.c:2147:14: note: remove extraneous parentheses around the comparison to silence this warning
+                (SvNVX(sv) == (NV) SvUVX(sv))
+                ~          ^                ~
+src/sv.c:2147:14: note: use '=' to turn this equality comparison into an assignment
+                (SvNVX(sv) == (NV) SvUVX(sv))
+                           ^~
+                           =
+src/sv.c:2441:14: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                (SvNVX(sv) == (NV) SvUVX(sv))
+                 ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+src/sv.c:2441:14: note: remove extraneous parentheses around the comparison to silence this warning
+                (SvNVX(sv) == (NV) SvUVX(sv))
+                ~          ^                ~
+src/sv.c:2441:14: note: use '=' to turn this equality comparison into an assignment
+                (SvNVX(sv) == (NV) SvUVX(sv))
+                           ^~
+                           =
+src/sv.c:8310:14: warning: implicit conversion from 'unsigned long' to 'double' changes value from 18446744073709551615 to 18446744073709551616 [-Wimplicit-int-float-conversion]
+    if (nv < UV_MAX) {
+           ~ ^~~~~~
+src/perl.h:1359:20: note: expanded from macro 'UV_MAX'
+#    define UV_MAX PERL_ULONG_MAX
+                   ^~~~~~~~~~~~~~
+src/perl.h:1957:27: note: expanded from macro 'PERL_ULONG_MAX'
+#  define PERL_ULONG_MAX ((unsigned long)ULONG_MAX)
+                          ^~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+src/perlio.c:4857:25: warning: incompatible pointer types passing 'struct __va_list_tag **' to parameter of type 'va_list *' (aka '__builtin_va_list *') [-Wincompatible-pointer-types]
+    sv_vcatpvf(sv, fmt, &ap);
+                        ^~~
+src/proto.h:703:76: note: passing argument to parameter 'args' here
+PERL_CALLCONV void      Perl_sv_vcatpvf(pTHX_ SV* sv, const char* pat, va_list* args);
+                                                                                ^
+1 warning generated.
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

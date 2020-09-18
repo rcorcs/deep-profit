@@ -1,0 +1,111 @@
+src/moves.c:847:53: warning: for loop has empty body [-Wempty-body]
+                for (l = wking_loc-11; board[l] == npiece; l -=11);
+                                                                  ^
+src/moves.c:847:53: note: put the semicolon on a separate line to silence this warning
+src/moves.c:862:53: warning: for loop has empty body [-Wempty-body]
+                for (l = wking_loc-12; board[l] == npiece; l -=12);
+                                                                  ^
+src/moves.c:862:53: note: put the semicolon on a separate line to silence this warning
+src/moves.c:1181:51: warning: for loop has empty body [-Wempty-body]
+        for (l = bking_loc-13; board[l] == npiece; l-=13);    
+                                                         ^
+src/moves.c:1181:51: note: put the semicolon on a separate line to silence this warning
+src/moves.c:1194:51: warning: for loop has empty body [-Wempty-body]
+        for (l = bking_loc-11; board[l] == npiece; l-=11);    
+                                                         ^
+src/moves.c:1194:51: note: put the semicolon on a separate line to silence this warning
+4 warnings generated.
+src/partner.c:166:2: warning: indirection of non-volatile null pointer will be deleted, not trap [-Wnull-dereference]
+        DIE;
+        ^~~
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^~~~~~~~~~~~~~
+src/partner.c:166:2: note: consider using __builtin_trap() or qualifying pointer with 'volatile'
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^
+src/partner.c:321:2: warning: indirection of non-volatile null pointer will be deleted, not trap [-Wnull-dereference]
+        DIE;
+        ^~~
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^~~~~~~~~~~~~~
+src/partner.c:321:2: note: consider using __builtin_trap() or qualifying pointer with 'volatile'
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^
+2 warnings generated.
+src/search.c:1858:30: warning: indirection of non-volatile null pointer will be deleted, not trap [-Wnull-dereference]
+      if (bestmovenum == -1) DIE;
+                             ^~~
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^~~~~~~~~~~~~~
+src/search.c:1858:30: note: consider using __builtin_trap() or qualifying pointer with 'volatile'
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^
+1 warning generated.
+src/utils.c:773:7: warning: indirection of non-volatile null pointer will be deleted, not trap [-Wnull-dereference]
+      DIE;
+      ^~~
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^~~~~~~~~~~~~~
+src/utils.c:773:7: note: consider using __builtin_trap() or qualifying pointer with 'volatile'
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^
+src/utils.c:779:2: warning: indirection of non-volatile null pointer will be deleted, not trap [-Wnull-dereference]
+        DIE;
+        ^~~
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^~~~~~~~~~~~~~
+src/utils.c:779:2: note: consider using __builtin_trap() or qualifying pointer with 'volatile'
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^
+src/utils.c:785:7: warning: indirection of non-volatile null pointer will be deleted, not trap [-Wnull-dereference]
+      DIE;
+      ^~~
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^~~~~~~~~~~~~~
+src/utils.c:785:7: note: consider using __builtin_trap() or qualifying pointer with 'volatile'
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^
+src/utils.c:794:7: warning: indirection of non-volatile null pointer will be deleted, not trap [-Wnull-dereference]
+      DIE;
+      ^~~
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^~~~~~~~~~~~~~
+src/utils.c:794:7: note: consider using __builtin_trap() or qualifying pointer with 'volatile'
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^
+src/utils.c:800:7: warning: indirection of non-volatile null pointer will be deleted, not trap [-Wnull-dereference]
+      DIE;
+      ^~~
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^~~~~~~~~~~~~~
+src/utils.c:800:7: note: consider using __builtin_trap() or qualifying pointer with 'volatile'
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^
+src/utils.c:806:7: warning: indirection of non-volatile null pointer will be deleted, not trap [-Wnull-dereference]
+      DIE;
+      ^~~
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^~~~~~~~~~~~~~
+src/utils.c:806:7: note: consider using __builtin_trap() or qualifying pointer with 'volatile'
+./src/sjeng.h:26:14: note: expanded from macro 'DIE'
+#define DIE (*(int *)(NULL) = 0)
+             ^
+6 warnings generated.
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

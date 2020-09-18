@@ -1,0 +1,15 @@
+src/gates.c:365:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/gates.c:543:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+             (reg->size + addsize) * sizeof(char));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+src/objcode.c:176:18: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(args, operation);
+                 ^
+src/objcode.c:165:35: note: parameter of type 'unsigned char' is declared here
+quantum_objcode_put(unsigned char operation, ...)
+                                  ^
+1 warning generated.
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

@@ -1,0 +1,113 @@
+In file included from src/TransService.cpp:73:
+./src/xercesc/util/XMLWin1252Transcoder.hpp:57:9: warning: 'XMLWIN1252TRANSCODER_HPP' is used as a header guard here, followed by #define of a different macro [-Wheader-guard]
+#ifndef XMLWIN1252TRANSCODER_HPP
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+./src/xercesc/util/XMLWin1252Transcoder.hpp:58:9: note: 'XMLWIN2152TRANSCODER_HPP' is defined here; did you mean 'XMLWIN1252TRANSCODER_HPP'?
+#define XMLWIN2152TRANSCODER_HPP
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+        XMLWIN1252TRANSCODER_HPP
+1 warning generated.
+In file included from src/DocumentImpl.cpp:65:
+In file included from src/xercesc/dom/DocumentImpl.hpp:78:
+In file included from ./src/xercesc/util/RefHashTableOf.hpp:373:
+./src/xercesc/util/RefHashTableOf.c:281:17: warning: cannot delete expression with pointer-to-'void' type 'void *' [-Wdelete-incomplete]
+                delete curElem->fData;
+                ^      ~~~~~~~~~~~~~~
+./src/xercesc/util/RefHashTableOf.c:226:5: note: in instantiation of member function 'xercesc_2_5::RefHashTableOf<void>::removeAll' requested here
+    removeAll();
+    ^
+src/DocumentImpl.cpp:186:9: note: in instantiation of member function 'xercesc_2_5::RefHashTableOf<void>::~RefHashTableOf' requested here
+        delete userData;
+        ^
+In file included from src/DocumentImpl.cpp:65:
+In file included from src/xercesc/dom/DocumentImpl.hpp:78:
+In file included from ./src/xercesc/util/RefHashTableOf.hpp:373:
+./src/xercesc/util/RefHashTableOf.c:596:17: warning: cannot delete expression with pointer-to-'void' type 'void *' [-Wdelete-incomplete]
+                delete curElem->fData;
+                ^      ~~~~~~~~~~~~~~
+./src/xercesc/util/RefHashTableOf.c:260:5: note: in instantiation of member function 'xercesc_2_5::RefHashTableOf<void>::removeBucketElem' requested here
+    removeBucketElem(key, hashVal);
+    ^
+src/DocumentImpl.cpp:831:13: note: in instantiation of member function 'xercesc_2_5::RefHashTableOf<void>::removeKey' requested here
+                userData->removeKey((void*)n);
+                          ^
+In file included from src/DocumentImpl.cpp:65:
+In file included from src/xercesc/dom/DocumentImpl.hpp:78:
+In file included from ./src/xercesc/util/RefHashTableOf.hpp:373:
+./src/xercesc/util/RefHashTableOf.c:460:13: warning: cannot delete expression with pointer-to-'void' type 'void *' [-Wdelete-incomplete]
+            delete newBucket->fData;
+            ^      ~~~~~~~~~~~~~~~~
+src/DocumentImpl.cpp:833:13: note: in instantiation of member function 'xercesc_2_5::RefHashTableOf<void>::put' requested here
+                userData->put((void*)n,data);
+                          ^
+3 warnings generated.
+In file included from src/XMLWin1252Transcoder.cpp:61:
+./src/xercesc/util/XMLWin1252Transcoder.hpp:57:9: warning: 'XMLWIN1252TRANSCODER_HPP' is used as a header guard here, followed by #define of a different macro [-Wheader-guard]
+#ifndef XMLWIN1252TRANSCODER_HPP
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+./src/xercesc/util/XMLWin1252Transcoder.hpp:58:9: note: 'XMLWIN2152TRANSCODER_HPP' is defined here; did you mean 'XMLWIN1252TRANSCODER_HPP'?
+#define XMLWIN2152TRANSCODER_HPP
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+        XMLWIN1252TRANSCODER_HPP
+1 warning generated.
+src/RangeImpl.cpp:466:52: warning: inequality comparison result unused [-Wunused-comparison]
+        for (DOM_Node n = parent.getFirstChild(); n!=null, n!=refNode; n = n.getNextSibling()) {
+                                                  ~^~~~~~
+src/RangeImpl.cpp:466:52: note: use '|=' to turn this inequality comparison into an or-assignment
+        for (DOM_Node n = parent.getFirstChild(); n!=null, n!=refNode; n = n.getNextSibling()) {
+                                                   ^~
+                                                   |=
+1 warning generated.
+src/XSModel.cpp:874:12: warning: 12 enumeration values not handled in switch: 'TYPE_DEFINITION', 'ATTRIBUTE_USE', 'ATTRIBUTE_GROUP_DEFINITION'... [-Wswitch]
+    switch(compType) {
+           ^
+1 warning generated.
+src/XMLChTranscoder.cpp:117:23: warning: setting buffer to a 'sizeof' expression; did you mean to transpose the last two arguments? [-Wmemset-transposed-args]
+    memset(charSizes, sizeof(XMLCh), countToDo);
+                      ^
+src/XMLChTranscoder.cpp:117:23: note: cast the second argument to 'int' to silence
+1 warning generated.
+src/DOMDocumentImpl.cpp:1311:9: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+1 warning generated.
+src/DOMParser.cpp:984:20: warning: 6 enumeration values not handled in switch: 'AttTypes_Unknown', 'Simple', 'Any_Any'... [-Wswitch]
+            switch(type)
+                   ^
+src/DOMParser.cpp:1047:20: warning: 8 enumeration values not handled in switch: 'DefAttTypes_Unknown', 'Default', 'Required_And_Fixed'... [-Wswitch]
+            switch(def)
+                   ^
+2 warnings generated.
+src/AbstractDOMParser.cpp:1117:20: warning: 6 enumeration values not handled in switch: 'AttTypes_Unknown', 'Simple', 'Any_Any'... [-Wswitch]
+            switch(type)
+                   ^
+src/AbstractDOMParser.cpp:1176:20: warning: 8 enumeration values not handled in switch: 'DefAttTypes_Unknown', 'Default', 'Required_And_Fixed'... [-Wswitch]
+            switch(def)
+                   ^
+2 warnings generated.
+src/ContentSpecNode.cpp:284:56: warning: operator '?:' has lower precedence than '*'; '*' will be evaluated first [-Wparentheses]
+                    max = max * (maxFirst > maxSecond) ? maxFirst : maxSecond;
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+src/ContentSpecNode.cpp:284:56: note: place parentheses around the '*' expression to silence this warning
+                    max = max * (maxFirst > maxSecond) ? maxFirst : maxSecond;
+                                                       ^
+                          (                           )
+src/ContentSpecNode.cpp:284:56: note: place parentheses around the '?:' expression to evaluate it first
+                    max = max * (maxFirst > maxSecond) ? maxFirst : maxSecond;
+                                                       ^
+                                (                                            )
+1 warning generated.
+src/IGXMLScanner.cpp:2398:13: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+            else if (fGrammarType == Grammar::SchemaGrammarType) 
+            ^
+src/IGXMLScanner.cpp:2521:13: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+            else if (fGrammarType == Grammar::SchemaGrammarType) 
+            ^
+2 warnings generated.
+src/XMLUTF16Transcoder.cpp:158:23: warning: setting buffer to a 'sizeof' expression; did you mean to transpose the last two arguments? [-Wmemset-transposed-args]
+    memset(charSizes, sizeof(UTF16Ch), countToDo);
+                      ^
+src/XMLUTF16Transcoder.cpp:158:23: note: cast the second argument to 'int' to silence
+1 warning generated.
+clang-11: warning: -Z-reserved-lib-stdc++: 'linker' input unused [-Wunused-command-line-argument]
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

@@ -1,0 +1,36 @@
+Merged: @_ZN9flexarrayI6pointtE7destroyEv, @_ZN9flexarrayIP6regobjE7destroyEv = @_ZN9flexarrayI6pointtE7destroyEv
+Merged: @_ZN9flexarrayI6pointtE6createEi, @_ZN9flexarrayIP6regobjE6createEi = @_ZN9flexarrayI6pointtE6createEi
+Removing FuncId
+Timer:PredictionGains: 0.000000e+00
+Timer:Total: 7.769918e-02
+Timer:Unprofitable: 5.886483e-02
+Timer:Align: 8.926392e-03
+Timer:Param: 7.901192e-04
+Timer:CodeGen: 1.506090e-02
+Timer:Simplify: 3.180146e-02
+Timer:PreProcess: 8.511543e-04
+Timer:Lin: 6.709099e-04
+Timer:Rank: 7.292986e-03
+Timer:Update: 1.074553e-03
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---Wall Time---  --- Name ---
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       Total
+
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

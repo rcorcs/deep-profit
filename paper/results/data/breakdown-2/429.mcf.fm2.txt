@@ -1,0 +1,21 @@
+Timer:PredictionGains: 0.000000e+00
+Timer:Total: 3.319001e-02
+Timer:Unprofitable: 3.054667e-02
+Timer:Align: 3.505230e-03
+Timer:Param: 1.747608e-04
+Timer:CodeGen: 5.083799e-03
+Timer:Simplify: 1.837111e-02
+Timer:PreProcess: 2.586842e-04
+Timer:Lin: 2.000332e-04
+Timer:Rank: 4.599094e-04
+Timer:Update: 1.800060e-04
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---Wall Time---  --- Name ---
+        -----       FM::OneMerge
+        -----       FM::OneMerge
+        -----       Total
+
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

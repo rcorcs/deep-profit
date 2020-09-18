@@ -1,0 +1,115 @@
+src/fmo.c:114:77: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+    printf ("cannot allocated %d bytes for MapUnitToSliceGroupMap, exit\n", PicSizeInMapUnits * sizeof (byte));
+                              ~~                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                              %lu
+src/fmo.c:178:61: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+    printf ("cannot allocated %d bytes for MBAmap, exit\n", (img->PicSizeInMbs) * sizeof (byte));
+                              ~~                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                              %lu
+2 warnings generated.
+src/q_offsets.c:302:17: warning: comparing a pointer to a null character constant; did you mean to compare to NULL? [-Wpointer-compare]
+    if(content!='\0')
+                ^~~~
+                (void *)0
+1 warning generated.
+src/q_matrix.c:377:17: warning: comparing a pointer to a null character constant; did you mean to compare to NULL? [-Wpointer-compare]
+    if(content!='\0')
+                ^~~~
+                (void *)0
+1 warning generated.
+src/annexb.c:49:17: warning: use of unary operator that may be intended as compound assignment (+=)
+    BitsWritten =+ 8;
+                ^~
+1 warning generated.
+src/parset.c:148:57: warning: passing 'byte [64000]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  RBSPlen = GenerateSeq_parameter_set_rbsp (active_sps, rbsp);
+                                                        ^~~~
+./src/parset.h:36:74: note: passing argument to parameter 'buf' here
+int GenerateSeq_parameter_set_rbsp (seq_parameter_set_rbsp_t *sps, char *buf);
+                                                                         ^
+src/parset.c:149:25: warning: passing 'byte [64000]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  NALUlen = RBSPtoNALU (rbsp, n, RBSPlen, NALU_TYPE_SPS, NALU_PRIORITY_HIGHEST, 0, 1);
+                        ^~~~
+./src/nalu.h:22:23: note: passing argument to parameter 'rbsp' here
+int RBSPtoNALU (char *rbsp, NALU_t *nalu, int rbsp_size, int nal_unit_type, int nal_reference_idc, 
+                      ^
+src/parset.c:178:65: warning: passing 'byte [64000]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  RBSPlen = GeneratePic_parameter_set_rbsp (&PicParSet[PPS_id], rbsp);
+                                                                ^~~~
+./src/parset.h:37:74: note: passing argument to parameter 'buf' here
+int GeneratePic_parameter_set_rbsp (pic_parameter_set_rbsp_t *pps, char *buf);
+                                                                         ^
+src/parset.c:179:25: warning: passing 'byte [64000]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  NALUlen = RBSPtoNALU (rbsp, n, RBSPlen, NALU_TYPE_PPS, NALU_PRIORITY_HIGHEST, 0, 1);
+                        ^~~~
+./src/nalu.h:22:23: note: passing argument to parameter 'rbsp' here
+int RBSPtoNALU (char *rbsp, NALU_t *nalu, int rbsp_size, int nal_unit_type, int nal_reference_idc, 
+                      ^
+src/parset.c:574:38: warning: assigning to 'byte *' (aka 'unsigned char *') from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  partition->bitstream->streamBuffer = rbsp;
+                                     ^ ~~~~
+src/parset.c:705:38: warning: assigning to 'byte *' (aka 'unsigned char *') from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  partition->bitstream->streamBuffer = rbsp;
+                                     ^ ~~~~
+6 warnings generated.
+src/sei.c:1364:63: warning: implicit conversion from 'int' to 'char' changes value from 255 to -1 [-Wconstant-conversion]
+    seiUser_data_unregistered.byte[i] = max(0, min(temp_data, 255));
+                                      ~                       ^~~
+./src/minmax.h:15:41: note: expanded from macro 'min'
+#define min(a, b) (((a) < (b)) ? (a) : (b))
+                                        ^
+./src/minmax.h:14:41: note: expanded from macro 'max'
+#define max(a, b) (((a) > (b)) ? (a) : (b))
+                                        ^
+src/sei.c:1483:71: warning: implicit conversion from 'int' to 'char' changes value from 255 to -1 [-Wconstant-conversion]
+    seiUser_data_registered_itu_t_t35.byte[i] = max(0, min(temp_data, 255));
+                                              ~                       ^~~
+./src/minmax.h:15:41: note: expanded from macro 'min'
+#define min(a, b) (((a) < (b)) ? (a) : (b))
+                                        ^
+./src/minmax.h:14:41: note: expanded from macro 'max'
+#define max(a, b) (((a) > (b)) ? (a) : (b))
+                                        ^
+2 warnings generated.
+src/mbuffer.c:1779:44: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+        if ((dpb.fs_ltref[i]->is_long_term == 3))
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+src/mbuffer.c:1779:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((dpb.fs_ltref[i]->is_long_term == 3))
+            ~                              ^   ~
+src/mbuffer.c:1779:44: note: use '=' to turn this equality comparison into an assignment
+        if ((dpb.fs_ltref[i]->is_long_term == 3))
+                                           ^~
+                                           =
+src/mbuffer.c:1785:46: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+          if ((dpb.fs_ltref[i]->is_long_term == 1))
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+src/mbuffer.c:1785:46: note: remove extraneous parentheses around the comparison to silence this warning
+          if ((dpb.fs_ltref[i]->is_long_term == 1))
+              ~                              ^   ~
+src/mbuffer.c:1785:46: note: use '=' to turn this equality comparison into an assignment
+          if ((dpb.fs_ltref[i]->is_long_term == 1))
+                                             ^~
+                                             =
+src/mbuffer.c:1815:44: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+        if ((dpb.fs_ltref[i]->is_long_term == 3))
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+src/mbuffer.c:1815:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((dpb.fs_ltref[i]->is_long_term == 3))
+            ~                              ^   ~
+src/mbuffer.c:1815:44: note: use '=' to turn this equality comparison into an assignment
+        if ((dpb.fs_ltref[i]->is_long_term == 3))
+                                           ^~
+                                           =
+src/mbuffer.c:1821:46: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+          if ((dpb.fs_ltref[i]->is_long_term == 2))
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+src/mbuffer.c:1821:46: note: remove extraneous parentheses around the comparison to silence this warning
+          if ((dpb.fs_ltref[i]->is_long_term == 2))
+              ~                              ^   ~
+src/mbuffer.c:1821:46: note: use '=' to turn this equality comparison into an assignment
+          if ((dpb.fs_ltref[i]->is_long_term == 2))
+                                             ^~
+                                             =
+4 warnings generated.
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

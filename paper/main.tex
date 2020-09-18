@@ -1,202 +1,91 @@
-%\documentclass[sigplan,review,anonymous,10pt]{acmart}\settopmatter{printfolios=false,printccs=false,printacmref=false}
-\documentclass[sigplan,10pt,screen]{acmart}%\settopmatter{printfolios=false,printccs=false,printacmref=false}
+%%%%%%%% mlsys 2020 EXAMPLE LATEX SUBMISSION FILE %%%%%%%%%%%%%%%%%
 
-% CGO Format:
-% 10 Pages excluding references
-% 10pt Font
+\documentclass{article}
 
-%\usepackage[firstpage]{draftwatermark}
-%\SetWatermarkText{\hspace*{6in}\raisebox{9.5in}{\includegraphics[width=0.8in]{ae.pdf}}}
-%\SetWatermarkAngle{0}
+% Recommended, but optional, packages for figures and better typesetting:
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{booktabs} % for professional tables
 
-%\setlength{\droptitle}{1in}
+% hyperref makes hyperlinks in the resulting PDF.
+% If your build breaks (sometimes temporarily if a hyperlink spans a page)
+% please comment out the following usepackage line and replace
+% \usepackage{mlsys2020} with \usepackage[nohyperref]{mlsys2020} above.
+\usepackage{hyperref}
 
-\input{src/preamble}
+% Attempt to make hyperref and algorithmic work together better:
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
 
-%\usepackage{flushend}
-\usepackage{balance}
+% Use the following line for the initial blind version submitted for review:
+%\usepackage{mlsys2020}
 
-\newcommand{\cL}{{\cal L}}
+% If accepted, instead use the following line for the camera-ready submission:
+\usepackage[accepted]{mlsys2020}
 
-\newcommand{\ProjName}{{SalSSA}\xspace} %Sequence ALignment in the SSA form
-
-\begin{CCSXML}
-<ccs2012>
-<concept>
-<concept_id>10011007.10011006.10011041</concept_id>
-<concept_desc>Software and its engineering~Compilers</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-</ccs2012>
-\end{CCSXML}
-
-\ccsdesc[500]{Software and its engineering~Compilers}
-
-%%% The following is specific to PLDI '20 and the paper
-%%% 'Effective Function Merging in the SSA Form'
-%%% by Rodrigo C. O. Rocha, Pavlos Petoumenos, Zheng Wang, Murray Cole, and Hugh Leather.
-%%%
-\setcopyright{acmcopyright}
-\acmPrice{15.00}
-\acmDOI{10.1145/3385412.3386030}
-\acmYear{2020}
-\copyrightyear{2020}
-\acmISBN{978-1-4503-7613-6/20/06}
-\acmConference[PLDI '20]{Proceedings of the 41st ACM SIGPLAN International Conference on Programming Language Design and Implementation}{June 15--20, 2020}{London, UK}
-\acmBooktitle{Proceedings of the 41st ACM SIGPLAN International Conference on Programming Language Design and Implementation (PLDI '20), June 15--20, 2020, London, UK}
-
-
-%% Bibliography style
-\bibliographystyle{ACM-Reference-Format}
-%% Citation style
-%% Note: author/year citations are required for papers published as an
-%% issue of PACMPL.
-%\citestyle{acmauthoryear}   %% For author/year citations
+% The \mlsystitle you define below is probably too long as a header.
+% Therefore, a short form for the running title is supplied here:
+\mlsystitlerunning{Predicting Function Merging Profitability with Deep Learning}
 
 \begin{document}
 
-%\special{papersize=8.5in,11in}
-%\setlength{\pdfpageheight}{\paperheight}
-%\setlength{\pdfpagewidth}{\paperwidth}
+\twocolumn[
+\mlsystitle{Predicting Function Merging Profitability with Deep Learning}
 
-%\conferenceinfo{CONF 'yy}{Month d--d, 20yy, City, ST, Country}
-%\copyrightyear{20yy}
-%\copyrightdata{978-1-nnnn-nnnn-n/yy/mm}
-%\doi{nnnnnnn.nnnnnnn}
+% It is OKAY to include author information, even for blind
+% submissions: the style file will automatically remove it for you
+% unless you've provided the [accepted] option to the mlsys2020
+% package.
 
-\hypersetup{
-  colorlinks,
-  breaklinks=true,
-  linkcolor=black,
-  urlcolor=black,
-  anchorcolor=black,
-  citecolor=black,
-  pdftitle={},
-  pdfauthor={}
-}
+% List of affiliations: The first argument should be a (short)
+% identifier you will use later to specify author affiliations
+% Academic affiliations should list Department, University, City, Region, Country
+% Industry affiliations should list Company, City, Region, Country
 
-%\subtitle{}
-\title{Title}
+% You can specify symbols, otherwise they are numbered in order.
+% Ideally, you should not use this facility. Affiliations will be numbered
+% in order of appearance and this is the preferred way.
+\mlsyssetsymbol{equal}{*}
 
+\begin{mlsysauthorlist}
+%\mlsysauthor{Aeiau Zzzz}{equal,to}
+%\mlsysauthor{Bauiu C.~Yyyy}{equal,to,goo}
+\mlsysauthor{Rodrigo Rocha}{edi}
+\mlsysauthor{Pavlos Petoumenos}{man}
+\mlsysauthor{Zheng Wang}{leeds}
+\mlsysauthor{Murray Cole}{edi}
+\mlsysauthor{Hugh Leather}{edi}
+\end{mlsysauthorlist}
 
-%\authorinfo{}
+\mlsysaffiliation{edi}{School of Informatics, University of Edinburgh, United Kingdom}
+\mlsysaffiliation{man}{University of Manchester, United Kingdom}
+\mlsysaffiliation{leeds}{University of Leeds, United Kingdom}
 
-%Rodrigo Rocha, Pavlos Petoumenos, Murray Cole, Zheng Wang, Hugh Leather
+\mlsyscorrespondingauthor{Cieua Vvvvv}{c.vvvvv@googol.com}
+\mlsyscorrespondingauthor{Eee Pppp}{ep@eden.co.uk}
 
+% You may provide any keywords that you
+% find helpful for describing your paper; these are used to populate
+% the "keywords" metadata in the PDF but will not be shown in the document
+\mlsyskeywords{Machine Learning, MLSys}
 
-%\authorinfo{\text{Rodrigo Rocha, $\,$ Pavlos Petoumenos}}
-%           {University of Edinburgh, UK}
-%           {\url{r.rocha@ed.ac.uk}, \url{ppetoume@inf.ed.ac.uk}}
-
-%\authorinfo{Rodrigo C. O. Rocha}
-%           {University of Edinburgh, UK}
-%           {\url{r.rocha@ed.ac.uk}}
-
-%\authorinfo{Pavlos Petoumenos}
-%           {University of Manchester, UK}
-%           {\url{pavlos.petoumenos@manchester.ac.uk}}
-
-%\authorinfo{Zheng Wang}
-%           {University of Leeds, UK}
-%           {\url{z.wang5@leeds.ac.uk}}
-
-%\authorinfo{Murray Cole}
-%           {University of Edinburgh, UK}
-%           {\url{mic@inf.ed.ac.uk}}
-%
-%\authorinfo{Hugh Leather}
-%           {University of Edinburgh, UK}
-%           {\url{hleather@inf.ed.ac.uk}}
-
-%\authorinfo{Murray Cole, $\,$ Hugh Leather}
-%           {University of Edinburgh, UK}
-%           {\url{mic@inf.ed.ac.uk}, \url{hleather@inf.ed.ac.uk}}
-
-
-% \author{
-% \begin{tabular}{c c c}
-% \large{ Rodrigo C. O. Rocha } & \large{ Pavlos Petoumenos } & \large{ Zheng Wang }\\
-% \emph{ University of Edinburgh, UK } & \emph{ University of Manchester, UK } & \emph{ University of Leeds, UK }\\
-% \url{r.rocha@ed.ac.uk} & \url{pavlos.petoumenos@manchester.ac.uk} & \url{z.wang5@leeds.ac.uk}
-% \end{tabular}
-% \\
-% \\
-% \begin{tabular}{c c}
-% \large Murray Cole & \large Hugh Leather\\
-% \emph{ University of Edinburgh, UK } & \emph{ University of Edinburgh, UK }\\
-% \url{mic@inf.ed.ac.uk} & \url{hleather@inf.ed.ac.uk}
-% \end{tabular}
-% }
-
-
-\author{Rodrigo Rocha}
-\affiliation{
- \institution{University of Edinburgh, UK}
- %\streetaddress{}
- %\city{}
- %\state{}
- %\country{UK}
-}
-\email{r.rocha@ed.ac.uk}
-
-\author{Pavlos Petoumenos}
-\affiliation{
- \institution{University of Manchester, UK}
- %\streetaddress{}
- %\city{}
- %\state{}
- %\country{UK}
-}
-\email{pavlos.petoumenos@manchester.ac.uk}
-
-\author{Zheng Wang}
-\affiliation{
- \institution{University of Leeds, UK}
- %\streetaddress{}
- %\city{}
- %\state{}
- %\country{UK}
-}
-\email{z.wang5@leeds.ac.uk}
-
-\author{Murray Cole}
-\affiliation{
- \institution{University of Edinburgh, UK}
- %\streetaddress{}
- %\city{}
- %\state{}
- %\country{UK}
-}
-\email{mic@inf.ed.ac.uk}
-
-\author{Hugh Leather}
-\affiliation{
- \institution{University of Edinburgh, UK}
- %\streetaddress{}
- %\city{}
- %\state{}
- %\country{UK}
-}
-\email{hleather@inf.ed.ac.uk}
+\vskip 0.3in
 
 
 \input{src/abstract}
 
-\keywords{Code Size Reduction, Function Merging, LTO.}
+]
 
-\maketitle
+% this must go after the closing bracket ] following \twocolumn[ ...
 
+% This command actually creates the footnote in the first column
+% listing the affiliations and the copyright notice.
+% The command takes one argument, which is text to display at the start of the footnote.
+% The \mlsysEqualContribution command is standard text for equal contribution.
+% Remove it (just {}) if you do not need this facility.
 
-
-%% \category{CR-number}{subcategory}{third-level}
-
-% general terms are not compulsory anymore,
-% you may leave them out
-%% \terms
-%% term1, term2
-
-%\keywords
-%Code Size, Function Merging, IPO, LTO %, Sequence Alignment
+%\printAffiliationsAndNotice{}  % leave blank if no need to mention equal contribution
+\printAffiliationsAndNotice{\mlsysEqualContribution} % otherwise use the standard text.
 
 \input{src/introduction}
 \input{src/background}
@@ -206,33 +95,45 @@
 \input{src/related}
 \input{src/conclusion}
 
-%\input{src/artifact}
+% Acknowledgements should only appear in the accepted version.
+%\section*{Acknowledgements}
+%This work has been supported in part by the UK Engineering and Physical Sciences Research Council (EPSRC) under grants EP/L01503X/1 (CDT in Pervasive Parallelism), EP/P003915/1 (SUMMER) and EP/M01567X/1 (SANDeRs).
+%This work was supported by the Royal Academy of Engineering under the Research Fellowship scheme.
 
 
-\section*{Acknowledgment}
-This work has been supported in part by the UK Engineering and Physical Sciences Research Council (EPSRC) under grants EP/L01503X/1 (CDT in
-Pervasive Parallelism), EP/P003915/1 (SUMMER) and EP/M01567X/1 (SANDeRs).  This work was supported by the Royal Academy of Engineering
-under the Research Fellowship scheme.
+% In the unusual situation where you want a paper to appear in the
+% references without citing it in the main text, use \nocite
+\nocite{langley00}
+
+\bibliography{references}
+\bibliographystyle{mlsys2020}
 
 
-%\bibliographystyle{abbrvnat}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SUPPLEMENTAL CONTENT AS APPENDIX AFTER REFERENCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\appendix
+%\section{Please add supplemental material as appendix here}
 
-%\bibliographystyle{IEEEtran}
+%Put anything that you might normally include after the references as an appendix here, {\it not in a separate supplementary file}. Upload your final camera-ready as a single pdf, including all appendices.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-% The bibliography should be embedded for final submission.
-
-%% \begin{thebibliography}{}
-%% \softraggedright
-
-%% \bibitem[Smith et~al.(2009)Smith, Jones]{smith02}
-%% P. Q. Smith, and X. Y. Jones. ...reference text...
-
-\balance
-
-\bibliography{bib/refs}
-
-%\clearpage
-%\balance
-%
 \end{document}
+
+
+% This document was modified from the file originally made available by
+% Pat Langley and Andrea Danyluk for ICML-2K. This version was created
+% by Iain Murray in 2018. It was modified from a version from Dan Roy in
+% 2017, which was based on a version from Lise Getoor and Tobias
+% Scheffer, which was slightly modified from the 2010 version by
+% Thorsten Joachims & Johannes Fuernkranz, slightly modified from the
+% 2009 version by Kiri Wagstaff and Sam Roweis's 2008 version, which is
+% slightly modified from Prasad Tadepalli's 2007 version which is a
+% lightly changed version of the previous year's version by Andrew
+% Moore, which was in turn edited from those of Kristian Kersting and
+% Codrina Lauth. Alex Smola contributed to the algorithmic style files.

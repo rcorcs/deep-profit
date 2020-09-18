@@ -1,0 +1,2340 @@
+src/defaultrenderfrontend.cpp:311:86: warning: address of array 'this->consoleoutput' will always evaluate to 'true' [-Wpointer-bool-conversion]
+                        streams[i] = new DefaultStreamBuffer(os, (i == ALL_STREAM), (i == ALL_STREAM) || !consoleoutput);
+                                                                                                         ~^~~~~~~~~~~~~
+src/defaultrenderfrontend.cpp:324:86: warning: address of array 'this->consoleoutput' will always evaluate to 'true' [-Wpointer-bool-conversion]
+                        streams[i] = new DefaultStreamBuffer(os, (i == ALL_STREAM), (i == ALL_STREAM) || !consoleoutput);
+                                                                                                         ~^~~~~~~~~~~~~
+2 warnings generated.
+src/povmscpp.cpp:1121:4: warning: delete called on 'POVMS_MessageReceiver::HandlerOO' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+                        delete nodeptr->handleroo;
+                        ^
+src/povmscpp.cpp:1123:4: warning: delete called on 'POVMS_MessageReceiver::Handler' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+                        delete nodeptr->handler;
+                        ^
+2 warnings generated.
+src/tokenize.cpp:177:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {AA_THRESHOLD_TOKEN, "aa_threshold"},
+                       ^
+src/tokenize.cpp:178:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {AA_LEVEL_TOKEN, "aa_level"},
+                   ^
+src/tokenize.cpp:179:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ABSORPTION_TOKEN, "absorption"},
+                     ^
+src/tokenize.cpp:180:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ABS_TOKEN, "abs"},
+              ^
+src/tokenize.cpp:181:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ACCURACY_TOKEN, "accuracy"},
+                   ^
+src/tokenize.cpp:182:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ACOSH_TOKEN, "acosh"},
+                ^
+src/tokenize.cpp:183:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ACOS_TOKEN, "acos"},
+               ^
+src/tokenize.cpp:184:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ADAPTIVE_TOKEN, "adaptive"},
+                   ^
+src/tokenize.cpp:185:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ADC_BAILOUT_TOKEN, "adc_bailout"},
+                      ^
+src/tokenize.cpp:186:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {AGATE_TOKEN, "agate"},
+                ^
+src/tokenize.cpp:187:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {AGATE_TURB_TOKEN, "agate_turb"},
+                     ^
+src/tokenize.cpp:188:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ALL_INTERSECTIONS_TOKEN, "all_intersections"},
+                            ^
+src/tokenize.cpp:189:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ALL_TOKEN, "all"},
+              ^
+src/tokenize.cpp:190:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ALPHA_TOKEN, "alpha"},
+                ^
+src/tokenize.cpp:191:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ALWAYS_SAMPLE_TOKEN, "always_sample"},
+                        ^
+src/tokenize.cpp:192:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ALTITUDE_TOKEN, "altitude"},
+                   ^
+src/tokenize.cpp:193:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {AMBIENT_LIGHT_TOKEN, "ambient_light"},
+                        ^
+src/tokenize.cpp:194:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {AMBIENT_TOKEN, "ambient"},
+                  ^
+src/tokenize.cpp:195:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {AMPERSAND_TOKEN, "&"},
+                    ^
+src/tokenize.cpp:196:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ANGLE_TOKEN, "angle"},
+                ^
+src/tokenize.cpp:197:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {APERTURE_TOKEN, "aperture"},
+                   ^
+src/tokenize.cpp:198:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {APPEND_TOKEN, "append"},
+                 ^
+src/tokenize.cpp:199:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ARC_ANGLE_TOKEN, "arc_angle"},
+                    ^
+src/tokenize.cpp:200:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {AREA_LIGHT_TOKEN, "area_light"},
+                     ^
+src/tokenize.cpp:201:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ARRAY_ID_TOKEN, "array identifier"},
+                   ^
+src/tokenize.cpp:202:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ARRAY_TOKEN, "array"},
+                ^
+src/tokenize.cpp:203:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ASCII_TOKEN, "ascii"},
+                ^
+src/tokenize.cpp:204:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ASC_TOKEN, "asc"},
+              ^
+src/tokenize.cpp:205:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ASINH_TOKEN, "asinh"},
+                ^
+src/tokenize.cpp:206:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ASIN_TOKEN, "asin"},
+               ^
+src/tokenize.cpp:207:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ASSUMED_GAMMA_TOKEN, "assumed_gamma"},
+                        ^
+src/tokenize.cpp:208:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ATAN2_TOKEN, "atan2"},
+                ^
+src/tokenize.cpp:209:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ATANH_TOKEN, "atanh"},
+                ^
+src/tokenize.cpp:210:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ATAN_TOKEN, "atan"},
+               ^
+src/tokenize.cpp:211:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {AT_TOKEN, "@"},
+             ^
+src/tokenize.cpp:212:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {AVERAGE_TOKEN, "average"},
+                  ^
+src/tokenize.cpp:213:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BACKGROUND_TOKEN, "background"},
+                     ^
+src/tokenize.cpp:214:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BACK_QUOTE_TOKEN, "`"},
+                     ^
+src/tokenize.cpp:215:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BACK_SLASH_TOKEN, "\\"},
+                     ^
+src/tokenize.cpp:216:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BAR_TOKEN, "|"},
+              ^
+src/tokenize.cpp:217:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BEZIER_SPLINE_TOKEN, "bezier_spline"},
+                        ^
+src/tokenize.cpp:218:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BICUBIC_PATCH_TOKEN, "bicubic_patch"},
+                        ^
+src/tokenize.cpp:219:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BLACK_HOLE_TOKEN, "black_hole"},
+                     ^
+src/tokenize.cpp:220:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BLOB_TOKEN, "blob"},
+               ^
+src/tokenize.cpp:221:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BLUE_TOKEN, "blue"},
+               ^
+src/tokenize.cpp:222:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BLUR_SAMPLES_TOKEN, "blur_samples"},
+                       ^
+src/tokenize.cpp:223:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BOUNDED_BY_TOKEN, "bounded_by"},
+                     ^
+src/tokenize.cpp:224:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BOXED_TOKEN, "boxed"},
+                ^
+src/tokenize.cpp:225:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BOX_TOKEN, "box"},
+              ^
+src/tokenize.cpp:226:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BOZO_TOKEN, "bozo"},
+               ^
+src/tokenize.cpp:227:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BREAK_TOKEN, "break"},
+                ^
+src/tokenize.cpp:228:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BRICK_SIZE_TOKEN, "brick_size"},
+                     ^
+src/tokenize.cpp:229:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BRICK_TOKEN, "brick"},
+                ^
+src/tokenize.cpp:230:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BRIGHTNESS_TOKEN, "brightness" },
+                     ^
+src/tokenize.cpp:231:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BRILLIANCE_TOKEN, "brilliance"},
+                     ^
+src/tokenize.cpp:232:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BUMPS_TOKEN, "bumps"},
+                ^
+src/tokenize.cpp:233:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BUMP_MAP_TOKEN, "bump_map"},
+                   ^
+src/tokenize.cpp:234:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {BUMP_SIZE_TOKEN, "bump_size"},
+                    ^
+src/tokenize.cpp:235:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {B_SPLINE_TOKEN, "b_spline"},
+                   ^
+src/tokenize.cpp:236:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CAMERA_ID_TOKEN, "camera identifier"},
+                    ^
+src/tokenize.cpp:237:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CAMERA_TOKEN, "camera"},
+                 ^
+src/tokenize.cpp:238:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CASE_TOKEN, "case"},
+               ^
+src/tokenize.cpp:239:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CAUSTICS_TOKEN, "caustics"},
+                   ^
+src/tokenize.cpp:240:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CEIL_TOKEN, "ceil"},
+               ^
+src/tokenize.cpp:241:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CELLS_TOKEN, "cells"},
+                ^
+src/tokenize.cpp:242:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CHARSET_TOKEN, "charset"},
+                  ^
+src/tokenize.cpp:243:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CHECKER_TOKEN, "checker"},
+                  ^
+src/tokenize.cpp:244:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CHR_TOKEN, "chr"},
+              ^
+src/tokenize.cpp:245:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CIRCULAR_TOKEN,"circular"},
+                  ^
+src/tokenize.cpp:246:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CLIPPED_BY_TOKEN, "clipped_by"},
+                     ^
+src/tokenize.cpp:247:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CLOCK_DELTA_TOKEN, "clock_delta"},
+                      ^
+src/tokenize.cpp:248:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CLOCK_ON_TOKEN, "clock_on"},
+                   ^
+src/tokenize.cpp:249:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CLOCK_TOKEN, "clock"},
+                ^
+src/tokenize.cpp:250:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COLON_TOKEN, ":"},
+                ^
+src/tokenize.cpp:251:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COLOUR_ID_TOKEN, "colour identifier"},
+                    ^
+src/tokenize.cpp:252:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COLOUR_KEY_TOKEN, "color keyword"},
+                     ^
+src/tokenize.cpp:253:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COLOUR_MAP_ID_TOKEN, "colour map identifier"},
+                        ^
+src/tokenize.cpp:254:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COLOUR_MAP_TOKEN, "color_map"},
+                     ^
+src/tokenize.cpp:255:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COLOUR_MAP_TOKEN, "colour_map"},
+                     ^
+src/tokenize.cpp:256:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COLOUR_TOKEN, "color"},
+                 ^
+src/tokenize.cpp:257:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COLOUR_TOKEN, "colour"},
+                 ^
+src/tokenize.cpp:258:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COMMA_TOKEN, ", "},
+                ^
+src/tokenize.cpp:259:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COMPONENT_TOKEN, "component"},
+                    ^
+src/tokenize.cpp:260:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COMPOSITE_TOKEN, "composite"},
+                    ^
+src/tokenize.cpp:261:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CONCAT_TOKEN, "concat"},
+                 ^
+src/tokenize.cpp:262:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CONE_TOKEN, "cone"},
+               ^
+src/tokenize.cpp:263:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CONFIDENCE_TOKEN, "confidence"},
+                     ^
+src/tokenize.cpp:264:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CONIC_SWEEP_TOKEN, "conic_sweep"},
+                      ^
+src/tokenize.cpp:265:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CONTAINED_BY_TOKEN,"contained_by"},
+                      ^
+src/tokenize.cpp:266:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CONTROL0_TOKEN, "control0"},
+                   ^
+src/tokenize.cpp:267:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CONTROL1_TOKEN, "control1"},
+                   ^
+src/tokenize.cpp:268:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COORDS_TOKEN, "coords" },
+                 ^
+src/tokenize.cpp:269:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COSH_TOKEN, "cosh"},
+               ^
+src/tokenize.cpp:270:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COS_TOKEN, "cos"},
+              ^
+src/tokenize.cpp:271:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COUNT_TOKEN, "count" },
+                ^
+src/tokenize.cpp:272:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CRACKLE_TOKEN, "crackle"},
+                  ^
+src/tokenize.cpp:273:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CRAND_TOKEN, "crand"},
+                ^
+src/tokenize.cpp:274:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CUBE_TOKEN, "cube"},
+               ^
+src/tokenize.cpp:275:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CUBIC_SPLINE_TOKEN, "cubic_spline"},
+                       ^
+src/tokenize.cpp:276:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CUBIC_TOKEN, "cubic"},
+                ^
+src/tokenize.cpp:277:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CUBIC_WAVE_TOKEN, "cubic_wave"},
+                     ^
+src/tokenize.cpp:278:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CYLINDER_TOKEN, "cylinder"},
+                   ^
+src/tokenize.cpp:279:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CYLINDRICAL_TOKEN, "cylindrical"},
+                      ^
+src/tokenize.cpp:280:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DASH_TOKEN, "-"},
+               ^
+src/tokenize.cpp:281:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DEBUG_TOKEN, "debug"},
+                ^
+src/tokenize.cpp:282:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DECLARE_TOKEN, "declare"},
+                  ^
+src/tokenize.cpp:283:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DEFAULT_TOKEN, "default"},
+                  ^
+src/tokenize.cpp:284:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DEFINED_TOKEN, "defined"},
+                  ^
+src/tokenize.cpp:285:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DEGREES_TOKEN, "degrees"},
+                  ^
+src/tokenize.cpp:286:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DENSITY_FILE_TOKEN, "density_file"},
+                       ^
+src/tokenize.cpp:287:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DENSITY_ID_TOKEN, "density identifier"},
+                     ^
+src/tokenize.cpp:288:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DENSITY_MAP_ID_TOKEN, "density_map identifier"},
+                         ^
+src/tokenize.cpp:289:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DENSITY_MAP_TOKEN, "density_map"},
+                      ^
+src/tokenize.cpp:290:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DENSITY_TOKEN, "density"},
+                  ^
+src/tokenize.cpp:291:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DENTS_TOKEN, "dents"},
+                ^
+src/tokenize.cpp:292:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DF3_TOKEN, "df3"},
+              ^
+src/tokenize.cpp:293:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DIFFERENCE_TOKEN, "difference"},
+                     ^
+src/tokenize.cpp:294:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DIFFUSE_TOKEN, "diffuse"},
+                  ^
+src/tokenize.cpp:295:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DIMENSIONS_TOKEN, "dimensions"},
+                     ^
+src/tokenize.cpp:296:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DIMENSION_SIZE_TOKEN, "dimension_size"},
+                         ^
+src/tokenize.cpp:297:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DIRECTION_TOKEN, "direction"},
+                    ^
+src/tokenize.cpp:298:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DISC_TOKEN, "disc"},
+               ^
+src/tokenize.cpp:299:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DISPERSION_TOKEN, "dispersion"},
+                     ^
+src/tokenize.cpp:300:30: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DISPERSION_SAMPLES_TOKEN, "dispersion_samples"},
+                             ^
+src/tokenize.cpp:301:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DISTANCE_MAXIMUM_TOKEN, "distance_maximum" },
+                           ^
+src/tokenize.cpp:302:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DISTANCE_TOKEN, "distance"},
+                   ^
+src/tokenize.cpp:303:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DIST_EXP_TOKEN, "dist_exp"},
+                   ^
+src/tokenize.cpp:304:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DIV_TOKEN, "div"},
+              ^
+src/tokenize.cpp:305:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DOLLAR_TOKEN, "$"},
+                 ^
+src/tokenize.cpp:306:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {DOUBLE_ILLUMINATE_TOKEN, "double_illuminate"},
+                            ^
+src/tokenize.cpp:307:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ECCENTRICITY_TOKEN, "eccentricity"},
+                       ^
+src/tokenize.cpp:308:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ELSE_TOKEN, "else"},
+               ^
+src/tokenize.cpp:309:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {EMISSION_TOKEN, "emission"},
+                   ^
+src/tokenize.cpp:310:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {EMPTY_ARRAY_TOKEN, "empty array"},
+                      ^
+src/tokenize.cpp:311:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {END_OF_FILE_TOKEN, "End of File"},
+                      ^
+src/tokenize.cpp:312:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {END_TOKEN, "end"},
+              ^
+src/tokenize.cpp:313:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {EQUALS_TOKEN, "="},
+                 ^
+src/tokenize.cpp:314:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ERROR_BOUND_TOKEN, "error_bound" },
+                      ^
+src/tokenize.cpp:315:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ERROR_TOKEN, "error"},
+                ^
+src/tokenize.cpp:316:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {EVALUATE_TOKEN, "evaluate"},
+                   ^
+src/tokenize.cpp:317:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {EXCLAMATION_TOKEN, "!"},
+                      ^
+src/tokenize.cpp:318:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {EXP_TOKEN, "exp"},
+              ^
+src/tokenize.cpp:319:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {EXPONENT_TOKEN, "exponent"},
+                   ^
+src/tokenize.cpp:320:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {EXTERIOR_TOKEN, "exterior"},
+                   ^
+src/tokenize.cpp:321:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {EXTINCTION_TOKEN, "extinction"},
+                     ^
+src/tokenize.cpp:322:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FACETS_TOKEN, "facets"},
+                 ^
+src/tokenize.cpp:323:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FACE_INDICES_TOKEN, "face_indices"},
+                       ^
+src/tokenize.cpp:324:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FADE_COLOUR_TOKEN, "fade_colour"},
+                      ^
+src/tokenize.cpp:325:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FADE_COLOUR_TOKEN, "fade_color"},
+                      ^
+src/tokenize.cpp:326:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FADE_DISTANCE_TOKEN, "fade_distance"},
+                        ^
+src/tokenize.cpp:327:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FADE_POWER_TOKEN, "fade_power"},
+                     ^
+src/tokenize.cpp:328:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FALLOFF_ANGLE_TOKEN, "falloff_angle"},
+                        ^
+src/tokenize.cpp:329:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FALLOFF_TOKEN, "falloff"},
+                  ^
+src/tokenize.cpp:330:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FALSE_TOKEN, "false"},
+                ^
+src/tokenize.cpp:331:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FCLOSE_TOKEN, "fclose"},
+                 ^
+src/tokenize.cpp:332:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FILE_EXISTS_TOKEN, "file_exists"},
+                      ^
+src/tokenize.cpp:333:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FILE_ID_TOKEN, "file identifier"},
+                  ^
+src/tokenize.cpp:334:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FILL_LIGHT_TOKEN, "shadowless"},
+                     ^
+src/tokenize.cpp:335:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FILTER_TOKEN, "filter"},
+                 ^
+src/tokenize.cpp:336:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FINALCLOCK_TOKEN, "final_clock"},
+                     ^
+src/tokenize.cpp:337:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FINALFRAME_TOKEN, "final_frame"},
+                     ^
+src/tokenize.cpp:338:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FINISH_ID_TOKEN, "finish identifier"},
+                    ^
+src/tokenize.cpp:339:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FINISH_TOKEN, "finish"},
+                 ^
+src/tokenize.cpp:340:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FISHEYE_TOKEN, "fisheye"},
+                  ^
+src/tokenize.cpp:341:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FLATNESS_TOKEN, "flatness"},
+                   ^
+src/tokenize.cpp:342:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FLIP_TOKEN, "flip"},
+               ^
+src/tokenize.cpp:343:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FLOAT_FUNCT_TOKEN, "float function"},
+                      ^
+src/tokenize.cpp:344:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FLOAT_ID_TOKEN, "float identifier"},
+                   ^
+src/tokenize.cpp:345:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FLOAT_TOKEN, "float constant"},
+                ^
+src/tokenize.cpp:346:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FLOOR_TOKEN, "floor"},
+                ^
+src/tokenize.cpp:347:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FOCAL_POINT_TOKEN, "focal_point"},
+                      ^
+src/tokenize.cpp:348:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FOG_ALT_TOKEN, "fog_alt"},
+                  ^
+src/tokenize.cpp:349:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FOG_ID_TOKEN, "fog identifier"},
+                 ^
+src/tokenize.cpp:350:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FOG_OFFSET_TOKEN, "fog_offset"},
+                     ^
+src/tokenize.cpp:351:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FOG_TOKEN, "fog"},
+              ^
+src/tokenize.cpp:352:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FOG_TYPE_TOKEN, "fog_type"},
+                   ^
+src/tokenize.cpp:353:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FOPEN_TOKEN, "fopen"},
+                ^
+src/tokenize.cpp:354:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FORM_TOKEN, "form"},
+               ^
+src/tokenize.cpp:355:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FRAMENUMBER_TOKEN, "frame_number"},
+                      ^
+src/tokenize.cpp:356:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FREQUENCY_TOKEN, "frequency"},
+                    ^
+src/tokenize.cpp:357:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FRESNEL_TOKEN, "fresnel"},
+                  ^
+src/tokenize.cpp:358:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FUNCTION_TOKEN, "function"},
+                   ^
+src/tokenize.cpp:359:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {FUNCT_ID_TOKEN, "function identifier"},
+                   ^
+src/tokenize.cpp:360:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VECTFUNCT_ID_TOKEN, "vector function identifier"},
+                       ^
+src/tokenize.cpp:361:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {GIF_TOKEN, "gif"},
+              ^
+src/tokenize.cpp:362:27: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {GLOBAL_SETTINGS_TOKEN, "global_settings" },
+                          ^
+src/tokenize.cpp:363:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {GRADIENT_TOKEN, "gradient"},
+                   ^
+src/tokenize.cpp:364:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {GRANITE_TOKEN, "granite"},
+                  ^
+src/tokenize.cpp:365:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {GRAY_TOKEN, "gray"},
+               ^
+src/tokenize.cpp:366:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {GRAY_THRESHOLD_TOKEN, "gray_threshold" },
+                         ^
+src/tokenize.cpp:367:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {GREEN_TOKEN, "green"},
+                ^
+src/tokenize.cpp:368:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {HASH_TOKEN, "#"},
+               ^
+src/tokenize.cpp:369:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {HAT_TOKEN, "^"},
+              ^
+src/tokenize.cpp:370:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {HEIGHT_FIELD_TOKEN, "height_field"},
+                       ^
+src/tokenize.cpp:371:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {HEXAGON_TOKEN, "hexagon"},
+                  ^
+src/tokenize.cpp:372:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {HF_GRAY_16_TOKEN, "hf_gray_16" },
+                     ^
+src/tokenize.cpp:373:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {HIERARCHY_TOKEN, "hierarchy"},
+                    ^
+src/tokenize.cpp:374:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {HOLLOW_TOKEN, "hollow"},
+                 ^
+src/tokenize.cpp:375:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {HYPERCOMPLEX_TOKEN, "hypercomplex"},
+                       ^
+src/tokenize.cpp:376:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IDENTIFIER_TOKEN, "undeclared identifier"},
+                     ^
+src/tokenize.cpp:377:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IMAGE_WIDTH_TOKEN,"image_width"},
+                     ^
+src/tokenize.cpp:378:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IMAGE_HEIGHT_TOKEN,"image_height"},
+                      ^
+src/tokenize.cpp:379:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INITIALCLOCK_TOKEN, "initial_clock"},
+                       ^
+src/tokenize.cpp:380:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INITIALFRAME_TOKEN, "initial_frame"},
+                       ^
+src/tokenize.cpp:381:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INTERIOR_TEXTURE_TOKEN, "interior_texture"},
+                           ^
+src/tokenize.cpp:382:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IFDEF_TOKEN, "ifdef"},
+                ^
+src/tokenize.cpp:383:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IFF_TOKEN, "iff"},
+              ^
+src/tokenize.cpp:384:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IFNDEF_TOKEN, "ifndef"},
+                 ^
+src/tokenize.cpp:385:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IF_TOKEN, "if"},
+             ^
+src/tokenize.cpp:386:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IMAGE_MAP_TOKEN, "image_map"},
+                    ^
+src/tokenize.cpp:387:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IMAGE_PATTERN_TOKEN, "image_pattern"},
+                        ^
+src/tokenize.cpp:388:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INCLUDE_TOKEN, "include"},
+                  ^
+src/tokenize.cpp:389:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INSIDE_TOKEN, "inside"},
+                 ^
+src/tokenize.cpp:390:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INSIDE_VECTOR_TOKEN, "inside_vector"},
+                        ^
+src/tokenize.cpp:391:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INTERIOR_ID_TOKEN, "interior identifier"},
+                      ^
+src/tokenize.cpp:392:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INTERIOR_TOKEN, "interior"},
+                   ^
+src/tokenize.cpp:393:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INTERPOLATE_TOKEN, "interpolate"},
+                      ^
+src/tokenize.cpp:394:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INTERSECTION_TOKEN, "intersection"},
+                       ^
+src/tokenize.cpp:395:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INTERVALS_TOKEN, "intervals"},
+                    ^
+src/tokenize.cpp:396:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INT_TOKEN, "int"},
+              ^
+src/tokenize.cpp:397:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INVERSE_TOKEN, "inverse"},
+                  ^
+src/tokenize.cpp:398:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IOR_TOKEN, "ior"},
+              ^
+src/tokenize.cpp:399:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IRID_TOKEN, "irid"},
+               ^
+src/tokenize.cpp:400:27: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {IRID_WAVELENGTH_TOKEN, "irid_wavelength"},
+                          ^
+src/tokenize.cpp:401:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ISOSURFACE_TOKEN, "isosurface"},
+                     ^
+src/tokenize.cpp:402:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {JITTER_TOKEN, "jitter"},
+                 ^
+src/tokenize.cpp:403:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {JULIA_TOKEN, "julia"},
+                ^
+src/tokenize.cpp:404:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {JULIA_FRACTAL_TOKEN, "julia_fractal"},
+                        ^
+src/tokenize.cpp:405:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {JPEG_TOKEN, "jpeg"},
+               ^
+src/tokenize.cpp:406:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LAMBDA_TOKEN, "lambda"},
+                 ^
+src/tokenize.cpp:407:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LATHE_TOKEN, "lathe"},
+                ^
+src/tokenize.cpp:408:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LEFT_ANGLE_TOKEN, "<"},
+                     ^
+src/tokenize.cpp:409:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LEFT_CURLY_TOKEN, "{"},
+                     ^
+src/tokenize.cpp:410:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LEFT_PAREN_TOKEN, "("},
+                     ^
+src/tokenize.cpp:411:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LEFT_SQUARE_TOKEN, "["},
+                      ^
+src/tokenize.cpp:412:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LEOPARD_TOKEN, "leopard"},
+                  ^
+src/tokenize.cpp:413:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LIGHT_GROUP_TOKEN, "light_group"},
+                      ^
+src/tokenize.cpp:414:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LIGHT_SOURCE_TOKEN, "light_source"},
+                       ^
+src/tokenize.cpp:415:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LINEAR_SPLINE_TOKEN, "linear_spline"},
+                        ^
+src/tokenize.cpp:416:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LINEAR_SWEEP_TOKEN, "linear_sweep"},
+                       ^
+src/tokenize.cpp:417:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LN_TOKEN, "ln"},
+             ^
+src/tokenize.cpp:418:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LOAD_FILE_TOKEN, "load_file"},
+                    ^
+src/tokenize.cpp:419:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LOCAL_TOKEN, "local"},
+                ^
+src/tokenize.cpp:420:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LOCATION_TOKEN, "location"},
+                   ^
+src/tokenize.cpp:421:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LOG_TOKEN, "log"},
+              ^
+src/tokenize.cpp:422:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LOOKS_LIKE_TOKEN, "looks_like"},
+                     ^
+src/tokenize.cpp:423:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LOOK_AT_TOKEN, "look_at"},
+                  ^
+src/tokenize.cpp:424:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {LOW_ERROR_FACTOR_TOKEN, "low_error_factor" },
+                           ^
+src/tokenize.cpp:425:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MACRO_ID_TOKEN, "macro identifier"},
+                   ^
+src/tokenize.cpp:426:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MACRO_TOKEN, "macro"},
+                ^
+src/tokenize.cpp:427:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MAGNET_TOKEN, "magnet"},
+                 ^
+src/tokenize.cpp:428:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MAJOR_RADIUS_TOKEN, "major_radius"},
+                       ^
+src/tokenize.cpp:429:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MANDEL_TOKEN, "mandel"},
+                 ^
+src/tokenize.cpp:430:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MAP_TYPE_TOKEN, "map_type"},
+                   ^
+src/tokenize.cpp:431:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MARBLE_TOKEN, "marble"},
+                 ^
+src/tokenize.cpp:432:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MATERIAL_ID_TOKEN, "material identifier"},
+                      ^
+src/tokenize.cpp:433:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MATERIAL_MAP_TOKEN, "material_map"},
+                       ^
+src/tokenize.cpp:434:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MATERIAL_TOKEN, "material"},
+                   ^
+src/tokenize.cpp:435:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MATRIX_TOKEN, "matrix"},
+                 ^
+src/tokenize.cpp:436:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MAX_EXTENT_TOKEN, "max_extent"},
+                     ^
+src/tokenize.cpp:437:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MAX_GRADIENT_TOKEN, "max_gradient"},
+                       ^
+src/tokenize.cpp:438:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MAX_INTERSECTIONS, "max_intersections"},
+                      ^
+src/tokenize.cpp:439:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MAX_ITERATION_TOKEN, "max_iteration"},
+                        ^
+src/tokenize.cpp:440:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MAX_SAMPLE_TOKEN, "max_sample"},
+                     ^
+src/tokenize.cpp:441:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MAX_TOKEN, "max"},
+              ^
+src/tokenize.cpp:442:27: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MAX_TRACE_LEVEL_TOKEN, "max_trace_level"},
+                          ^
+src/tokenize.cpp:443:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MAX_TRACE_TOKEN, "max_trace"},
+                    ^
+src/tokenize.cpp:444:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MEDIA_ATTENUATION_TOKEN, "media_attenuation"},
+                            ^
+src/tokenize.cpp:445:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MEDIA_ID_TOKEN, "media identifier"},
+                   ^
+src/tokenize.cpp:446:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MEDIA_INTERACTION_TOKEN, "media_interaction"},
+                            ^
+src/tokenize.cpp:447:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MEDIA_TOKEN, "media"},
+                ^
+src/tokenize.cpp:448:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MERGE_TOKEN, "merge"},
+                ^
+src/tokenize.cpp:449:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MESH2_TOKEN, "mesh2"},
+                ^
+src/tokenize.cpp:450:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MESH_TOKEN, "mesh"},
+               ^
+src/tokenize.cpp:451:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {METALLIC_TOKEN, "metallic"},
+                   ^
+src/tokenize.cpp:452:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {METHOD_TOKEN, "method"},
+                 ^
+src/tokenize.cpp:453:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {METRIC_TOKEN, "metric" },
+                 ^
+src/tokenize.cpp:454:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MINIMUM_REUSE_TOKEN, "minimum_reuse" },
+                        ^
+src/tokenize.cpp:455:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MIN_EXTENT_TOKEN, "min_extent" },
+                     ^
+src/tokenize.cpp:456:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MIN_TOKEN, "min"},
+              ^
+src/tokenize.cpp:457:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MOD_TOKEN, "mod"},
+              ^
+src/tokenize.cpp:458:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {MORTAR_TOKEN, "mortar"},
+                 ^
+src/tokenize.cpp:459:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NATURAL_SPLINE_TOKEN, "natural_spline"},
+                         ^
+src/tokenize.cpp:460:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NEAREST_COUNT_TOKEN, "nearest_count" },
+                        ^
+src/tokenize.cpp:461:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NORMAL_INDICES_TOKEN, "normal_indices"},
+                         ^
+src/tokenize.cpp:462:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NORMAL_MAP_ID_TOKEN, "normal_map identifier"},
+                        ^
+src/tokenize.cpp:463:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NORMAL_MAP_TOKEN, "normal_map"},
+                     ^
+src/tokenize.cpp:464:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NORMAL_VECTORS_TOKEN, "normal_vectors"},
+                         ^
+src/tokenize.cpp:465:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NO_IMAGE_TOKEN, "no_image"},
+                   ^
+src/tokenize.cpp:466:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NO_REFLECTION_TOKEN, "no_reflection"},
+                        ^
+src/tokenize.cpp:467:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NO_SHADOW_TOKEN, "no_shadow"},
+                    ^
+src/tokenize.cpp:468:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NO_TOKEN, "no"},
+             ^
+src/tokenize.cpp:469:27: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NUMBER_OF_WAVES_TOKEN, "number_of_waves"},
+                          ^
+src/tokenize.cpp:470:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {OBJECT_ID_TOKEN, "object identifier"},
+                    ^
+src/tokenize.cpp:471:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {OBJECT_TOKEN, "object"},
+                 ^
+src/tokenize.cpp:472:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {OCTAVES_TOKEN, "octaves"},
+                  ^
+src/tokenize.cpp:473:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {OFFSET_TOKEN, "offset"},
+                 ^
+src/tokenize.cpp:474:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {OFF_TOKEN, "off"},
+              ^
+src/tokenize.cpp:475:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {OMEGA_TOKEN, "omega"},
+                ^
+src/tokenize.cpp:476:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {OMNIMAX_TOKEN, "omnimax"},
+                  ^
+src/tokenize.cpp:477:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ONCE_TOKEN, "once"},
+               ^
+src/tokenize.cpp:478:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ONION_TOKEN, "onion"},
+                ^
+src/tokenize.cpp:479:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ON_TOKEN, "on"},
+             ^
+src/tokenize.cpp:480:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {OPEN_TOKEN, "open"},
+               ^
+src/tokenize.cpp:481:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ORIENTATION_TOKEN, "orientation"},
+                      ^
+src/tokenize.cpp:482:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ORIENT_TOKEN,"orient"},
+                ^
+src/tokenize.cpp:483:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ORTHOGRAPHIC_TOKEN, "orthographic"},
+                       ^
+src/tokenize.cpp:484:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PANORAMIC_TOKEN, "panoramic"},
+                    ^
+src/tokenize.cpp:485:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PARALLEL_TOKEN, "parallel"},
+                   ^
+src/tokenize.cpp:486:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PARAMETER_ID_TOKEN, "parameter identifier"},
+                       ^
+src/tokenize.cpp:487:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PARAMETRIC_TOKEN,"parametric"},
+                    ^
+src/tokenize.cpp:488:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PATTERN_TOKEN, "pattern"},
+                  ^
+src/tokenize.cpp:489:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PERCENT_TOKEN, "%"},
+                  ^
+src/tokenize.cpp:490:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PERIOD_TOKEN, ". (period)"},
+                 ^
+src/tokenize.cpp:491:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PERSPECTIVE_TOKEN, "perspective"},
+                      ^
+src/tokenize.cpp:492:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PGM_TOKEN, "pgm"},
+              ^
+src/tokenize.cpp:493:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PHASE_TOKEN, "phase"},
+                ^
+src/tokenize.cpp:494:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PHONG_SIZE_TOKEN, "phong_size"},
+                     ^
+src/tokenize.cpp:495:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PHONG_TOKEN, "phong"},
+                ^
+src/tokenize.cpp:496:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PIGMENT_ID_TOKEN, "pigment identifier"},
+                     ^
+src/tokenize.cpp:497:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PIGMENT_MAP_ID_TOKEN, "pigment_map identifier"},
+                         ^
+src/tokenize.cpp:498:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PIGMENT_MAP_TOKEN, "pigment_map"},
+                      ^
+src/tokenize.cpp:499:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PIGMENT_TOKEN, "pigment"},
+                  ^
+src/tokenize.cpp:500:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PI_TOKEN, "pi"},
+             ^
+src/tokenize.cpp:501:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PLANAR_TOKEN, "planar"},
+                 ^
+src/tokenize.cpp:502:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PLANE_TOKEN, "plane"},
+                ^
+src/tokenize.cpp:503:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PLUS_TOKEN, "+"},
+               ^
+src/tokenize.cpp:504:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PNG_TOKEN, "png"},
+              ^
+src/tokenize.cpp:505:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {POINT_AT_TOKEN, "point_at"},
+                   ^
+src/tokenize.cpp:506:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {POLYGON_TOKEN, "polygon"},
+                  ^
+src/tokenize.cpp:507:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {POLY_TOKEN, "poly"},
+               ^
+src/tokenize.cpp:508:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {POLY_WAVE_TOKEN, "poly_wave"},
+                    ^
+src/tokenize.cpp:509:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {POT_TOKEN, "pot"},
+              ^
+src/tokenize.cpp:510:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {POW_TOKEN, "pow"},
+              ^
+src/tokenize.cpp:511:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PPM_TOKEN, "ppm"},
+              ^
+src/tokenize.cpp:512:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PRECISION_TOKEN, "precision"},
+                    ^
+src/tokenize.cpp:513:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PRECOMPUTE_TOKEN,"precompute"},
+                    ^
+src/tokenize.cpp:514:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PRETRACE_START_TOKEN, "pretrace_start"},
+                         ^
+src/tokenize.cpp:515:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PRETRACE_END_TOKEN, "pretrace_end"},
+                       ^
+src/tokenize.cpp:516:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PRISM_TOKEN, "prism"},
+                ^
+src/tokenize.cpp:517:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PROD_TOKEN, "prod"},
+               ^
+src/tokenize.cpp:518:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PROJECTED_THROUGH_TOKEN, "projected_through"},
+                            ^
+src/tokenize.cpp:519:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PWR_TOKEN, "pwr"},
+              ^
+src/tokenize.cpp:520:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {QUADRATIC_SPLINE_TOKEN, "quadratic_spline"},
+                           ^
+src/tokenize.cpp:521:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {QUADRIC_TOKEN, "quadric"},
+                  ^
+src/tokenize.cpp:522:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {QUARTIC_TOKEN, "quartic"},
+                  ^
+src/tokenize.cpp:523:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {QUATERNION_TOKEN, "quaternion"},
+                     ^
+src/tokenize.cpp:524:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {QUESTION_TOKEN, "?"},
+                   ^
+src/tokenize.cpp:525:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {QUICK_COLOUR_TOKEN, "quick_color"},
+                       ^
+src/tokenize.cpp:526:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {QUICK_COLOUR_TOKEN, "quick_colour"},
+                       ^
+src/tokenize.cpp:527:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {QUILTED_TOKEN, "quilted"},
+                  ^
+src/tokenize.cpp:528:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RADIAL_TOKEN, "radial"},
+                 ^
+src/tokenize.cpp:529:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RADIANS_TOKEN, "radians"},
+                  ^
+src/tokenize.cpp:530:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RADIOSITY_TOKEN, "radiosity" },
+                    ^
+src/tokenize.cpp:531:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RADIUS_TOKEN, "radius"},
+                 ^
+src/tokenize.cpp:532:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RAINBOW_ID_TOKEN, "rainbow identifier"},
+                     ^
+src/tokenize.cpp:533:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RAINBOW_TOKEN, "rainbow"},
+                  ^
+src/tokenize.cpp:534:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RAMP_WAVE_TOKEN, "ramp_wave"},
+                    ^
+src/tokenize.cpp:535:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RAND_TOKEN, "rand"},
+               ^
+src/tokenize.cpp:536:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RANGE_TOKEN, "range"},
+                ^
+src/tokenize.cpp:537:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RATIO_TOKEN, "ratio"},
+                ^
+src/tokenize.cpp:538:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {READ_TOKEN, "read"},
+               ^
+src/tokenize.cpp:539:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RECIPROCAL_TOKEN, "reciprocal" },
+                     ^
+src/tokenize.cpp:540:27: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RECURSION_LIMIT_TOKEN, "recursion_limit" },
+                          ^
+src/tokenize.cpp:541:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RED_TOKEN, "red"},
+              ^
+src/tokenize.cpp:542:31: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {REFLECTION_EXPONENT_TOKEN, "reflection_exponent"},
+                              ^
+src/tokenize.cpp:543:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {REFLECTION_TOKEN, "reflection"},
+                     ^
+src/tokenize.cpp:544:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {REFRACTION_TOKEN, "refraction"},
+                     ^
+src/tokenize.cpp:545:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {REL_GE_TOKEN, ">="},
+                 ^
+src/tokenize.cpp:546:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {REL_LE_TOKEN, "<="},
+                 ^
+src/tokenize.cpp:547:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {REL_NE_TOKEN, "!="},
+                 ^
+src/tokenize.cpp:548:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RENDER_TOKEN, "render"},
+                 ^
+src/tokenize.cpp:549:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {REPEAT_TOKEN, "repeat"},
+                 ^
+src/tokenize.cpp:550:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RGBFT_TOKEN, "rgbft"},
+                ^
+src/tokenize.cpp:551:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RGBF_TOKEN, "rgbf"},
+               ^
+src/tokenize.cpp:552:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RGBT_TOKEN, "rgbt"},
+               ^
+src/tokenize.cpp:553:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RGB_TOKEN, "rgb"},
+              ^
+src/tokenize.cpp:554:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RIGHT_ANGLE_TOKEN, ">"},
+                      ^
+src/tokenize.cpp:555:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RIGHT_CURLY_TOKEN, "}"},
+                      ^
+src/tokenize.cpp:556:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RIGHT_PAREN_TOKEN, ")"},
+                      ^
+src/tokenize.cpp:557:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RIGHT_SQUARE_TOKEN, "]"},
+                       ^
+src/tokenize.cpp:558:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RIGHT_TOKEN, "right"},
+                ^
+src/tokenize.cpp:559:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {RIPPLES_TOKEN, "ripples"},
+                  ^
+src/tokenize.cpp:560:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ROTATE_TOKEN, "rotate"},
+                 ^
+src/tokenize.cpp:561:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ROUGHNESS_TOKEN, "roughness"},
+                    ^
+src/tokenize.cpp:562:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SAMPLES_TOKEN, "samples"},
+                  ^
+src/tokenize.cpp:563:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SAVE_FILE_TOKEN, "save_file"},
+                    ^
+src/tokenize.cpp:564:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SCALE_TOKEN, "scale"},
+                ^
+src/tokenize.cpp:565:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SCALLOP_WAVE_TOKEN, "scallop_wave"},
+                       ^
+src/tokenize.cpp:566:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SCATTERING_TOKEN, "scattering"},
+                     ^
+src/tokenize.cpp:567:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SEED_TOKEN, "seed"},
+               ^
+src/tokenize.cpp:568:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SELECT_TOKEN, "select"},
+                 ^
+src/tokenize.cpp:569:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SEMI_COLON_TOKEN, ";"},
+                     ^
+src/tokenize.cpp:570:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SINE_WAVE_TOKEN, "sine_wave"},
+                    ^
+src/tokenize.cpp:571:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SINGLE_QUOTE_TOKEN, "'"},
+                       ^
+src/tokenize.cpp:572:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SINH_TOKEN, "sinh"},
+               ^
+src/tokenize.cpp:573:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SIN_TOKEN, "sin"},
+              ^
+src/tokenize.cpp:574:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SIZE_TOKEN, "size" },
+               ^
+src/tokenize.cpp:575:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SKYSPHERE_ID_TOKEN, "sky_sphere identifier"},
+                       ^
+src/tokenize.cpp:576:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SKYSPHERE_TOKEN, "sky_sphere"},
+                    ^
+src/tokenize.cpp:577:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SKY_TOKEN, "sky"},
+              ^
+src/tokenize.cpp:578:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SLASH_TOKEN, "/"},
+                ^
+src/tokenize.cpp:579:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SLICE_TOKEN, "slice"},
+                ^
+src/tokenize.cpp:580:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SLOPE_MAP_ID_TOKEN, "slope_map identifier"},
+                       ^
+src/tokenize.cpp:581:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SLOPE_MAP_TOKEN, "slope_map"},
+                    ^
+src/tokenize.cpp:582:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SLOPE_TOKEN,"slope"},
+               ^
+src/tokenize.cpp:583:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SMOOTH_TOKEN, "smooth"},
+                 ^
+src/tokenize.cpp:584:27: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SMOOTH_TRIANGLE_TOKEN, "smooth_triangle"},
+                          ^
+src/tokenize.cpp:585:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SOLID_TOKEN, "solid" },
+                ^
+src/tokenize.cpp:586:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SOR_TOKEN, "sor"},
+              ^
+src/tokenize.cpp:587:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPECULAR_TOKEN, "specular"},
+                   ^
+src/tokenize.cpp:588:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPHERE_SWEEP_TOKEN, "sphere_sweep"},
+                       ^
+src/tokenize.cpp:589:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPHERE_TOKEN, "sphere"},
+                 ^
+src/tokenize.cpp:590:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPHERICAL_TOKEN, "spherical"},
+                    ^
+src/tokenize.cpp:591:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPIRAL1_TOKEN, "spiral1"},
+                  ^
+src/tokenize.cpp:592:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPIRAL2_TOKEN, "spiral2"},
+                  ^
+src/tokenize.cpp:593:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPLINE_ID_TOKEN, "spline identifier"},
+                    ^
+src/tokenize.cpp:594:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPLINE_TOKEN, "spline"},
+                 ^
+src/tokenize.cpp:595:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPOTLIGHT_TOKEN, "spotlight"},
+                    ^
+src/tokenize.cpp:596:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPOTTED_TOKEN, "spotted"},
+                  ^
+src/tokenize.cpp:597:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SQRT_TOKEN, "sqrt"},
+               ^
+src/tokenize.cpp:598:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SQR_TOKEN, "sqr"},
+              ^
+src/tokenize.cpp:599:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STAR_TOKEN, "*"},
+               ^
+src/tokenize.cpp:600:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STATISTICS_TOKEN, "statistics"},
+                     ^
+src/tokenize.cpp:601:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STRCMP_TOKEN, "strcmp"},
+                 ^
+src/tokenize.cpp:602:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STRENGTH_TOKEN, "strength"},
+                   ^
+src/tokenize.cpp:603:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STRING_ID_TOKEN, "string identifier"},
+                    ^
+src/tokenize.cpp:604:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STRING_LITERAL_TOKEN, "string literal"},
+                         ^
+src/tokenize.cpp:605:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STRLEN_TOKEN, "strlen"},
+                 ^
+src/tokenize.cpp:606:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STRLWR_TOKEN, "strlwr"},
+                 ^
+src/tokenize.cpp:607:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STRUPR_TOKEN, "strupr"},
+                 ^
+src/tokenize.cpp:608:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STR_TOKEN, "str"},
+              ^
+src/tokenize.cpp:609:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STURM_TOKEN, "sturm"},
+                ^
+src/tokenize.cpp:610:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SUBSTR_TOKEN, "substr"},
+                 ^
+src/tokenize.cpp:611:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SUM_TOKEN, "sum"},
+              ^
+src/tokenize.cpp:612:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SUPERELLIPSOID_TOKEN, "superellipsoid"},
+                         ^
+src/tokenize.cpp:613:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SWITCH_TOKEN, "switch"},
+                 ^
+src/tokenize.cpp:614:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SYS_TOKEN, "sys"},
+              ^
+src/tokenize.cpp:615:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TANH_TOKEN, "tanh"},
+               ^
+src/tokenize.cpp:616:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TAN_TOKEN, "tan"},
+              ^
+src/tokenize.cpp:617:30: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TEMPORARY_MACRO_ID_TOKEN, "unfinished macro declaration"},
+                             ^
+src/tokenize.cpp:618:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TEXTURE_ID_TOKEN, "texture identifier"},
+                     ^
+src/tokenize.cpp:619:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TEXTURE_LIST_TOKEN, "texture_list"},
+                       ^
+src/tokenize.cpp:620:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TEXTURE_MAP_ID_TOKEN, "texture_map identifier"},
+                         ^
+src/tokenize.cpp:621:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TEXTURE_MAP_TOKEN, "texture_map"},
+                      ^
+src/tokenize.cpp:622:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TEXTURE_TOKEN, "texture"},
+                  ^
+src/tokenize.cpp:623:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TEXT_TOKEN, "text"},
+               ^
+src/tokenize.cpp:624:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TGA_TOKEN, "tga"},
+              ^
+src/tokenize.cpp:625:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {THICKNESS_TOKEN, "thickness"},
+                    ^
+src/tokenize.cpp:626:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {THRESHOLD_TOKEN, "threshold"},
+                    ^
+src/tokenize.cpp:627:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TIFF_TOKEN, "tiff"},
+               ^
+src/tokenize.cpp:628:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TIGHTNESS_TOKEN, "tightness"},
+                    ^
+src/tokenize.cpp:629:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TILDE_TOKEN, "~"},
+                ^
+src/tokenize.cpp:630:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TILE2_TOKEN, "tile2"},
+                ^
+src/tokenize.cpp:631:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TILES_TOKEN, "tiles"},
+                ^
+src/tokenize.cpp:632:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TNORMAL_ID_TOKEN, "normal identifier"},
+                     ^
+src/tokenize.cpp:633:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TNORMAL_TOKEN, "normal"},
+                  ^
+src/tokenize.cpp:634:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TOLERANCE_TOKEN, "tolerance"},
+                    ^
+src/tokenize.cpp:635:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TOROIDAL_TOKEN, "toroidal"},
+                   ^
+src/tokenize.cpp:636:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TORUS_TOKEN, "torus"},
+                ^
+src/tokenize.cpp:637:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TRACE_TOKEN, "trace"},
+                ^
+src/tokenize.cpp:638:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TRANSFORM_ID_TOKEN, "transform identifier"},
+                       ^
+src/tokenize.cpp:639:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TRANSFORM_TOKEN, "transform"},
+                    ^
+src/tokenize.cpp:640:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TRANSLATE_TOKEN, "translate"},
+                    ^
+src/tokenize.cpp:641:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TRANSMIT_TOKEN, "transmit"},
+                   ^
+src/tokenize.cpp:642:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TRIANGLE_TOKEN, "triangle"},
+                   ^
+src/tokenize.cpp:643:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TRIANGLE_WAVE_TOKEN, "triangle_wave"},
+                        ^
+src/tokenize.cpp:644:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TRUE_TOKEN, "true"},
+               ^
+src/tokenize.cpp:645:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TTF_TOKEN, "ttf"},
+              ^
+src/tokenize.cpp:646:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TURBULENCE_TOKEN, "turbulence"},
+                     ^
+src/tokenize.cpp:647:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TURB_DEPTH_TOKEN, "turb_depth"},
+                     ^
+src/tokenize.cpp:648:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TYPE_TOKEN, "type"},
+               ^
+src/tokenize.cpp:649:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {T_TOKEN, "t"},
+            ^
+src/tokenize.cpp:650:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {ULTRA_WIDE_ANGLE_TOKEN, "ultra_wide_angle"},
+                           ^
+src/tokenize.cpp:651:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {UNDEF_TOKEN, "undef"},
+                ^
+src/tokenize.cpp:652:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {UNION_TOKEN, "union"},
+                ^
+src/tokenize.cpp:653:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {UP_TOKEN, "up"},
+             ^
+src/tokenize.cpp:654:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {USE_ALPHA_TOKEN, "use_alpha"},
+                    ^
+src/tokenize.cpp:655:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {USE_COLOUR_TOKEN, "use_color"},
+                     ^
+src/tokenize.cpp:656:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {USE_COLOUR_TOKEN, "use_colour"},
+                     ^
+src/tokenize.cpp:657:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {USE_INDEX_TOKEN, "use_index"},
+                    ^
+src/tokenize.cpp:658:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {UTF8_TOKEN, "utf8"},
+               ^
+src/tokenize.cpp:659:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {UV_ID_TOKEN, "uv vector identifier"},
+                ^
+src/tokenize.cpp:660:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {UV_INDICES_TOKEN, "uv_indices"},
+                     ^
+src/tokenize.cpp:661:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {UV_MAPPING_TOKEN, "uv_mapping"},
+                     ^
+src/tokenize.cpp:662:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {UV_VECTORS_TOKEN, "uv_vectors"},
+                     ^
+src/tokenize.cpp:663:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {U_STEPS_TOKEN, "u_steps"},
+                  ^
+src/tokenize.cpp:664:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {U_TOKEN, "u"},
+            ^
+src/tokenize.cpp:665:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VAL_TOKEN, "val"},
+              ^
+src/tokenize.cpp:666:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VARIANCE_TOKEN, "variance"},
+                   ^
+src/tokenize.cpp:667:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VAXIS_ROTATE_TOKEN, "vaxis_rotate"},
+                       ^
+src/tokenize.cpp:668:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VCROSS_TOKEN, "vcross"},
+                 ^
+src/tokenize.cpp:669:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VDOT_TOKEN, "vdot"},
+               ^
+src/tokenize.cpp:670:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VECTOR_4D_ID_TOKEN, "4d-vector identifier"},
+                       ^
+src/tokenize.cpp:671:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VECTOR_FUNCT_TOKEN, "vector function"},
+                       ^
+src/tokenize.cpp:672:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VECTOR_ID_TOKEN, "vector identifier"},
+                    ^
+src/tokenize.cpp:673:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VERSION_TOKEN, "version"},
+                  ^
+src/tokenize.cpp:674:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VERTEX_VECTORS_TOKEN, "vertex_vectors"},
+                         ^
+src/tokenize.cpp:675:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VLENGTH_TOKEN, "vlength"},
+                  ^
+src/tokenize.cpp:676:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VNORMALIZE_TOKEN, "vnormalize"},
+                     ^
+src/tokenize.cpp:677:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VROTATE_TOKEN, "vrotate"},
+                  ^
+src/tokenize.cpp:678:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VSTR_TOKEN, "vstr"},
+               ^
+src/tokenize.cpp:679:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {VTURBULENCE_TOKEN, "vturbulence"},
+                      ^
+src/tokenize.cpp:680:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {V_STEPS_TOKEN, "v_steps"},
+                  ^
+src/tokenize.cpp:681:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {V_TOKEN, "v"},
+            ^
+src/tokenize.cpp:682:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {WARNING_TOKEN, "warning"},
+                  ^
+src/tokenize.cpp:683:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {WARP_TOKEN, "warp"},
+               ^
+src/tokenize.cpp:684:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {WATER_LEVEL_TOKEN, "water_level"},
+                      ^
+src/tokenize.cpp:685:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {WAVES_TOKEN, "waves"},
+                ^
+src/tokenize.cpp:686:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {WHILE_TOKEN, "while"},
+                ^
+src/tokenize.cpp:687:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {WIDTH_TOKEN, "width"},
+                ^
+src/tokenize.cpp:688:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {WOOD_TOKEN, "wood"},
+               ^
+src/tokenize.cpp:689:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {WRINKLES_TOKEN, "wrinkles"},
+                   ^
+src/tokenize.cpp:690:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {WRITE_TOKEN, "write"},
+                ^
+src/tokenize.cpp:691:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {X_TOKEN, "x"},
+            ^
+src/tokenize.cpp:692:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {YES_TOKEN, "yes"},
+              ^
+src/tokenize.cpp:693:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {Y_TOKEN, "y"},
+            ^
+src/tokenize.cpp:694:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {Z_TOKEN, "z"},
+            ^
+src/tokenize.cpp:696:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PHOTONS_TOKEN, "photons"},
+                  ^
+src/tokenize.cpp:697:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {STEPS_TOKEN,"steps"},
+               ^
+src/tokenize.cpp:698:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PASS_THROUGH_TOKEN, "pass_through"},
+                       ^
+src/tokenize.cpp:699:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {COLLECT_TOKEN, "collect"},
+                  ^
+src/tokenize.cpp:700:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {AUTOSTOP_TOKEN, "autostop"},
+                   ^
+src/tokenize.cpp:701:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {GATHER_TOKEN, "gather"},
+                 ^
+src/tokenize.cpp:702:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPLIT_UNION_TOKEN, "split_union"},
+                      ^
+src/tokenize.cpp:703:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {EXPAND_THRESHOLDS_TOKEN, "expand_thresholds"},
+                            ^
+src/tokenize.cpp:704:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {SPACING_TOKEN, "spacing"},
+                  ^
+src/tokenize.cpp:708:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {TARGET_TOKEN, "target"},
+                 ^
+src/tokenize.cpp:709:27: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CONSERVE_ENERGY_TOKEN, "conserve_energy"},
+                          ^
+src/tokenize.cpp:710:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {CUTAWAY_TEXTURES_TOKEN, "cutaway_textures"},
+                           ^
+src/tokenize.cpp:711:26: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {PIGMENT_PATTERN_TOKEN,"pigment_pattern"},
+                         ^
+src/tokenize.cpp:712:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NO_BUMP_SCALE_TOKEN, "no_bump_scale"},
+                        ^
+src/tokenize.cpp:713:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {GLOBAL_LIGHTS_TOKEN, "global_lights"},
+                        ^
+src/tokenize.cpp:714:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {INTERNAL_TOKEN, "internal"},
+                   ^
+src/tokenize.cpp:715:27: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {NOISE_GENERATOR_TOKEN, "noise_generator"}
+                          ^
+src/tokenize.cpp:4159:13: warning: comparison of array 'opts.Header_File_Name' equal to a null pointer is always false [-Wtautological-pointer-compare]
+   if (opts.Header_File_Name == NULL)
+       ~~~~~^~~~~~~~~~~~~~~~    ~~~~
+536 warnings generated.
+src/userio.cpp:85:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_PREINIT, "Early Init" },
+                         ^
+src/userio.cpp:86:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_STARTUP, "Startup" },
+                         ^
+src/userio.cpp:87:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_BANNER, "Banner" },
+                        ^
+src/userio.cpp:88:16: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_INIT, "Init" },
+                      ^
+src/userio.cpp:89:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_FILE_INIT, "File Init" },
+                           ^
+src/userio.cpp:90:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_PARSING, "Parse" },
+                         ^
+src/userio.cpp:91:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_CONTINUING, "Continue Trace" },
+                            ^
+src/userio.cpp:92:21: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_RENDERING, "Rendering" },
+                           ^
+src/userio.cpp:93:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_SHUTDOWN, "Shutdown" },
+                          ^
+src/userio.cpp:94:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_CLEANUP_PARSE, "Cleanup Parse" },
+                               ^
+src/userio.cpp:95:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_SLAB_BUILDING, "Slab Building" },
+                               ^
+src/userio.cpp:96:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_TOKEN_INIT, "Scene File Parser Initialization" },
+                            ^
+src/userio.cpp:97:23: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_INCLUDE_ERR, "Parse" },
+                             ^
+src/userio.cpp:98:25: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { STAGE_FOUND_INSTEAD, "Parse" }
+                               ^
+src/userio.cpp:476:13: warning: comparison of array 'opts.Shellouts' equal to a null pointer is always false [-Wtautological-pointer-compare]
+  if ( opts.Shellouts == NULL ) return(IGNORE_RET);
+       ~~~~~^~~~~~~~~    ~~~~
+src/userio.cpp:487:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    case PRE_SCENE_SHL:  s="pre-scene";   break;
+                           ^
+src/userio.cpp:488:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    case PRE_FRAME_SHL:  s="pre-frame";   break;
+                           ^
+src/userio.cpp:489:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    case POST_FRAME_SHL: s="post-frame";  break;
+                           ^
+src/userio.cpp:490:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    case POST_SCENE_SHL: s="post-scene";  break;
+                           ^
+src/userio.cpp:491:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    case USER_ABORT_SHL: s="user about";  break;
+                           ^
+src/userio.cpp:492:28: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    case FATAL_SHL:      s="fatal error"; break;
+                           ^
+21 warnings generated.
+src/parse.cpp:8376:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  return ("");
+         ^
+1 warning generated.
+src/messageoutput.cpp:306:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                char *al = "";
+                           ^
+src/messageoutput.cpp:326:9: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        al = " with alpha";
+                             ^
+src/messageoutput.cpp:333:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        case 'C': t = "RLE Targa";       break;
+                                      ^
+src/messageoutput.cpp:334:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        case 'N': t = "PNG";             break;
+                                      ^
+src/messageoutput.cpp:335:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        case 'J': t = "JPEG";            break;
+                                      ^
+src/messageoutput.cpp:336:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        case 'P': t = "PPM";             break;
+                                      ^
+src/messageoutput.cpp:337:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        case 'S': t = "(system format)"; break;
+                                      ^
+src/messageoutput.cpp:338:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        case 'T': t = "Targa";           break;
+                                      ^
+src/messageoutput.cpp:339:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                        default:  t = "(none)";          break;
+                                      ^
+src/messageoutput.cpp:381:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        t = "CSV";
+                                            ^
+src/messageoutput.cpp:385:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        t = "TGA";
+                                            ^
+src/messageoutput.cpp:389:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        t = "PNG";
+                                            ^
+src/messageoutput.cpp:393:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        t = "PPM";
+                                            ^
+src/messageoutput.cpp:397:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        t = "(system format)";
+                                            ^
+src/messageoutput.cpp:400:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                                        t = "(none)";
+                                            ^
+15 warnings generated.
+src/fpmetric.cpp:1034:13: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        char* es = "precompute";
+                   ^
+1 warning generated.
+src/fnpovfpu.cpp:405:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "add",   OPCODE_ADD,    ITYPE_R },
+          ^
+src/fnpovfpu.cpp:406:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "sub",   OPCODE_SUB,    ITYPE_R },
+          ^
+src/fnpovfpu.cpp:407:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "mul",   OPCODE_MUL,    ITYPE_R },
+          ^
+src/fnpovfpu.cpp:408:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "div",   OPCODE_DIV,    ITYPE_R },
+          ^
+src/fnpovfpu.cpp:409:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "mod",   OPCODE_MOD,    ITYPE_R },
+          ^
+src/fnpovfpu.cpp:410:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "move",  OPCODE_MOVE,   ITYPE_R },
+          ^
+src/fnpovfpu.cpp:411:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "cmp",   OPCODE_CMP,    ITYPE_R },
+          ^
+src/fnpovfpu.cpp:412:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "neg",   OPCODE_NEG,    ITYPE_R },
+          ^
+src/fnpovfpu.cpp:413:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "abs",   OPCODE_ABS,    ITYPE_R },
+          ^
+src/fnpovfpu.cpp:414:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "addi",  OPCODE_ADDI,   ITYPE_I },
+          ^
+src/fnpovfpu.cpp:415:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "subi",  OPCODE_SUBI,   ITYPE_I },
+          ^
+src/fnpovfpu.cpp:416:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "muli",  OPCODE_MULI,   ITYPE_I },
+          ^
+src/fnpovfpu.cpp:417:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "divi",  OPCODE_DIVI,   ITYPE_I },
+          ^
+src/fnpovfpu.cpp:418:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "modi",  OPCODE_MODI,   ITYPE_I },
+          ^
+src/fnpovfpu.cpp:419:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "loadi", OPCODE_LOADI,  ITYPE_I },
+          ^
+src/fnpovfpu.cpp:420:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "cmpi",  OPCODE_CMPI,   ITYPE_I },
+          ^
+src/fnpovfpu.cpp:421:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "seq",   OPCODE_SEQ,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:422:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "sne",   OPCODE_SNE,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:423:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "slt",   OPCODE_SLT,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:424:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "sle",   OPCODE_SLE,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:425:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "sgt",   OPCODE_SGT,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:426:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "sge",   OPCODE_SGE,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:427:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "teq",   OPCODE_TEQ,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:428:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "tne",   OPCODE_TNE,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:429:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "load",  OPCODE_LOAD,   ITYPE_M },
+          ^
+src/fnpovfpu.cpp:430:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "store", OPCODE_STORE,  ITYPE_M },
+          ^
+src/fnpovfpu.cpp:431:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "xeq",   OPCODE_XEQ,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:432:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "xne",   OPCODE_XNE,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:433:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "xlt",   OPCODE_XLT,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:434:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "xle",   OPCODE_XLE,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:435:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "xgt",   OPCODE_XGT,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:436:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "xge",   OPCODE_XGE,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:437:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "xdz",   OPCODE_XDZ,    ITYPE_S },
+          ^
+src/fnpovfpu.cpp:438:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "beq",   OPCODE_BEQ,    ITYPE_J },
+          ^
+src/fnpovfpu.cpp:439:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "bne",   OPCODE_BNE,    ITYPE_J },
+          ^
+src/fnpovfpu.cpp:440:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "blt",   OPCODE_BLT,    ITYPE_J },
+          ^
+src/fnpovfpu.cpp:441:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "ble",   OPCODE_BLE,    ITYPE_J },
+          ^
+src/fnpovfpu.cpp:442:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "bgt",   OPCODE_BGT,    ITYPE_J },
+          ^
+src/fnpovfpu.cpp:443:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "bge",   OPCODE_BGE,    ITYPE_J },
+          ^
+src/fnpovfpu.cpp:444:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "jsr",   OPCODE_JSR,    ITYPE_J },
+          ^
+src/fnpovfpu.cpp:445:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "jmp",   OPCODE_JMP,    ITYPE_J },
+          ^
+src/fnpovfpu.cpp:446:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "rts",   OPCODE_RTS,    ITYPE_X },
+          ^
+src/fnpovfpu.cpp:447:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "call",  OPCODE_CALL,   ITYPE_J },
+          ^
+src/fnpovfpu.cpp:448:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "sys1",  OPCODE_SYS1,   ITYPE_J },
+          ^
+src/fnpovfpu.cpp:449:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "sys2",  OPCODE_SYS2,   ITYPE_J },
+          ^
+src/fnpovfpu.cpp:450:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "trap",  OPCODE_TRAP,   ITYPE_J },
+          ^
+src/fnpovfpu.cpp:451:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "traps", OPCODE_TRAPS,  ITYPE_J },
+          ^
+src/fnpovfpu.cpp:452:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "grow",  OPCODE_GROW,   ITYPE_J },
+          ^
+src/fnpovfpu.cpp:453:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "push",  OPCODE_PUSH,   ITYPE_J },
+          ^
+src/fnpovfpu.cpp:454:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "pop",   OPCODE_POP,    ITYPE_J },
+          ^
+src/fnpovfpu.cpp:455:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { "nop",   OPCODE_NOP,    ITYPE_X },
+          ^
+51 warnings generated.
+src/renderio.cpp:211:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        def_ext=SYS_DEF_EXT;
+                ^
+./src/frame.h:399:21: note: expanded from macro 'SYS_DEF_EXT'
+#define SYS_DEF_EXT ".tga"
+                    ^
+src/renderio.cpp:218:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        def_ext=".tga";
+                ^
+src/renderio.cpp:223:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        def_ext=".jpg";
+                ^
+src/renderio.cpp:228:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        def_ext=".ppm";
+                ^
+src/renderio.cpp:233:17: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        def_ext=".png";
+                ^
+src/renderio.cpp:401:58: warning: the value of the size argument in 'strncat' is too large, might lead to a buffer overflow [-Wstrncat-size]
+  strncat (Actual_Output_Name,opts.Output_Numbered_Name, sizeof (Actual_Output_Name));
+                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/renderio.cpp:401:58: note: change the argument to be the free space in the destination buffer minus the terminating null byte
+  strncat (Actual_Output_Name,opts.Output_Numbered_Name, sizeof (Actual_Output_Name));
+                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                         sizeof(Actual_Output_Name) - strlen(Actual_Output_Name) - 1
+6 warnings generated.
+src/fileinputoutput.cpp:62:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ "",      "",      "",      ""      }}, // POV_File_Unknown
+     ^
+src/fileinputoutput.cpp:62:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ "",      "",      "",      ""      }}, // POV_File_Unknown
+              ^
+src/fileinputoutput.cpp:62:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ "",      "",      "",      ""      }}, // POV_File_Unknown
+                       ^
+src/fileinputoutput.cpp:62:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ "",      "",      "",      ""      }}, // POV_File_Unknown
+                                ^
+src/fileinputoutput.cpp:63:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".tga",  ".TGA",  "",      ""      }}, // POV_File_Image_Targa
+     ^
+src/fileinputoutput.cpp:63:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".tga",  ".TGA",  "",      ""      }}, // POV_File_Image_Targa
+              ^
+src/fileinputoutput.cpp:63:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".tga",  ".TGA",  "",      ""      }}, // POV_File_Image_Targa
+                       ^
+src/fileinputoutput.cpp:63:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".tga",  ".TGA",  "",      ""      }}, // POV_File_Image_Targa
+                                ^
+src/fileinputoutput.cpp:64:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".png",  ".PNG",  "",      ""      }}, // POV_File_Image_PNG
+     ^
+src/fileinputoutput.cpp:64:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".png",  ".PNG",  "",      ""      }}, // POV_File_Image_PNG
+              ^
+src/fileinputoutput.cpp:64:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".png",  ".PNG",  "",      ""      }}, // POV_File_Image_PNG
+                       ^
+src/fileinputoutput.cpp:64:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".png",  ".PNG",  "",      ""      }}, // POV_File_Image_PNG
+                                ^
+src/fileinputoutput.cpp:65:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ppm",  ".PPM",  "",      ""      }}, // POV_File_Image_PPM
+     ^
+src/fileinputoutput.cpp:65:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ppm",  ".PPM",  "",      ""      }}, // POV_File_Image_PPM
+              ^
+src/fileinputoutput.cpp:65:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ppm",  ".PPM",  "",      ""      }}, // POV_File_Image_PPM
+                       ^
+src/fileinputoutput.cpp:65:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ppm",  ".PPM",  "",      ""      }}, // POV_File_Image_PPM
+                                ^
+src/fileinputoutput.cpp:66:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".pgm",  ".PGM",  "",      ""      }}, // POV_File_Image_PGM
+     ^
+src/fileinputoutput.cpp:66:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".pgm",  ".PGM",  "",      ""      }}, // POV_File_Image_PGM
+              ^
+src/fileinputoutput.cpp:66:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".pgm",  ".PGM",  "",      ""      }}, // POV_File_Image_PGM
+                       ^
+src/fileinputoutput.cpp:66:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".pgm",  ".PGM",  "",      ""      }}, // POV_File_Image_PGM
+                                ^
+src/fileinputoutput.cpp:67:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".gif",  ".GIF",  "",      ""      }}, // POV_File_Image_GIF
+     ^
+src/fileinputoutput.cpp:67:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".gif",  ".GIF",  "",      ""      }}, // POV_File_Image_GIF
+              ^
+src/fileinputoutput.cpp:67:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".gif",  ".GIF",  "",      ""      }}, // POV_File_Image_GIF
+                       ^
+src/fileinputoutput.cpp:67:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".gif",  ".GIF",  "",      ""      }}, // POV_File_Image_GIF
+                                ^
+src/fileinputoutput.cpp:68:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".iff",  ".IFF",  "",      ""      }}, // POV_File_Image_IFF
+     ^
+src/fileinputoutput.cpp:68:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".iff",  ".IFF",  "",      ""      }}, // POV_File_Image_IFF
+              ^
+src/fileinputoutput.cpp:68:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".iff",  ".IFF",  "",      ""      }}, // POV_File_Image_IFF
+                       ^
+src/fileinputoutput.cpp:68:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".iff",  ".IFF",  "",      ""      }}, // POV_File_Image_IFF
+                                ^
+src/fileinputoutput.cpp:69:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".jpg",  ".JPG",  ".jpeg", ".JPEG" }}, // POV_File_Image_JPEG
+     ^
+src/fileinputoutput.cpp:69:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".jpg",  ".JPG",  ".jpeg", ".JPEG" }}, // POV_File_Image_JPEG
+              ^
+src/fileinputoutput.cpp:69:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".jpg",  ".JPG",  ".jpeg", ".JPEG" }}, // POV_File_Image_JPEG
+                       ^
+src/fileinputoutput.cpp:69:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".jpg",  ".JPG",  ".jpeg", ".JPEG" }}, // POV_File_Image_JPEG
+                                ^
+src/fileinputoutput.cpp:70:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".tif",  ".TIF",  ".tiff", ".TIFF" }}, // POV_File_Image_TIFF
+     ^
+src/fileinputoutput.cpp:70:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".tif",  ".TIF",  ".tiff", ".TIFF" }}, // POV_File_Image_TIFF
+              ^
+src/fileinputoutput.cpp:70:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".tif",  ".TIF",  ".tiff", ".TIFF" }}, // POV_File_Image_TIFF
+                       ^
+src/fileinputoutput.cpp:70:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".tif",  ".TIF",  ".tiff", ".TIFF" }}, // POV_File_Image_TIFF
+                                ^
+src/fileinputoutput.cpp:71:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ POV_IS1, POV_IS2, POV_IS3, POV_IS4 }}, // POV_File_Image_System
+     ^
+src/fileinputoutput.cpp:45:18: note: expanded from macro 'POV_IS1'
+        #define POV_IS1 ""
+                        ^
+src/fileinputoutput.cpp:71:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ POV_IS1, POV_IS2, POV_IS3, POV_IS4 }}, // POV_File_Image_System
+              ^
+src/fileinputoutput.cpp:49:18: note: expanded from macro 'POV_IS2'
+        #define POV_IS2 ""
+                        ^
+src/fileinputoutput.cpp:71:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ POV_IS1, POV_IS2, POV_IS3, POV_IS4 }}, // POV_File_Image_System
+                       ^
+src/fileinputoutput.cpp:53:18: note: expanded from macro 'POV_IS3'
+        #define POV_IS3 ""
+                        ^
+src/fileinputoutput.cpp:71:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ POV_IS1, POV_IS2, POV_IS3, POV_IS4 }}, // POV_File_Image_System
+                                ^
+src/fileinputoutput.cpp:57:18: note: expanded from macro 'POV_IS4'
+        #define POV_IS4 ""
+                        ^
+src/fileinputoutput.cpp:72:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".pov",  ".POV",  "",      ""      }}, // POV_File_Text_POV
+     ^
+src/fileinputoutput.cpp:72:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".pov",  ".POV",  "",      ""      }}, // POV_File_Text_POV
+              ^
+src/fileinputoutput.cpp:72:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".pov",  ".POV",  "",      ""      }}, // POV_File_Text_POV
+                       ^
+src/fileinputoutput.cpp:72:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".pov",  ".POV",  "",      ""      }}, // POV_File_Text_POV
+                                ^
+src/fileinputoutput.cpp:73:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".inc",  ".INC",  "",      ""      }}, // POV_File_Text_INC
+     ^
+src/fileinputoutput.cpp:73:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".inc",  ".INC",  "",      ""      }}, // POV_File_Text_INC
+              ^
+src/fileinputoutput.cpp:73:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".inc",  ".INC",  "",      ""      }}, // POV_File_Text_INC
+                       ^
+src/fileinputoutput.cpp:73:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".inc",  ".INC",  "",      ""      }}, // POV_File_Text_INC
+                                ^
+src/fileinputoutput.cpp:74:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ini",  ".INI",  "",      ""      }}, // POV_File_Text_INI
+     ^
+src/fileinputoutput.cpp:74:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ini",  ".INI",  "",      ""      }}, // POV_File_Text_INI
+              ^
+src/fileinputoutput.cpp:74:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ini",  ".INI",  "",      ""      }}, // POV_File_Text_INI
+                       ^
+src/fileinputoutput.cpp:74:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ini",  ".INI",  "",      ""      }}, // POV_File_Text_INI
+                                ^
+src/fileinputoutput.cpp:75:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".csv",  ".CSV",  "",      ""      }}, // POV_File_Text_CSV
+     ^
+src/fileinputoutput.cpp:75:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".csv",  ".CSV",  "",      ""      }}, // POV_File_Text_CSV
+              ^
+src/fileinputoutput.cpp:75:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".csv",  ".CSV",  "",      ""      }}, // POV_File_Text_CSV
+                       ^
+src/fileinputoutput.cpp:75:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".csv",  ".CSV",  "",      ""      }}, // POV_File_Text_CSV
+                                ^
+src/fileinputoutput.cpp:76:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".txt",  ".TXT",  "",      ""      }}, // POV_File_Text_Stream
+     ^
+src/fileinputoutput.cpp:76:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".txt",  ".TXT",  "",      ""      }}, // POV_File_Text_Stream
+              ^
+src/fileinputoutput.cpp:76:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".txt",  ".TXT",  "",      ""      }}, // POV_File_Text_Stream
+                       ^
+src/fileinputoutput.cpp:76:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".txt",  ".TXT",  "",      ""      }}, // POV_File_Text_Stream
+                                ^
+src/fileinputoutput.cpp:77:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ "",      "",      "",      ""      }}, // POV_File_Text_User
+     ^
+src/fileinputoutput.cpp:77:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ "",      "",      "",      ""      }}, // POV_File_Text_User
+              ^
+src/fileinputoutput.cpp:77:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ "",      "",      "",      ""      }}, // POV_File_Text_User
+                       ^
+src/fileinputoutput.cpp:77:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ "",      "",      "",      ""      }}, // POV_File_Text_User
+                                ^
+src/fileinputoutput.cpp:78:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".df3",  ".DF3",  "",      ""      }}, // POV_File_Data_DF3
+     ^
+src/fileinputoutput.cpp:78:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".df3",  ".DF3",  "",      ""      }}, // POV_File_Data_DF3
+              ^
+src/fileinputoutput.cpp:78:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".df3",  ".DF3",  "",      ""      }}, // POV_File_Data_DF3
+                       ^
+src/fileinputoutput.cpp:78:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".df3",  ".DF3",  "",      ""      }}, // POV_File_Data_DF3
+                                ^
+src/fileinputoutput.cpp:79:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".rca",  ".RCA",  "",      ""      }}, // POV_File_Data_RCA
+     ^
+src/fileinputoutput.cpp:79:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".rca",  ".RCA",  "",      ""      }}, // POV_File_Data_RCA
+              ^
+src/fileinputoutput.cpp:79:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".rca",  ".RCA",  "",      ""      }}, // POV_File_Data_RCA
+                       ^
+src/fileinputoutput.cpp:79:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".rca",  ".RCA",  "",      ""      }}, // POV_File_Data_RCA
+                                ^
+src/fileinputoutput.cpp:80:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".log",  ".LOG",  "",      ""      }}, // POV_File_Data_LOG
+     ^
+src/fileinputoutput.cpp:80:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".log",  ".LOG",  "",      ""      }}, // POV_File_Data_LOG
+              ^
+src/fileinputoutput.cpp:80:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".log",  ".LOG",  "",      ""      }}, // POV_File_Data_LOG
+                       ^
+src/fileinputoutput.cpp:80:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".log",  ".LOG",  "",      ""      }}, // POV_File_Data_LOG
+                                ^
+src/fileinputoutput.cpp:81:6: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ttf",  ".TTF",  "",      ""      }}  // POV_File_Font_TTF
+     ^
+src/fileinputoutput.cpp:81:15: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ttf",  ".TTF",  "",      ""      }}  // POV_File_Font_TTF
+              ^
+src/fileinputoutput.cpp:81:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ttf",  ".TTF",  "",      ""      }}  // POV_File_Font_TTF
+                       ^
+src/fileinputoutput.cpp:81:33: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  {{ ".ttf",  ".TTF",  "",      ""      }}  // POV_File_Font_TTF
+                                ^
+80 warnings generated.
+src/fnsyntax.cpp:97:8: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { 35, "operator" },
+              ^
+src/fnsyntax.cpp:98:8: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { 45, "." },
+              ^
+src/fnsyntax.cpp:99:8: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { 40, "sign or operand" },
+              ^
+src/fnsyntax.cpp:100:8: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { 50, "operand" },
+              ^
+src/fnsyntax.cpp:101:8: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { 55, ")" },
+              ^
+src/fnsyntax.cpp:102:8: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        { 60, "color or vector member" },
+              ^
+6 warnings generated.
+src/hfield.cpp:1551:19: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+  char *dda_msg = "Illegal grid value in dda_traversal().\n"
+                  ^
+1 warning generated.
+src/optout.cpp:171:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Bezier Patch" },
+          ^
+src/optout.cpp:173:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Bicubic Patch" },
+          ^
+src/optout.cpp:175:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Blob" },
+          ^
+src/optout.cpp:177:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Blob Component" },
+          ^
+src/optout.cpp:179:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Blob Bound" },
+          ^
+src/optout.cpp:181:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Box" },
+          ^
+src/optout.cpp:183:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Cone/Cylinder" },
+          ^
+src/optout.cpp:185:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "CSG Intersection" },
+          ^
+src/optout.cpp:187:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "CSG Merge" },
+          ^
+src/optout.cpp:189:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "CSG Union" },
+          ^
+src/optout.cpp:191:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Disc" },
+          ^
+src/optout.cpp:193:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Fractal" },
+          ^
+src/optout.cpp:195:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Height Field" },
+          ^
+src/optout.cpp:197:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Height Field Box" },
+          ^
+src/optout.cpp:199:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Height Field Triangle" },
+          ^
+src/optout.cpp:201:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Height Field Block" },
+          ^
+src/optout.cpp:203:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Height Field Cell" },
+          ^
+src/optout.cpp:205:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Isosurface" },
+          ^
+src/optout.cpp:207:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Isosurface Container" },
+          ^
+src/optout.cpp:209:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Isosurface Cache" },
+          ^
+src/optout.cpp:211:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Lathe" },
+          ^
+src/optout.cpp:213:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Lathe Bound" },
+          ^
+src/optout.cpp:215:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Mesh" },
+          ^
+src/optout.cpp:217:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Plane" },
+          ^
+src/optout.cpp:219:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Polygon" },
+          ^
+src/optout.cpp:221:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Prism" },
+          ^
+src/optout.cpp:223:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Prism Bound" },
+          ^
+src/optout.cpp:225:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Parametric" },
+          ^
+src/optout.cpp:227:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Parametric Bound" },
+          ^
+src/optout.cpp:229:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Quadric" },
+          ^
+src/optout.cpp:231:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Quartic/Poly" },
+          ^
+src/optout.cpp:233:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Sphere" },
+          ^
+src/optout.cpp:235:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Sphere Sweep" },
+          ^
+src/optout.cpp:237:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Superellipsoid" },
+          ^
+src/optout.cpp:239:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Surface of Revolution" },
+          ^
+src/optout.cpp:241:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Surface of Rev. Bound" },
+          ^
+src/optout.cpp:243:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Torus" },
+          ^
+src/optout.cpp:245:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Torus Bound" },
+          ^
+src/optout.cpp:247:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Triangle" },
+          ^
+src/optout.cpp:249:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "True Type Font" },
+          ^
+src/optout.cpp:251:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Bounding Object" },
+          ^
+src/optout.cpp:253:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Clipping Object" },
+          ^
+src/optout.cpp:255:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Bounding Box" },
+          ^
+src/optout.cpp:257:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Light Buffer" },
+          ^
+src/optout.cpp:259:4: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+          "Vista Buffer" },
+          ^
+src/optout.cpp:328:10: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+                return ".On ";
+                       ^
+src/optout.cpp:330:9: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        return ".Off";
+               ^
+47 warnings generated.
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]

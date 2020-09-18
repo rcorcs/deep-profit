@@ -1,0 +1,938 @@
+src/fe_tools.cc:466:15: warning: inequality comparison result unused [-Wunused-comparison]
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+         ~~~~~^~~~~~~
+src/fe_tools.cc:1589:15: note: in instantiation of function template specialization 'FETools::interpolate<3, Vector<double>, Vector<double> >' requested here
+void FETools::interpolate<deal_II_dimension>
+              ^
+src/fe_tools.cc:466:15: note: use '|=' to turn this inequality comparison into an or-assignment
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+              ^~
+              |=
+src/fe_tools.cc:466:15: warning: inequality comparison result unused [-Wunused-comparison]
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+         ~~~~~^~~~~~~
+src/fe_tools.cc:1633:15: note: in instantiation of function template specialization 'FETools::interpolate<3, Vector<float>, Vector<float> >' requested here
+void FETools::interpolate<deal_II_dimension>
+              ^
+src/fe_tools.cc:466:15: note: use '|=' to turn this inequality comparison into an or-assignment
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+              ^~
+              |=
+src/fe_tools.cc:466:15: warning: inequality comparison result unused [-Wunused-comparison]
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+         ~~~~~^~~~~~~
+src/fe_tools.cc:1677:15: note: in instantiation of function template specialization 'FETools::interpolate<3, BlockVector<double>, BlockVector<double> >' requested here
+void FETools::interpolate<deal_II_dimension>
+              ^
+src/fe_tools.cc:466:15: note: use '|=' to turn this inequality comparison into an or-assignment
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+              ^~
+              |=
+src/fe_tools.cc:466:15: warning: inequality comparison result unused [-Wunused-comparison]
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+         ~~~~~^~~~~~~
+src/fe_tools.cc:1730:15: note: in instantiation of function template specialization 'FETools::interpolate<3, BlockVector<float>, BlockVector<float> >' requested here
+void FETools::interpolate<deal_II_dimension>
+              ^
+src/fe_tools.cc:466:15: note: use '|=' to turn this inequality comparison into an or-assignment
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+              ^~
+              |=
+src/fe_tools.cc:466:15: warning: inequality comparison result unused [-Wunused-comparison]
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+         ~~~~~^~~~~~~
+src/fe_tools.cc:578:7: note: in instantiation of function template specialization 'FETools::interpolate<3, BlockVector<double>, Vector<double> >' requested here
+      interpolate(dof1, u1, dof2, constraints2, u2);
+      ^
+src/fe_tools.cc:466:15: note: use '|=' to turn this inequality comparison into an or-assignment
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+              ^~
+              |=
+src/fe_tools.cc:466:15: warning: inequality comparison result unused [-Wunused-comparison]
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+         ~~~~~^~~~~~~
+src/fe_tools.cc:579:7: note: in instantiation of function template specialization 'FETools::interpolate<3, Vector<double>, BlockVector<double> >' requested here
+      interpolate(dof2, u2, dof1, constraints1, u1_interpolated);
+      ^
+src/fe_tools.cc:466:15: note: use '|=' to turn this inequality comparison into an or-assignment
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+              ^~
+              |=
+src/fe_tools.cc:466:15: warning: inequality comparison result unused [-Wunused-comparison]
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+         ~~~~~^~~~~~~
+src/fe_tools.cc:578:7: note: in instantiation of function template specialization 'FETools::interpolate<3, BlockVector<float>, Vector<float> >' requested here
+      interpolate(dof1, u1, dof2, constraints2, u2);
+      ^
+src/fe_tools.cc:466:15: note: use '|=' to turn this inequality comparison into an or-assignment
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+              ^~
+              |=
+src/fe_tools.cc:466:15: warning: inequality comparison result unused [-Wunused-comparison]
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+         ~~~~~^~~~~~~
+src/fe_tools.cc:579:7: note: in instantiation of function template specialization 'FETools::interpolate<3, Vector<float>, BlockVector<float> >' requested here
+      interpolate(dof2, u2, dof1, constraints1, u1_interpolated);
+      ^
+src/fe_tools.cc:466:15: note: use '|=' to turn this inequality comparison into an or-assignment
+  for (; cell1!=endc1, cell2!=endc2; ++cell1, ++cell2) 
+              ^~
+              |=
+8 warnings generated.
+In file included from src/multigrid.all_dimensions.cc:19:
+./src/include/multigrid/mg_transfer.h:497:26: warning: access declarations are deprecated; use using declarations instead [-Wdeprecated]
+    MGTransferBlockBase::memory_consumption;
+                         ^
+    using 
+In file included from src/multigrid.all_dimensions.cc:18:
+In file included from ./src/include/lac/block_sparse_matrix.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparseMatrix<double> >, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix.h:1249:11: note: in instantiation of member function 'Table<2, SmartPointer<SparseMatrix<double> > >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+src/multigrid.all_dimensions.cc:130:42: note: in instantiation of member function 'BlockSparseMatrix<double>::block' requested here
+      prolongation_matrices[to_level-1]->block(k,k).vmult (dst.block(b), src.block(b));
+                                         ^
+2 warnings generated.
+In file included from src/dof_constraints.cc:16:
+In file included from ./src/include/dofs/dof_constraints.templates.h:20:
+In file included from ./src/include/lac/full_matrix.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparsityPattern>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparsity_pattern.h:528:11: note: in instantiation of member function 'Table<2, SmartPointer<SparsityPattern> >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+src/dof_constraints.cc:924:29: note: in instantiation of member function 'BlockSparsityPatternBase<SparsityPattern>::block' requested here
+                block_sparsity = sparsity.block(block_row, block_col);
+                                          ^
+In file included from src/dof_constraints.cc:16:
+In file included from ./src/include/dofs/dof_constraints.templates.h:20:
+In file included from ./src/include/lac/full_matrix.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<CompressedSparsityPattern>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparsity_pattern.h:528:11: note: in instantiation of member function 'Table<2, SmartPointer<CompressedSparsityPattern> >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+src/dof_constraints.cc:1064:29: note: in instantiation of member function 'BlockSparsityPatternBase<CompressedSparsityPattern>::block' requested here
+                block_sparsity = sparsity.block(block_row, block_col);
+                                          ^
+In file included from src/dof_constraints.cc:16:
+In file included from ./src/include/dofs/dof_constraints.templates.h:20:
+In file included from ./src/include/lac/full_matrix.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparseMatrix<double> >, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix.h:1249:11: note: in instantiation of member function 'Table<2, SmartPointer<SparseMatrix<double> > >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+./src/include/dofs/dof_constraints.templates.h:308:42: note: in instantiation of member function 'BlockSparseMatrix<double>::block' requested here
+    for (unsigned int i=0; i<uncondensed.block(b,b).m(); ++i)
+                                         ^
+In file included from src/dof_constraints.cc:16:
+In file included from ./src/include/dofs/dof_constraints.templates.h:20:
+In file included from ./src/include/lac/full_matrix.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparseMatrix<float> >, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix.h:1249:11: note: in instantiation of member function 'Table<2, SmartPointer<SparseMatrix<float> > >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+./src/include/dofs/dof_constraints.templates.h:308:42: note: in instantiation of member function 'BlockSparseMatrix<float>::block' requested here
+    for (unsigned int i=0; i<uncondensed.block(b,b).m(); ++i)
+                                         ^
+4 warnings generated.
+In file included from src/block_sparsity_pattern.cc:15:
+In file included from ./src/include/lac/block_sparsity_pattern.h:19:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparsityPattern>, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+src/block_sparsity_pattern.cc:286:22: note: in instantiation of member function 'Table<2, SmartPointer<SparsityPattern> >::operator[]' requested here
+      if (sub_objects[i][j]->is_compressed () == false)
+                     ^
+In file included from src/block_sparsity_pattern.cc:15:
+In file included from ./src/include/lac/block_sparsity_pattern.h:19:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparsityPattern>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/block_sparsity_pattern.cc:77:29: note: in instantiation of member function 'Table<2, SmartPointer<SparsityPattern> >::operator[]' requested here
+        SparsityPatternBase * sp = sub_objects[i][j];
+                                   ^
+In file included from src/block_sparsity_pattern.cc:15:
+In file included from ./src/include/lac/block_sparsity_pattern.h:19:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<CompressedSparsityPattern>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/block_sparsity_pattern.cc:77:29: note: in instantiation of member function 'Table<2, SmartPointer<CompressedSparsityPattern> >::operator[]' requested here
+        SparsityPatternBase * sp = sub_objects[i][j];
+                                   ^
+In file included from src/block_sparsity_pattern.cc:15:
+In file included from ./src/include/lac/block_sparsity_pattern.h:19:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<CompressedSparsityPattern>, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+src/block_sparsity_pattern.cc:109:29: note: in instantiation of member function 'Table<2, SmartPointer<CompressedSparsityPattern> >::operator[]' requested here
+      *sub_objects[i][j] = *bsp.sub_objects[i][j];
+                            ^
+4 warnings generated.
+In file included from src/filtered_matrix.cc:15:
+In file included from ./src/include/lac/filtered_matrix.templates.h:21:
+In file included from ./src/include/lac/block_sparse_matrix.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparseMatrix<double> >, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix.h:1263:11: note: in instantiation of member function 'Table<2, SmartPointer<SparseMatrix<double> > >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+src/filtered_matrix.in.h:113:30: note: in instantiation of member function 'BlockSparseMatrix<double>::block' requested here
+    block_sizes[i] = matrix->block(i,i).n();
+                             ^
+In file included from src/filtered_matrix.cc:15:
+In file included from ./src/include/lac/filtered_matrix.templates.h:21:
+In file included from ./src/include/lac/block_sparse_matrix.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparseMatrix<float> >, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix.h:1263:11: note: in instantiation of member function 'Table<2, SmartPointer<SparseMatrix<float> > >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+src/filtered_matrix.in.h:113:30: note: in instantiation of member function 'BlockSparseMatrix<float>::block' requested here
+    block_sizes[i] = matrix->block(i,i).n();
+                             ^
+2 warnings generated.
+In file included from src/fe_dgp_nonparametric.cc:18:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, double, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_dgp_nonparametric.cc:314:8: note: in instantiation of member function 'Table<2, double>::operator[]' requested here
+              data.shape_values[k][i] = fe_data.values[k];
+              ^
+In file included from src/fe_dgp_nonparametric.cc:18:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<1, 3>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_dgp_nonparametric.cc:316:8: note: in instantiation of member function 'Table<2, Tensor<1, 3> >::operator[]' requested here
+              data.shape_gradients[k][i] = fe_data.grads[k];
+              ^
+In file included from src/fe_dgp_nonparametric.cc:18:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<2, 3>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_dgp_nonparametric.cc:318:8: note: in instantiation of member function 'Table<2, Tensor<2, 3> >::operator[]' requested here
+              data.shape_2nd_derivatives[k][i] = fe_data.grad_grads[k];
+              ^
+3 warnings generated.
+src/dof_renumbering.cc:63:8: warning: access declarations are deprecated; use using declarations instead [-Wdeprecated]
+    T::operator->;
+       ^
+    using 
+src/dof_renumbering.cc:64:8: warning: access declarations are deprecated; use using declarations instead [-Wdeprecated]
+    T::operator++;
+       ^
+    using 
+src/dof_renumbering.cc:65:8: warning: access declarations are deprecated; use using declarations instead [-Wdeprecated]
+    T::operator==;
+       ^
+    using 
+src/dof_renumbering.cc:82:8: warning: access declarations are deprecated; use using declarations instead [-Wdeprecated]
+    T::operator->;
+       ^
+    using 
+src/dof_renumbering.cc:83:8: warning: access declarations are deprecated; use using declarations instead [-Wdeprecated]
+    T::operator++;
+       ^
+    using 
+src/dof_renumbering.cc:84:8: warning: access declarations are deprecated; use using declarations instead [-Wdeprecated]
+    T::operator==;
+       ^
+    using 
+6 warnings generated.
+In file included from src/fe_values.cc:15:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<1, 3>, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/fe/fe_values.h:1353:12: note: in instantiation of member function 'Table<2, Tensor<1, 3> >::operator[]' requested here
+    return this->shape_gradients[i][j];
+           ^
+In file included from src/fe_values.cc:15:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<2, 3>, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/fe/fe_values.h:1449:12: note: in instantiation of member function 'Table<2, Tensor<2, 3> >::operator[]' requested here
+    return this->shape_2nd_derivatives[i][j];
+           ^
+2 warnings generated.
+In file included from src/matrices.cc:23:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<1, 3>, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/fe/fe_values.h:1353:12: note: in instantiation of member function 'Table<2, Tensor<1, 3> >::operator[]' requested here
+    return this->shape_gradients[i][j];
+           ^
+src/matrices.cc:976:45: note: in instantiation of member function 'FEValuesBase<3>::shape_grad' requested here
+                      const Tensor<1,dim>& Dv = fe_values.shape_grad(i,point);
+                                                          ^
+src/matrices.cc:916:58: note: in instantiation of function template specialization 'MatrixCreator::create_laplace_matrix_1<3>' requested here
+  create_laplace_matrix_1_t p = &MatrixCreator::template create_laplace_matrix_1<dim>;
+                                                         ^
+1 warning generated.
+In file included from src/mg_dof_tools.cc:18:
+In file included from ./src/include/lac/block_sparsity_pattern.h:19:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparsityPattern>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparsity_pattern.h:578:3: note: in instantiation of member function 'Table<2, SmartPointer<SparsityPattern> >::operator[]' requested here
+  sub_objects[row_index.first][col_index.first]->add (row_index.second,
+  ^
+src/mg_dof_tools.cc:61:13: note: in instantiation of member function 'BlockSparsityPatternBase<SparsityPattern>::add' requested here
+          sparsity.add (dofs_on_this_cell[i],
+                   ^
+In file included from src/mg_dof_tools.cc:18:
+In file included from ./src/include/lac/block_sparsity_pattern.h:19:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<CompressedSparsityPattern>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparsity_pattern.h:578:3: note: in instantiation of member function 'Table<2, SmartPointer<CompressedSparsityPattern> >::operator[]' requested here
+  sub_objects[row_index.first][col_index.first]->add (row_index.second,
+  ^
+src/mg_dof_tools.cc:61:13: note: in instantiation of member function 'BlockSparsityPatternBase<CompressedSparsityPattern>::add' requested here
+          sparsity.add (dofs_on_this_cell[i],
+                   ^
+2 warnings generated.
+In file included from src/step-14.cc:21:
+In file included from ./src/include/lac/full_matrix.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<1, 3>, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/fe/fe_values.h:1353:12: note: in instantiation of member function 'Table<2, Tensor<1, 3> >::operator[]' requested here
+    return this->shape_gradients[i][j];
+           ^
+src/step-14.cc:781:40: note: in instantiation of member function 'FEValuesBase<3>::shape_grad' requested here
+              cell_matrix(i,j) += ((fe_values.shape_grad(i,q_point) *
+                                              ^
+src/step-14.cc:716:55: note: in instantiation of member function 'LaplaceSolver::Solver<3>::assemble_matrix' requested here
+      threads += Threads::spawn (*this, &Solver<dim>::assemble_matrix)
+                                                      ^
+src/step-14.cc:676:5: note: in instantiation of member function 'LaplaceSolver::Solver<3>::assemble_linear_system' requested here
+    assemble_linear_system (linear_system);
+    ^
+src/step-14.cc:2376:7: note: in instantiation of member function 'LaplaceSolver::Solver<3>::solve_problem' requested here
+      WeightedResidual (Triangulation<dim>       &coarse_grid,
+      ^
+src/step-14.cc:3995:10: note: in instantiation of member function 'LaplaceSolver::WeightedResidual<3>::WeightedResidual' requested here
+          = new LaplaceSolver::WeightedResidual<dim> (triangulation,
+                ^
+src/step-14.cc:4240:23: note: in instantiation of member function 'Framework<3>::run' requested here
+      Framework<dim>::run (descriptor);
+                      ^
+1 warning generated.
+In file included from src/mg_transfer_block.all_dimensions.cc:26:
+./src/include/multigrid/mg_transfer.h:497:26: warning: access declarations are deprecated; use using declarations instead [-Wdeprecated]
+    MGTransferBlockBase::memory_consumption;
+                         ^
+    using 
+1 warning generated.
+In file included from src/dof_tools.cc:25:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparsityPattern>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparsity_pattern.h:578:3: note: in instantiation of member function 'Table<2, SmartPointer<SparsityPattern> >::operator[]' requested here
+  sub_objects[row_index.first][col_index.first]->add (row_index.second,
+  ^
+src/dof_tools.cc:62:13: note: in instantiation of member function 'BlockSparsityPatternBase<SparsityPattern>::add' requested here
+          sparsity.add (dofs_on_this_cell[i],
+                   ^
+In file included from src/dof_tools.cc:25:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<CompressedSparsityPattern>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparsity_pattern.h:578:3: note: in instantiation of member function 'Table<2, SmartPointer<CompressedSparsityPattern> >::operator[]' requested here
+  sub_objects[row_index.first][col_index.first]->add (row_index.second,
+  ^
+src/dof_tools.cc:62:13: note: in instantiation of member function 'BlockSparsityPatternBase<CompressedSparsityPattern>::add' requested here
+          sparsity.add (dofs_on_this_cell[i],
+                   ^
+2 warnings generated.
+In file included from src/fe_poly.cc:15:
+In file included from ./src/include/base/polynomials_p.h:23:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, double, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_poly.cc:219:6: note: in instantiation of member function 'Table<2, double>::operator[]' requested here
+            data->shape_values[k][i] = values[k];
+            ^
+In file included from src/fe_poly.cc:15:
+In file included from ./src/include/base/polynomials_p.h:23:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<1, 3>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_poly.cc:223:6: note: in instantiation of member function 'Table<2, Tensor<1, 3> >::operator[]' requested here
+            data->shape_gradients[k][i] = grads[k];
+            ^
+2 warnings generated.
+src/parameter_handler.cc:1148:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+    else
+    ^
+1 warning generated.
+In file included from src/block_vector.cc:16:
+In file included from ./src/include/lac/block_vector.templates.h:19:
+./src/include/lac/block_vector.h:1470:14: warning: returning reference to local temporary object [-Wreturn-stack-address]
+      return p;
+             ^
+src/block_vector.cc:52:20: note: in instantiation of member function 'internal::BlockVectorIterators::Iterator<double, true>::operator*' requested here
+    template class Iterator<double,true>;
+                   ^
+./src/include/lac/block_vector.h:1469:17: note: binding reference variable 'p' here
+      reference p = parent->block(current_block)(index_within_block);
+                ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/lac/block_vector.h:1486:15: warning: returning address of local temporary object [-Wreturn-stack-address]
+      return &p;
+              ^
+src/block_vector.cc:52:20: note: in instantiation of member function 'internal::BlockVectorIterators::Iterator<double, true>::operator->' requested here
+    template class Iterator<double,true>;
+                   ^
+./src/include/lac/block_vector.h:1485:17: note: binding reference variable 'p' here
+      reference p = parent->block(current_block)(index_within_block);
+                ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/lac/block_vector.h:1505:18: warning: returning reference to local temporary object [-Wreturn-stack-address]
+          return p;
+                 ^
+src/block_vector.cc:52:20: note: in instantiation of member function 'internal::BlockVectorIterators::Iterator<double, true>::operator[]' requested here
+    template class Iterator<double,true>;
+                   ^
+./src/include/lac/block_vector.h:1504:21: note: binding reference variable 'p' here
+          reference p = parent->block(current_block)(index_within_block + d);
+                    ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/lac/block_vector.h:1517:14: warning: returning reference to local temporary object [-Wreturn-stack-address]
+      return p;
+             ^
+./src/include/lac/block_vector.h:1516:17: note: binding reference variable 'p' here
+      reference p = (*parent)(global_index+d);
+                ^   ~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/lac/block_vector.h:1470:14: warning: returning reference to local temporary object [-Wreturn-stack-address]
+      return p;
+             ^
+src/block_vector.cc:55:20: note: in instantiation of member function 'internal::BlockVectorIterators::Iterator<float, true>::operator*' requested here
+    template class Iterator<float,true>;
+                   ^
+./src/include/lac/block_vector.h:1469:17: note: binding reference variable 'p' here
+      reference p = parent->block(current_block)(index_within_block);
+                ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/lac/block_vector.h:1486:15: warning: returning address of local temporary object [-Wreturn-stack-address]
+      return &p;
+              ^
+src/block_vector.cc:55:20: note: in instantiation of member function 'internal::BlockVectorIterators::Iterator<float, true>::operator->' requested here
+    template class Iterator<float,true>;
+                   ^
+./src/include/lac/block_vector.h:1485:17: note: binding reference variable 'p' here
+      reference p = parent->block(current_block)(index_within_block);
+                ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/lac/block_vector.h:1505:18: warning: returning reference to local temporary object [-Wreturn-stack-address]
+          return p;
+                 ^
+src/block_vector.cc:55:20: note: in instantiation of member function 'internal::BlockVectorIterators::Iterator<float, true>::operator[]' requested here
+    template class Iterator<float,true>;
+                   ^
+./src/include/lac/block_vector.h:1504:21: note: binding reference variable 'p' here
+          reference p = parent->block(current_block)(index_within_block + d);
+                    ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/lac/block_vector.h:1517:14: warning: returning reference to local temporary object [-Wreturn-stack-address]
+      return p;
+             ^
+./src/include/lac/block_vector.h:1516:17: note: binding reference variable 'p' here
+      reference p = (*parent)(global_index+d);
+                ^   ~~~~~~~~~~~~~~~~~~~~~~~~~
+8 warnings generated.
+In file included from src/block_sparse_matrix.cc:14:
+In file included from ./src/include/lac/block_sparse_matrix.templates.h:19:
+In file included from ./src/include/lac/block_sparse_matrix.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparseMatrix<double> >, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix.templates.h:53:17: note: in instantiation of member function 'Table<2, SmartPointer<SparseMatrix<double> > >::operator[]' requested here
+        BlockType *p = sub_objects[r][c];
+                       ^
+In file included from src/block_sparse_matrix.cc:14:
+In file included from ./src/include/lac/block_sparse_matrix.templates.h:19:
+In file included from ./src/include/lac/block_sparse_matrix.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparsityPattern>, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/lac/block_sparsity_pattern.h:541:11: note: in instantiation of member function 'Table<2, SmartPointer<SparsityPattern> >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+./src/include/lac/block_sparse_matrix.templates.h:125:29: note: in instantiation of member function 'BlockSparsityPatternBase<SparsityPattern>::block' requested here
+        p->reinit (sparsity.block(r,c));
+                            ^
+In file included from src/block_sparse_matrix.cc:14:
+In file included from ./src/include/lac/block_sparse_matrix.templates.h:19:
+In file included from ./src/include/lac/block_sparse_matrix.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparseMatrix<double> >, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix.h:1263:11: note: in instantiation of member function 'Table<2, SmartPointer<SparseMatrix<double> > >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+In file included from src/block_sparse_matrix.cc:14:
+In file included from ./src/include/lac/block_sparse_matrix.templates.h:19:
+In file included from ./src/include/lac/block_sparse_matrix.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparseMatrix<float> >, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix.templates.h:53:17: note: in instantiation of member function 'Table<2, SmartPointer<SparseMatrix<float> > >::operator[]' requested here
+        BlockType *p = sub_objects[r][c];
+                       ^
+In file included from src/block_sparse_matrix.cc:14:
+In file included from ./src/include/lac/block_sparse_matrix.templates.h:19:
+In file included from ./src/include/lac/block_sparse_matrix.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparseMatrix<float> >, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix.h:1263:11: note: in instantiation of member function 'Table<2, SmartPointer<SparseMatrix<float> > >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+5 warnings generated.
+In file included from src/block_sparse_matrix_ez.cc:14:
+In file included from ./src/include/lac/block_sparse_matrix_ez.h:20:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SparseMatrixEZ<double>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix_ez.templates.h:155:20: note: in instantiation of member function 'Table<2, SparseMatrixEZ<double> >::operator[]' requested here
+    row_sizes[r] = blocks[r][0].m();
+                   ^
+In file included from src/block_sparse_matrix_ez.cc:14:
+In file included from ./src/include/lac/block_sparse_matrix_ez.h:20:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SparseMatrixEZ<double>, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix_ez.h:386:10: note: in instantiation of member function 'Table<2, SparseMatrixEZ<double> >::operator[]' requested here
+  return blocks[row][column];
+         ^
+In file included from src/block_sparse_matrix_ez.cc:14:
+In file included from ./src/include/lac/block_sparse_matrix_ez.h:20:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SparseMatrixEZ<float>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix_ez.templates.h:155:20: note: in instantiation of member function 'Table<2, SparseMatrixEZ<float> >::operator[]' requested here
+    row_sizes[r] = blocks[r][0].m();
+                   ^
+In file included from src/block_sparse_matrix_ez.cc:14:
+In file included from ./src/include/lac/block_sparse_matrix_ez.h:20:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SparseMatrixEZ<float>, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix_ez.h:386:10: note: in instantiation of member function 'Table<2, SparseMatrixEZ<float> >::operator[]' requested here
+  return blocks[row][column];
+         ^
+4 warnings generated.
+In file included from src/fe.cc:15:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<1, 3>, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/fe/fe_values.h:1353:12: note: in instantiation of member function 'Table<2, Tensor<1, 3> >::operator[]' requested here
+    return this->shape_gradients[i][j];
+           ^
+src/fe.cc:531:56: note: in instantiation of member function 'FEValuesBase<3>::shape_grad' requested here
+                  right = fe_internal.differences[d1]->shape_grad(shape_index, q);
+                                                       ^
+In file included from src/fe.cc:15:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<1, 3>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe.cc:578:17: note: in instantiation of member function 'Table<2, Tensor<1, 3> >::operator[]' requested here
+                diff_quot[d][q][d1] = 1./(2*fd_step_length) * (right[d]-left[d]);
+                ^
+In file included from src/fe.cc:15:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<2, 3>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe.cc:597:17: note: in instantiation of member function 'Table<2, Tensor<2, 3> >::operator[]' requested here
+                data.shape_2nd_derivatives[total_index][q][d][d1] = diff_quot2[q][d1];
+                ^
+3 warnings generated.
+In file included from src/fe_raviart_thomas.cc:15:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<1, 3>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_raviart_thomas.cc:1474:13: note: in instantiation of member function 'Table<2, Tensor<1, 3> >::operator[]' requested here
+            data->shape_values[i][q][c]
+            ^
+In file included from src/fe_raviart_thomas.cc:15:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<2, 3>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_raviart_thomas.cc:1479:13: note: in instantiation of member function 'Table<2, Tensor<2, 3> >::operator[]' requested here
+            data->shape_gradients[i][q][c]
+            ^
+In file included from src/fe_raviart_thomas.cc:15:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, double, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_raviart_thomas.cc:1548:8: note: in instantiation of member function 'Table<2, double>::operator[]' requested here
+              data.shape_values[k*dim+d][q] = shape_values[q][d];
+              ^
+3 warnings generated.
+src/grid_in.cc:346:76: warning: while loop has empty body [-Wempty-body]
+  while (getline(in,line), ((line.find("End")==std::string::npos) && (in)));
+                                                                           ^
+src/grid_in.cc:346:76: note: put the semicolon on a separate line to silence this warning
+1 warning generated.
+src/tria.cc:7348:6: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                          else
+                          ^
+src/tria.cc:7413:9: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                      else 
+                      ^
+2 warnings generated.
+In file included from src/mapping_q.cc:14:
+In file included from ./src/include/fe/mapping_q.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, double, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/mapping_q.cc:658:9: note: in instantiation of member function 'Table<2, double>::operator[]' requested here
+          lohvs[unit_point][k]=lohv_ptr[unit_point*n_outer+k];
+               ^
+In file included from src/mapping_q.cc:14:
+In file included from ./src/include/fe/mapping_q.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, double, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+src/mapping_q.cc:797:8: note: in instantiation of member function 'Table<2, double>::operator[]' requested here
+        p+=lvs[unit_point][k]*a[k];
+              ^
+2 warnings generated.
+In file included from src/mg_transfer_block.cc:26:
+./src/include/multigrid/mg_transfer.h:497:26: warning: access declarations are deprecated; use using declarations instead [-Wdeprecated]
+    MGTransferBlockBase::memory_consumption;
+                         ^
+    using 
+In file included from src/mg_transfer_block.cc:19:
+In file included from ./src/include/lac/block_sparse_matrix.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparsityPattern>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparsity_pattern.h:528:11: note: in instantiation of member function 'Table<2, SmartPointer<SparsityPattern> >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+src/mg_transfer_block.cc:205:38: note: in instantiation of member function 'BlockSparsityPatternBase<SparsityPattern>::block' requested here
+            prolongation_sparsities[level]->block(i,j)
+                                            ^
+src/mg_transfer_block.cc:320:24: note: in instantiation of function template specialization 'MGTransferBlockBase::build_matrices<3>' requested here
+  MGTransferBlockBase::build_matrices (mg_dof, select);
+                       ^
+In file included from src/mg_transfer_block.cc:19:
+In file included from ./src/include/lac/block_sparse_matrix.h:18:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparseMatrix<double> >, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix.h:1249:11: note: in instantiation of member function 'Table<2, SmartPointer<SparseMatrix<double> > >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+./src/include/lac/block_sparse_matrix.h:1298:3: note: in instantiation of member function 'BlockSparseMatrix<double>::block' requested here
+  block(row_index.first,col_index.first).set (row_index.second,
+  ^
+src/mg_transfer_block.cc:282:36: note: in instantiation of member function 'BlockSparseMatrix<double>::set' requested here
+                          prolongation_matrices[level]->set(dof_indices_child[i],
+                                                        ^
+src/mg_transfer_block.cc:320:24: note: in instantiation of function template specialization 'MGTransferBlockBase::build_matrices<3>' requested here
+  MGTransferBlockBase::build_matrices (mg_dof, select);
+                       ^
+3 warnings generated.
+In file included from src/mg_transfer_prebuilt.cc:27:
+./src/include/multigrid/mg_transfer.h:497:26: warning: access declarations are deprecated; use using declarations instead [-Wdeprecated]
+    MGTransferBlockBase::memory_consumption;
+                         ^
+    using 
+1 warning generated.
+In file included from src/data_out_base.cc:15:
+In file included from ./src/include/base/data_out_base.h:19:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, double, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/data_out_base.cc:2574:30: note: in instantiation of member function 'Table<2, double>::operator[]' requested here
+      std::copy (data_vectors[data_set].begin(),
+                             ^
+src/data_out_base.cc:3389:16: note: in instantiation of function template specialization 'DataOutBase::write_gmv<1, 1>' requested here
+  DataOutBase::write_gmv (get_patches(), get_dataset_names(),
+               ^
+src/data_out_base.cc:1150:11: warning: no case matching constant switch condition '4'
+          switch(dim)
+                 ^~~
+src/data_out_base.cc:3344:16: note: in instantiation of function template specialization 'DataOutBase::write_dx<4, 4>' requested here
+  DataOutBase::write_dx (get_patches(), get_dataset_names(),
+               ^
+2 warnings generated.
+In file included from src/fe_system.cc:21:
+In file included from ./src/include/fe/fe_system.h:21:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, double, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_system.cc:933:25: note: in instantiation of member function 'Table<2, double>::operator[]' requested here
+                        data.shape_values[out_index+s][q] =
+                        ^
+src/fe_system.cc:679:3: note: in instantiation of function template specialization 'FESystem<3>::compute_fill<3>' requested here
+  compute_fill(mapping, cell, invalid_face_number, invalid_face_number,
+  ^
+In file included from src/fe_system.cc:21:
+In file included from ./src/include/fe/fe_system.h:21:
+In file included from ./src/include/fe/fe.h:17:
+In file included from ./src/include/fe/fe_base.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<1, 3>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_system.cc:938:25: note: in instantiation of member function 'Table<2, Tensor<1, 3> >::operator[]' requested here
+                        data.shape_gradients[out_index+s][q]=
+                        ^
+src/fe_system.cc:679:3: note: in instantiation of function template specialization 'FESystem<3>::compute_fill<3>' requested here
+  compute_fill(mapping, cell, invalid_face_number, invalid_face_number,
+  ^
+2 warnings generated.
+In file included from src/polynomial_space.cc:17:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, std::vector<double, std::allocator<double> >, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/polynomial_space.cc:279:9: note: in instantiation of member function 'Table<2, std::vector<double, std::allocator<double> > >::operator[]' requested here
+              v[0][ix][0]
+               ^
+1 warning generated.
+In file included from src/fe_nedelec.cc:15:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<1, 3>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_nedelec.cc:958:7: note: in instantiation of member function 'Table<2, Tensor<1, 3> >::operator[]' requested here
+             data->shape_values[i][q][c]
+             ^
+In file included from src/fe_nedelec.cc:15:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<2, 3>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_nedelec.cc:963:7: note: in instantiation of member function 'Table<2, Tensor<2, 3> >::operator[]' requested here
+             data->shape_gradients[i][q][c]
+             ^
+In file included from src/fe_nedelec.cc:15:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, double, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/fe_nedelec.cc:1032:8: note: in instantiation of member function 'Table<2, double>::operator[]' requested here
+              data.shape_values[k*dim+d][q] = shape_values[q][d];
+              ^
+3 warnings generated.
+In file included from src/matrices.all_dimensions.cc:16:
+In file included from ./src/include/lac/full_matrix.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparseMatrix<double> >, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+./src/include/lac/block_sparse_matrix.h:1249:11: note: in instantiation of member function 'Table<2, SmartPointer<SparseMatrix<double> > >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+src/matrices.all_dimensions.cc:244:39: note: in instantiation of member function 'BlockSparseMatrix<double>::block' requested here
+      for (unsigned int i=0; i<matrix.block(diag_block,diag_block).n(); ++i)
+                                      ^
+In file included from src/matrices.all_dimensions.cc:16:
+In file included from ./src/include/lac/full_matrix.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2262:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, SmartPointer<SparsityPattern>, true, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,true,1>(*this,
+         ^
+./src/include/lac/block_sparsity_pattern.h:541:11: note: in instantiation of member function 'Table<2, SmartPointer<SparsityPattern> >::operator[]' requested here
+  return *sub_objects[row][column];
+          ^
+src/matrices.all_dimensions.cc:302:40: note: in instantiation of member function 'BlockSparsityPatternBase<SparsityPattern>::block' requested here
+            local_sparsity = sparsity_pattern.block(block_index.first,
+                                              ^
+2 warnings generated.
+In file included from src/mapping_q1.cc:17:
+In file included from ./src/include/lac/full_matrix.h:21:
+./src/include/base/table.h:1890:28: warning: binding dereferenced null pointer to reference has undefined behavior [-Wnull-dereference]
+                    table (*static_cast<const TableType*>(0)),
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/include/base/table.h:2275:10: note: in instantiation of member function 'internal::TableBaseAccessors::Accessor<2, Tensor<1, 3>, false, 1>::Accessor' requested here
+  return internal::TableBaseAccessors::Accessor<2,T,false,1>(*this,
+         ^
+src/mapping_q1.cc:380:15: note: in instantiation of member function 'Table<2, Tensor<1, 3> >::operator[]' requested here
+          std::fill (data.unit_tangentials[i].begin(),
+                     ^
+1 warning generated.
+clang-11: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]
