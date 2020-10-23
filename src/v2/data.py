@@ -4,6 +4,9 @@ import sys
 import random
 import pickle
 
+SOS_token = 'SOS'
+EOS_token = 'EOS'
+
 def readLangs(filename,exclude,include):
     pairs = []
  
@@ -43,10 +46,8 @@ def readLangs(filename,exclude,include):
               f1.append(e.strip())
         else:
           if line=='EOS':
-            f1 = lang.addSentence(f1)
-            f2 = lang.addSentence(f2)
-            f1.append(EOS_token)
-            f2.append(EOS_token)
+            #f1.append(EOS_token)
+            #f2.append(EOS_token)
             pair = [f1,f2,label]
             #if filterPair(pair):
             pairs.append( pair )

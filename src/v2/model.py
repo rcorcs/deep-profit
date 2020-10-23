@@ -62,7 +62,8 @@ class Encoder2(nn.Module):
 
         with open(str(EMBEDDINGS), "rb") as f:
           self.embeddings = pickle.load(f)
-
+        vocab_id = self.dictionary.get(self.dictionary["!UNK"], self.dictionary["!UNK"])
+        embedding_size = len(self.embeddings[vocab_id])
         #self.embedding = nn.Embedding(input_size, embedding_size)
         self.gru = nn.GRU(embedding_size, hidden_size, num_layers=num_layers)
 
@@ -82,7 +83,6 @@ class Encoder2(nn.Module):
         vocab_id = self.dictionary.get(preprocessed[0], self.dictionary["!UNK"])
         output = self.embeddings[vocab_id]
         return torch.tensor(output, dtype=torch.float, device=device).view(1,1,-1)
-        #return torch.tensor(input, dtype=torch.long, device=device).view(-1, 1)
 
 class Classifier(nn.Module):
     def __init__(self, hidden_size, output_size):
