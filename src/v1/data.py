@@ -38,7 +38,7 @@ class Lang:
 # flag to reverse the pairs.
 #
 
-MAX_LENGTH = 150
+MAX_LENGTH = 120
 
 def filterPair(p):
     return len(p[0]) < MAX_LENGTH and \
@@ -46,7 +46,7 @@ def filterPair(p):
 
 
 def readLangs(filename,exclude,include,lang):
-    #print("Reading lines...")
+    print("Reading lines...")
 
     if lang==None:
       lang = Lang()
@@ -60,7 +60,6 @@ def readLangs(filename,exclude,include,lang):
       f1 = []
       f2 = []
       inF1 = True
-      skip = False
       for line in f:
         line = line.strip()
         if line.startswith('#'):
@@ -74,6 +73,8 @@ def readLangs(filename,exclude,include,lang):
           print(line)
           continue
         if skip:
+          continue
+        if line.startswith('!'):
           continue
         if line.startswith('='):
           label = int(line.split()[1].strip())
@@ -128,19 +129,11 @@ def filterPairs(pairs):
 
 def prepareData(filename, exclude, include, lang):
     lang, pairs = readLangs(filename, exclude, include, lang)
-    #print("Profitable: %d" % sum(p[2] for p in pairs),'/',len(pairs))
-    #print("Counted words:")
-    #print(lang.n_words)
+    print("Profitable: %d" % sum(p[2] for p in pairs),'/',len(pairs))
+    print("Counted words:")
+    print(lang.n_words)
     return lang, pairs
 
-def loadLang(filename, exclude=[], include=[], cache=True):
-  lang = None
-  if os.path.exists(filename+'.lang.pkl'):
-    with open(filename+'.lang.pkl','rb') as f:
-      lang = pickle.load(f)
-  else:
-    lang, _ = prepareData(filename,exclude,include,lang)
-  return lang
 
 def load(filename, exclude=[], include=[], cache=True):
   lang = None
@@ -160,7 +153,7 @@ def balanced(pairs, n):
     pairs01 = [ [p for p in pairs if p[2]==0], [p for p in pairs if p[2]==1] ]
     pairsIdx = []
     while len(pairsIdx)<n:
-        target = random.choice([0,1])
+        target = random.choice([0,1,1])
         pairsIdx.append( (target, random.choice(range(len(pairs01[target])))) )
     return [ pairs01[p[0]][p[1]] for p in pairsIdx ]
 

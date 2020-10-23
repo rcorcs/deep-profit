@@ -115,13 +115,14 @@ def train(dataset, encoder, classifier, device, learning_rate=0.01, print_every=
 
 if __name__=='__main__':
 
-  device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+  #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+  device = torch.device("cpu")
   print('Loading data')
   print(device)
   print('Ignoring:',sys.argv[2:])
   lang, entries = data.load(sys.argv[1],exclude=sys.argv[2:],cache=False)
   
-  n_iters = 20000
+  n_iters = 30000
   dataset = data.balanced(entries, n_iters)
   #dataset=entries
 

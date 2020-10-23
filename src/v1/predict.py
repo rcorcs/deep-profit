@@ -12,8 +12,11 @@ import data
 from data import Lang
 import model
 
+import timeit
 
+totalt = 0
 def evaluate(encoder, classifier, sentence1, sentence2, device):
+    global totalt
     with torch.no_grad():
         input1_tensor = encoder.prepareInput(sentence1, device)
         input1_length = input1_tensor.size()[0]
@@ -31,8 +34,13 @@ def evaluate(encoder, classifier, sentence1, sentence2, device):
         for ei in range(input2_length):
             _, encoder_hidden = encoder(input2_tensor[ei], encoder_hidden)
         encoded2_tensor = encoder_hidden[-1]
-    
+
+        start = timeit.default_timer()
+
         classifier_output = classifier(encoded1_tensor, encoded2_tensor) 
+
+        stop = timeit.default_timer()
+        totalt += stop - start
 
         return classifier_output
 
@@ -47,7 +55,7 @@ def evaluateRandomly(dataset, encoder, classifier, device):
         output = evaluate(encoder, classifier, pair[0], pair[1], device)
         topv, topi = output.data.topk(1)
         prediction = int(topi.view(1)[0])
-        print('=', pair[2], '|', prediction)
+        #print('=', pair[2], '|', prediction)
         #print('<',output)
         totalWith[pair[2]] += 1
         if prediction==pair[2]:
@@ -61,7 +69,8 @@ def evaluateRandomly(dataset, encoder, classifier, device):
 
 if __name__=='__main__':
 
-  device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+  #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+  device = torch.device("cpu")
   print('Loading data')
   print('Including:',sys.argv[2:])
   lang, entries = data.load(sys.argv[1],include=sys.argv[2:],cache=False)
@@ -76,3 +85,4 @@ if __name__=='__main__':
   classifier1 = torch.load('classifier.pt')
 
   evaluateRandomly(dataset, encoder1, classifier1, device)
+  print(totalt)
