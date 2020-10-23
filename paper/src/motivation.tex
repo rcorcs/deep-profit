@@ -40,6 +40,7 @@ By compiling the whole program down to its binary form, we are able to precisely
 However, the cost of compiling the whole program for every merging attempt is prohibitive.
 The re-compilation overhead can be severely aggravated for larger programs with multiple functions, where not only each compilation takes longer but the whole program is also re-compiled many times.
 
+
 \subsection{Wasteful Merge Operations}
 
 The fingerprint-based ranking strategy helps the function merging optimization to pair functions that are more similar.
@@ -50,7 +51,6 @@ As a result, a considerable amount of compilation time is wasted producing merge
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{figs/unprofitable-attempts.pdf}
-  \vspace{-2.5em}
   \caption{An average of about 82\% of merging attempts are unprofitable.}
   \label{fig:unprofitable-attempts}
 \end{figure}
@@ -60,25 +60,23 @@ As a result, a considerable amount of compilation time is wasted producing merge
 %This also includes the time wasted producing unprofitable merged functions.
 %Therefore, it is important to avoid merging unprofitable functions.
 
-Figure~\ref{fig:unprofitable-compile-time-percentage} shows the time spent producing unprofitable merged functions relative to the total compilation time of the function merging optimization.
+%Figure~\ref{fig:unprofitable-compile-time-percentage} shows the time spent producing unprofitable merged functions relative to the total compilation time of the function merging optimization.
 Since most of the merged functions are thrown away for being unprofitable, it is expected that most of the compilation time is also spent producing those merged functions.
-However, this impact is also aggravated when several of the unprofitable merged functions are much larger than the profitable ones.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.5\textwidth]{figs/unprofitable-compile-time-percentage.pdf}
-  \vspace{-2.5em}
-  \caption{The percentage of compilation-time spent on unprofitable merge operations.}
-  \label{fig:unprofitable-compile-time-percentage}
-\end{figure}
-
+This impact is also aggravated when several of the unprofitable merged functions are much larger than the profitable ones.
 Therefore, it is of utmost importance that we avoid merging unprofitable functions.
 If we could eliminate all the time wasted on unprofitable merge operations, we would free compilation time for more useful computation.
+
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics[width=0.8\textwidth]{src/deeplearning/figs/unprofitable-compile-time-percentage.pdf}
+%  \caption{The percentage of compilation-time spent on unprofitable merge operations.}
+%  \label{fig:unprofitable-compile-time-percentage}
+%\end{figure}
+
 
 \subsection{Summary}
 
 In this paper, our goal is to develop a solution capable of identifying whether or not a given pair of functions can be profitably merged, allowing us to use a more expensive profitability analysis based on partial re-compilation.
 If we could predict which pairs of function are more likely to cause code bloat, we could avoid wasting time merging them in the first place and having to estimate their binary sizes.
 Bailing out early frees time to be spent on more profitable merge operations.
-
 
