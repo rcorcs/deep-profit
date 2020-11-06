@@ -64,3 +64,23 @@ First, we use a language model based on recurrent neural networks to encode the 
 These vector encodings can be computed only once per function an cached.
 Finally, the context vectors of two input functions are concatenated and fed to a feed-forward neural network that classifies whether or not those functions are profitably merged.
 
+
+\subsubsection{\textit{inst2vec} Language Model}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.45\textwidth]{figs/inst2vec-known.pdf}
+  \caption{Percentage of instructions in the pre-trained \textit{inst2vec} language model.}
+  \label{fig:inst2vec-known}
+\end{figure}
+
+\subsection{Search Strategy}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.45\textwidth]{figs/func-merge-opt-new-arch.pdf}
+  \caption{Overview of our extended exploration framework..}
+  \label{fig:func-merge-opt-new-arch}
+\end{figure}
+
