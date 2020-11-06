@@ -3,7 +3,23 @@
 
 \subsection{Function Merging}
 
+Link-time code optimizers like~\cite{tallam10,kwan12,msvc-icf} merge text-identical functions at the bit level.
+However, such solutions are target-specific and need to be adapted for each object code format and hardware architecture.
 
+GCC and LLVM~\cite{llvm-fm,livska14} also provide an optimization for merging identical functions at the IR level and hence is agnostic to the target hardware.
+Unfortunately, they can only merge fully identical functions with at most type mismatches that can be losslessly cast to the same format.
+The work presented by von Koch~et~al.~\cite{edler14} advanced this simple merging strategy by exploiting the CFG isomorphism of two
+functions. However, it requires two mergeable functions to have identical CFGs and function types, where the two functions can only differ
+between correspoding instructions, specifically, in their opcodes or the number and types of the input operands.
+The state-of-the-art technique, FMSA~\cite{rocha19}, lifts most of the restrictions imposed by prior techniques~\cite{llvm-fm,livska14,edler14}.
+Although achieving impressive results, it does not directly handle \textit{phi-nodes} which are fundamental to the SSA form.
+In order to simplify their code generator, Rocha~et~al.~\cite{rocha19} replaced all phi-nodes with memory operations by first applying register demotion.
+This tends to almost double the function size, increasing compilation time and hindering function merging, as it expects that applying register promotion to the merged function will reverse the negative effect of the earlier register demotion.
+This is often not possible because function merging can add complexity to the memory operations, resulting in unnecessarily larger merged functions.
+
+In order to avoid register demotion, Rocha~et~al.~\cite{rocha20} describes a novel approach, called SalSSA, for merging functions which is capable of effectively handling the SSA form.
+Their approach achieves this with a new code generator that, instead of translating the aligned sequences directly into a merged function, generates code from the input control-flow graphs, using the alignment only to specify pairs of matching labels and instructions.
+SalSSA then produces code top-down, starting with the control flow graph of the merged function, then populating with instructions, arguments and labels, and finally with phi-nodes which maintain the correct flow of data.
 
 \subsection{Tuning Compilers with Deep Learning}
 
