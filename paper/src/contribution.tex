@@ -23,15 +23,15 @@ Figure~\ref{fig:our-cost-model-callgraph-1} illustrates an example of code extra
 
 \begin{figure}[h]
 \centering
-\begin{subfigure}
-\centering
-  \includegraphics[width=0.45\textwidth]{figs/our-cost-model-callgraph-1.pdf}
+\begin{subfigure}{0.45\textwidth}
+  \centering
+  \includegraphics[scale=0.6]{figs/our-cost-model-callgraph-1.pdf}
   \caption{Extracted code without function merging.}
   \label{fig:our-cost-model-callgraph-1}
 \end{subfigure}
-\begin{subfigure}
+\begin{subfigure}{0.45\textwidth}
 \centering
-  \includegraphics[width=0.45\textwidth]{figs/our-cost-model-callgraph-2.pdf}
+  \includegraphics[scale=0.6]{figs/our-cost-model-callgraph-2.pdf}
   \caption{Extracted code with function merging.}
   \label{fig:our-cost-model-callgraph-2}
 \end{subfigure}
@@ -63,4 +63,24 @@ The same linearised functions used for the merge operations, as described in Cha
 First, we use a language model based on recurrent neural networks to encode the input functions into context vectors of fixed size.
 These vector encodings can be computed only once per function an cached.
 Finally, the context vectors of two input functions are concatenated and fed to a feed-forward neural network that classifies whether or not those functions are profitably merged.
+
+
+\subsubsection{\textit{inst2vec} Language Model}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.45\textwidth]{figs/inst2vec-known.pdf}
+  \caption{Percentage of instructions in the pre-trained \textit{inst2vec} language model.}
+  \label{fig:inst2vec-known}
+\end{figure}
+
+\subsection{Search Strategy}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.45\textwidth]{figs/func-merge-opt-new-arch.pdf}
+  \caption{Overview of our extended exploration framework..}
+  \label{fig:func-merge-opt-new-arch}
+\end{figure}
 
