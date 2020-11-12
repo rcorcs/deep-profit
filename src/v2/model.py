@@ -14,45 +14,15 @@ import torch.nn as nn
 from torch import optim
 import torch.nn.functional as F
 
-import model
+import os
 
+WORKDIR = os.path.dirname(__file__)
 
-DICTIONARY = 'data/models/inst2vec_augmented_dictionary.pickle'
-EMBEDDINGS = "data/models/inst2vec_augmented_embeddings.pickle"
-
-######################################################################
-# The Encoder
-# -----------
-#
-# The encoder of a seq2seq network is a RNN that outputs some value for
-# every word from the input sentence. For every input word the encoder
-# outputs a vector and a hidden state, and uses the hidden state for the
-# next input word.
-#
-# .. figure:: /_static/img/seq-seq-images/encoder-network.png
-#    :alt:
-#
-#
+DICTIONARY = WORKDIR+'/data/models/inst2vec_augmented_dictionary.pickle'
+EMBEDDINGS = WORKDIR+"/data/models/inst2vec_augmented_embeddings.pickle"
 
 class Encoder(nn.Module):
-    def __init__(self, input_size, hidden_size):
-        super(Encoder2, self).__init__()
-        self.hidden_size = hidden_size
-
-        self.gru = nn.GRU(input_size, hidden_size)
-
-    def forward(self, input, hidden):
-        output, hidden = self.gru(input, hidden)
-        return output, hidden
-
-    def initHidden(self):
-        #return torch.zeros(1, 1, self.hidden_size, device=device)
-        h = torch.empty(1, 1, self.hidden_size, device=device)
-        nn.init.xavier_normal_(h)
-        return h
-
-class Encoder2(nn.Module):
-    def __init__(self, input_size, embedding_size, hidden_size, num_layers):
+    def __init__(self, hidden_size, num_layers):
         super(Encoder, self).__init__()
         self.num_layers = num_layers
         self.hidden_size = hidden_size
@@ -64,11 +34,9 @@ class Encoder2(nn.Module):
           self.embeddings = pickle.load(f)
         vocab_id = self.dictionary.get(self.dictionary["!UNK"], self.dictionary["!UNK"])
         embedding_size = len(self.embeddings[vocab_id])
-        #self.embedding = nn.Embedding(input_size, embedding_size)
         self.gru = nn.GRU(embedding_size, hidden_size, num_layers=num_layers)
 
     def forward(self, input, hidden):
-        #embedded = self.embedding(input).view(1, 1, -1)
         embedded = input.view(1,1,-1)
         output, hidden = self.gru(embedded, hidden)
         return output, hidden
@@ -79,9 +47,12 @@ class Encoder2(nn.Module):
     def prepareInput(self, input, device):
         preprocessed_input, _ = inst2vec_preprocess.preprocess([[input]])
         struct_dict = inst2vec_vocab.GetStructDict(preprocessed_input[0])
-        preprocessed = inst2vec_vocab.PreprocessLlvmBytecode(preprocessed[0],struct_dict)
+        preprocessed = inst2vec_vocab.PreprocessLlvmBytecode(preprocessed_input[0],struct_dict)
+        #print(input)
         vocab_id = self.dictionary.get(preprocessed[0], self.dictionary["!UNK"])
         output = self.embeddings[vocab_id]
+        #print(output)
+        #return (vocab_id!=self.dictionary["!UNK"])
         return torch.tensor(output, dtype=torch.float, device=device).view(1,1,-1)
 
 class Classifier(nn.Module):

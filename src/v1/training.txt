@@ -1,0 +1,10 @@
+= 0
+!fn: @spec_srand
+label
+store i32
+ret void
+EOS
+!fn: @quantum_get_version
+label
+ret ptr i8
+EOS

@@ -6,19 +6,12 @@ import sys
 
 import pickle 
 
-from inst2vec import inst2vec_preprocess
-import vocabulary as inst2vec_vocab
-
 import torch
 import torch.nn as nn
 from torch import optim
 import torch.nn.functional as F
 
 import model
-
-
-DICTIONARY = 'data/models/inst2vec_augmented_dictionary.pickle'
-EMBEDDINGS = "data/models/inst2vec_augmented_embeddings.pickle"
 
 ######################################################################
 # The Encoder
@@ -70,39 +63,6 @@ class Encoder2(nn.Module):
         h = torch.empty(1, 1, self.hidden_size, device=device)
         nn.init.xavier_normal_(h)
         return h
-
-class Encoder2(nn.Module):
-    def __init__(self, input_size, embedding_size, hidden_size, num_layers):
-        super(Encoder, self).__init__()
-        self.num_layers = num_layers
-        self.hidden_size = hidden_size
-
-        with open(str(DICTIONARY), "rb") as f:
-          self.dictionary = pickle.load(f)
-
-        with open(str(EMBEDDINGS), "rb") as f:
-          self.embeddings = pickle.load(f)
-
-        #self.embedding = nn.Embedding(input_size, embedding_size)
-        self.gru = nn.GRU(embedding_size, hidden_size, num_layers=num_layers)
-
-    def forward(self, input, hidden):
-        #embedded = self.embedding(input).view(1, 1, -1)
-        embedded = input.view(1,1,-1)
-        output, hidden = self.gru(embedded, hidden)
-        return output, hidden
-
-    def initHidden(self, device):
-        return torch.zeros(self.num_layers, 1, self.hidden_size, device=device)
-
-    def prepareInput(self, input, device):
-        preprocessed_input, _ = inst2vec_preprocess.preprocess([[input]])
-        struct_dict = inst2vec_vocab.GetStructDict(preprocessed_input[0])
-        preprocessed = inst2vec_vocab.PreprocessLlvmBytecode(preprocessed[0],struct_dict)
-        vocab_id = self.dictionary.get(preprocessed[0], self.dictionary["!UNK"])
-        output = self.embeddings[vocab_id]
-        return torch.tensor(output, dtype=torch.float, device=device).view(1,1,-1)
-        #return torch.tensor(input, dtype=torch.long, device=device).view(-1, 1)
 
 class Classifier(nn.Module):
     def __init__(self, hidden_size, output_size):

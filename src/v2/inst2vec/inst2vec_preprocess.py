@@ -116,7 +116,7 @@ def get_stmt_counts(data_set, data_list):
     data_operations_count = list()
 
     # Compute stmt counts (overall)
-    print('Counting statement occurrences (overall)...')
+    #print('Counting statement occurrences (overall)...')
     for stmt in data_list:
         data_count[stmt] += 1
 
@@ -148,16 +148,16 @@ def get_stmt_counts(data_set, data_list):
         total_stmt_count += op_count
 
     # Check that all stmts have been categorized once and only once (debugging purposes)
-    print('Starting categorization check ...')
+    #print('Starting categorization check ...')
     stmts_categorized = sorted(stmts_categorized)
     if stmts_categorized != list(range(len(data_set))):
-        print('Tracking down the errors in categorization ... : ')
+        #print('Tracking down the errors in categorization ... : ')
         for i in range(len(data_set)):
             num = stmts_categorized.count(i)
-            if num == 0:
-                print(data_set[i], "\n\tappears 0 times")
-            if num > 1:
-                print(data_set[i], "\n\tappears ", num, " times")
+            #if num == 0:
+            #    print(data_set[i], "\n\tappears 0 times")
+            #if num > 1:
+            #    print(data_set[i], "\n\tappears ", num, " times")
 
     assert stmts_categorized <= list(range(len(data_set))), "Not all statements have been categorized"
     assert stmts_categorized >= list(range(len(data_set))), "Some statements have been categorized multiple times"
@@ -211,7 +211,7 @@ def read_data_files_from_folder(foldername):
     file_names = list()
     file_count = 0
 
-    print('Reading data from all files in folder ', foldername)
+    #print('Reading data from all files in folder ', foldername)
     listing = os.listdir(foldername + '/')
     to_subtract = file_count
 
@@ -231,8 +231,8 @@ def read_data_files_from_folder(foldername):
             # Increment counters
             file_count += 1
 
-    print('Number of files read from', foldername, ': ', file_count - to_subtract)
-    print('Total number of files read for dataset', foldername, ': ', file_count)
+    #print('Number of files read from', foldername, ': ', file_count - to_subtract)
+    #print('Total number of files read for dataset', foldername, ': ', file_count)
     return data, file_names
 
 
@@ -253,7 +253,7 @@ def print_preprocessed_data(raw_data, foldername, filenames):
     i = 0
     for file in raw_data:
         filename = os.path.join(foldername, filenames[i][:-3] + '_preprocessed.txt')
-        print('Writing pre-processed data to file ', filename)
+        #print('Writing pre-processed data to file ', filename)
         with open(filename, 'w') as f:
             for l in file:
                 f.write(l+'\n')
@@ -267,7 +267,7 @@ def print_data(data, filename):
     :param filename: name of file to print this to (string)
     :return:
     """
-    print('Write data to file ', filename)
+    #print('Write data to file ', filename)
     with open(filename, 'w') as f:
         for l in data:
             f.write(l+'\n')
@@ -579,7 +579,7 @@ def remove_non_representative_code(data):
     :param data: input data as a list of files where each file is a list of strings
     :return: input data with non-representative lines of code removed
     """
-    print('Removing non-representative code ...')
+    #print('Removing non-representative code ...')
     for i in range(len(data)):
         data[i] = [line for line in data[i] if keep(line)]
 
@@ -592,7 +592,7 @@ def remove_leading_spaces(data):
     :param data: input data as a list of files, where each file is a list of strings
     :return: input data with leading spaces removed
     """
-    print('Removing leading spaces ...')
+    #print('Removing leading spaces ...')
     for i in range(len(data)):
         for j in range(len(data[i])):
             data[i][j] = data[i][j].strip()
@@ -606,7 +606,7 @@ def remove_trailing_comments_and_metadata(data):
     :param data: input data as a list of files where each file is a list of strings
     :return: modified input data
     """
-    print('Removing trailing comments and metadata ...')
+    #print('Removing trailing comments and metadata ...')
 
     for i in range(len(data)):
         for j in range(len(data[i])):
@@ -662,7 +662,7 @@ def collapse_stmt_units_to_a_line(data):
     :return: modified input data
     """
     to_track = ''
-    print('Collapsing statement units into one line ...')
+    #print('Collapsing statement units into one line ...')
     erase_token = 'to_erase'  # Helper variable to mark lines to be erased
     separator = '\n '
 
@@ -670,8 +670,8 @@ def collapse_stmt_units_to_a_line(data):
     for file in data:
         for i in range(len(file)):
 
-            if file[i] == to_track:
-                print('Found', to_track)
+            #if file[i] == to_track:
+            #    print('Found', to_track)
 
             if re.match(rgx.local_id + ' = landingpad', file[i]):
                 if i+1 < len(file):
@@ -722,7 +722,7 @@ def remove_structure_definitions(data):
     :param data: input data as a list of files where each file is a list of strings
     :return: input data with non-representative lines of code removed
     """
-    print('Removing structure (aggregate types) definitions ...')
+    #print('Removing structure (aggregate types) definitions ...')
     for i in range(len(data)):
         data[i] = [line for line in data[i] if not re.match('%.* = type (<?{ .* }|opaque|{})', line)]
 
@@ -918,9 +918,9 @@ def construct_function_dictionary(file):
     for line in file:
 
         # For debugging
-        if len(to_track) > 0:
-            if line == to_track or to_track in line:
-                print('Found line', line)
+        #if len(to_track) > 0:
+        #    if line == to_track or to_track in line:
+        #        print('Found line', line)
 
         # If it's a function definition
         if re.match(r'define', line):
@@ -1114,9 +1114,9 @@ def add_node(G, func_prefix, node, id, ids_in_basic_block):
     """
     # Debugging
     node_check = ''
-    if len(node_check) > 0:
-        if node_check in node or node_check == node:
-            print('Found node', node)
+    #if len(node_check) > 0:
+    #    if node_check in node or node_check == node:
+    #        print('Found node', node)
     assert node is not None, "Node none"
 
     # Add node
@@ -1143,9 +1143,9 @@ def add_edge(G, parent_prefix, parent_node, child_prefix, child_node, stmt, flow
 
     # Debugging
     stmt_check = ''
-    if len(stmt_check) > 0:
-        if stmt_check in stmt or stmt_check == stmt:
-            print('Found stmt', stmt)
+    #if len(stmt_check) > 0:
+    #    if stmt_check in stmt or stmt_check == stmt:
+    #        print('Found stmt', stmt)
     assert parent_node != 'undef', "Found undef parent-node at stmt:\n" + stmt
     assert child_node != 'undef', "Found undef child-node at stmt:\n" + stmt
 
@@ -1173,9 +1173,9 @@ def add_edge_dummy(G, parent_prefix, parent_node, stmt, ad_hoc_count):
     """
     # Debugging
     stmt_check = ''
-    if len(stmt_check) > 0:
-        if stmt_check in stmt:
-            print('Found stmt', stmt)
+    #if len(stmt_check) > 0:
+    #    if stmt_check in stmt:
+    #        print('Found stmt', stmt)
 
     # Assert that the nodes have been added to the graph prior to this
     parent_node_ = parent_prefix + parent_node
@@ -1218,9 +1218,9 @@ def add_stmts_to_graph(G, file, functions_defined_in_file, functions_declared_in
     for i, line in enumerate(file):
 
         # Debugging
-        if stmt_check:
-            if line == stmt_check or stmt_check in line:
-                print('\nFound statement in', line)
+        #if stmt_check:
+        #    if line == stmt_check or stmt_check in line:
+        #        print('\nFound statement in', line)
 
         # Adapt to dragon-egg generated code
         if '%"ssa point"' in line:

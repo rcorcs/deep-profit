@@ -3,9 +3,18 @@ import os
 import sys
 import random
 import pickle
+import re
 
 SOS_token = 'SOS'
 EOS_token = 'EOS'
+
+def cleanInst(inst):
+    #print(inst)
+    ninst = inst.strip().split('#')[0].strip()
+    ninst = ninst.split('!')[0].strip().strip(',').strip()
+    #ninst = re.sub('align \d*$','',ninst).strip().strip(',').strip()
+    #print(ninst)
+    return ninst
 
 def readLangs(filename,exclude,include):
     pairs = []
@@ -17,8 +26,23 @@ def readLangs(filename,exclude,include):
       f1 = []
       f2 = []
       inF1 = True
+      inSwitch = False
+      accLine = ''
       for line in f:
         line = line.strip()
+        split = line.split()
+        if len(split)>0 and split[0]=='switch':
+           inSwitch = True
+           accLine = line
+           continue
+        if inSwitch:
+           accLine += ' '+line
+           if line.strip()==']':
+             inSwitch = False
+             line = accLine
+             accLine = ''
+           else:
+             continue
         if line.startswith('#'):
           skip = False
           if line[1:].strip() in exclude:
@@ -42,8 +66,8 @@ def readLangs(filename,exclude,include):
           if line=='EOS':
             inF1 = False
           else:
-            for e in line.split():
-              f1.append(e.strip())
+            
+            f1.append(cleanInst(line))
         else:
           if line=='EOS':
             #f1.append(EOS_token)
@@ -54,8 +78,7 @@ def readLangs(filename,exclude,include):
             f1 = []
             f2 = []
           else:
-            for e in line.split():
-              f2.append(e.strip())
+            f2.append(cleanInst(line))
 
     return pairs
 
@@ -81,5 +104,25 @@ def balanced(pairs, n):
     return [ pairs01[p[0]][p[1]] for p in pairsIdx ]
 
 if __name__=='__main__':
+  
+  import model
+  enc = model.Encoder(0,0,0)
+
   pairs = load(sys.argv[1])
+  GTotal = 0
+  GFound = 0
+  for (f1,f2,label) in pairs:
+    Total = 0
+    Found = 0
+    for line in f1:
+      Total += 1
+      Found += 1 if enc.prepareInput(line,None) else 0
+    for line in f2:
+      Total += 1
+      Found += 1 if enc.prepareInput(line,None) else 0
+    print('Avg:',Total,Found, (float(Found)/float(Total)))
+    GTotal += Total
+    GFound += Found
+  print('Final:',GTotal,GFound, (float(GFound)/float(GTotal)))
+
 

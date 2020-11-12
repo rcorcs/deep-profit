@@ -9,7 +9,6 @@ from torch import optim
 import torch.nn.functional as F
 
 import data
-from data import Lang
 import model
 
 def trainEntry(input1_tensor, input2_tensor, target_label, encoder, classifier, encoder_optimizer, classifier_optimizer, criterion, device):
@@ -17,8 +16,8 @@ def trainEntry(input1_tensor, input2_tensor, target_label, encoder, classifier, 
     encoder_optimizer.zero_grad()
     classifier_optimizer.zero_grad()
 
-    input1_length = input1_tensor.size(0)
-    input2_length = input2_tensor.size(0)
+    input1_length = len(input1_tensor)
+    input2_length = len(input2_tensor)
 
     encoder_hidden = encoder.initHidden(device)
     for ei in range(input1_length):
@@ -89,8 +88,8 @@ def train(dataset, encoder, classifier, device, learning_rate=0.01, print_every=
     for iter in range(1, n_iters + 1):
         entry = dataset[iter - 1]
 
-        input1_tensor = encoder.prepareInput(entry[0], device)
-        input2_tensor = encoder.prepareInput(entry[1], device)
+        input1_tensor = [encoder.prepareInput(e, device) for e in entry[0]]
+        input2_tensor = [encoder.prepareInput(e, device) for e in entry[1]]
         
         target_tensor = torch.tensor([entry[2]], dtype=torch.long, device=device)
         
@@ -120,7 +119,7 @@ if __name__=='__main__':
   print('Loading data')
   print(device)
   print('Ignoring:',sys.argv[2:])
-  lang, entries = data.load(sys.argv[1],exclude=sys.argv[2:],cache=False)
+  entries = data.load(sys.argv[1],exclude=sys.argv[2:])
   
   n_iters = 30000
   dataset = data.balanced(entries, n_iters)
@@ -130,7 +129,7 @@ if __name__=='__main__':
 
   embedded_size = 64
   hidden_size = 128
-  encoder1 = model.Encoder(lang.n_words, embedded_size, hidden_size, 3).to(device)
+  encoder1 = model.Encoder(hidden_size, 3).to(device)
   classifier1 = model.Classifier(hidden_size,2).to(device)
 
   train(dataset, encoder1, classifier1, device=device, print_every=2000)
