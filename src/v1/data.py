@@ -44,9 +44,8 @@ def filterPair(p):
     return len(p[0]) < MAX_LENGTH and \
         len(p[1]) < MAX_LENGTH
 
-
 def readLangs(filename,exclude,include,lang):
-    print("Reading lines...")
+    #print("Reading lines...")
 
     if lang==None:
       lang = Lang()
@@ -102,6 +101,7 @@ def readLangs(filename,exclude,include,lang):
             for e in line.split():
               f2.append(e.strip())
 
+    #print(pairs)
     return lang, pairs
 
 
@@ -129,11 +129,20 @@ def filterPairs(pairs):
 
 def prepareData(filename, exclude, include, lang):
     lang, pairs = readLangs(filename, exclude, include, lang)
-    print("Profitable: %d" % sum(p[2] for p in pairs),'/',len(pairs))
-    print("Counted words:")
-    print(lang.n_words)
+    #print("Profitable: %d" % sum(p[2] for p in pairs),'/',len(pairs))
+    #print("Counted words:")
+    #print(lang.n_words)
     return lang, pairs
 
+
+def loadLang(filename, exclude=[], include=[], cache=True):
+  lang = None
+  if os.path.exists(filename+'.lang.pkl'):
+    with open(filename+'.lang.pkl','rb') as f:
+      lang = pickle.load(f)
+  else:
+    lang, _ = prepareData(filename,exclude,include,lang)
+  return lang
 
 def load(filename, exclude=[], include=[], cache=True):
   lang = None
@@ -142,7 +151,7 @@ def load(filename, exclude=[], include=[], cache=True):
       lang = pickle.load(f)
   lang, pairs = prepareData(filename,exclude,include,lang)
   if cache:
-    print('Caching Data')
+    #print('Caching Data')
     with open(filename+'.lang.pkl','wb') as f:
       pickle.dump(lang,f)
   #with open(filename+'.data.pkl','wb') as f:
@@ -153,7 +162,7 @@ def balanced(pairs, n):
     pairs01 = [ [p for p in pairs if p[2]==0], [p for p in pairs if p[2]==1] ]
     pairsIdx = []
     while len(pairsIdx)<n:
-        target = random.choice([0,1,1])
+        target = random.choice([0,1])
         pairsIdx.append( (target, random.choice(range(len(pairs01[target])))) )
     return [ pairs01[p[0]][p[1]] for p in pairsIdx ]
 
