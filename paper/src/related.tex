@@ -6,7 +6,7 @@
 Link-time code optimizers like~\cite{tallam10,kwan12,msvc-icf} merge text-identical functions at the bit level.
 However, such solutions are target-specific and need to be adapted for each object code format and hardware architecture.
 
-GCC and LLVM~\cite{llvm-fm,livska14} also provide an optimization for merging identical functions at the IR level and hence is agnostic to the target hardware.
+GCC and LLVM~\cite{llvm-fm,livska14} provide an optimization for merging identical functions at the IR level and hence is agnostic to the target hardware.
 Unfortunately, they can only merge fully identical functions with at most type mismatches that can be losslessly cast to the same format.
 The work presented by von Koch~et~al.~\cite{edler14} advanced this simple merging strategy by exploiting the CFG isomorphism of two
 functions. However, it requires two mergeable functions to have identical CFGs and function types, where the two functions can only differ
