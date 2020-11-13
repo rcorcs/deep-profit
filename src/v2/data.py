@@ -88,7 +88,7 @@ def readLangs(filename,exclude,include):
 
 def prepareData(filename, exclude, include):
     pairs = readLangs(filename, exclude, include)
-    print("Profitable: %d" % sum(p[2] for p in pairs),'/',len(pairs))
+    #print("Profitable: %d" % sum(p[2] for p in pairs),'/',len(pairs))
     return pairs
 
 def load(filename, exclude=[], include=[]):
@@ -99,7 +99,7 @@ def balanced(pairs, n):
     pairs01 = [ [p for p in pairs if p[2]==0], [p for p in pairs if p[2]==1] ]
     pairsIdx = []
     while len(pairsIdx)<n:
-        target = random.choice([0,1,1])
+        target = random.choice([0,1])
         pairsIdx.append( (target, random.choice(range(len(pairs01[target])))) )
     return [ pairs01[p[0]][p[1]] for p in pairsIdx ]
 

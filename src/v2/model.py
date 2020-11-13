@@ -42,6 +42,9 @@ class Encoder(nn.Module):
         return output, hidden
 
     def initHidden(self, device):
+        #h = torch.empty(1, 1, self.hidden_size, device=device)
+        #nn.init.xavier_normal_(h)
+        #return h
         return torch.zeros(self.num_layers, 1, self.hidden_size, device=device)
 
     def prepareInput(self, input, device):

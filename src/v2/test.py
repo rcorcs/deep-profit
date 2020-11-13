@@ -23,7 +23,6 @@ def evaluate(encoder, classifier, sentence1, sentence2, device):
         input1_length = len(input1_tensor)
         input2_length = len(input2_tensor)
 
-    
         encoder_hidden = encoder.initHidden(device)
         for ei in range(input1_length):
             _, encoder_hidden = encoder(input1_tensor[ei], encoder_hidden)

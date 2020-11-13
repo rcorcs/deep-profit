@@ -44,7 +44,6 @@ def filterPair(p):
     return len(p[0]) < MAX_LENGTH and \
         len(p[1]) < MAX_LENGTH
 
-
 def readLangs(filename,exclude,include,lang):
     #print("Reading lines...")
 
@@ -163,7 +162,7 @@ def balanced(pairs, n):
     pairs01 = [ [p for p in pairs if p[2]==0], [p for p in pairs if p[2]==1] ]
     pairsIdx = []
     while len(pairsIdx)<n:
-        target = random.choice([0,1,1])
+        target = random.choice([0,1])
         pairsIdx.append( (target, random.choice(range(len(pairs01[target])))) )
     return [ pairs01[p[0]][p[1]] for p in pairsIdx ]
 

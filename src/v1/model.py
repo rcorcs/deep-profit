@@ -42,27 +42,13 @@ class Encoder(nn.Module):
         return output, hidden
 
     def initHidden(self, device):
+        #h = torch.empty(1, 1, self.hidden_size, device=device)
+        #nn.init.xavier_normal_(h)
+        #return h
         return torch.zeros(self.num_layers, 1, self.hidden_size, device=device)
 
     def prepareInput(self, input, device):
         return torch.tensor(input, dtype=torch.long, device=device).view(-1, 1)
-
-class Encoder2(nn.Module):
-    def __init__(self, input_size, hidden_size):
-        super(Encoder2, self).__init__()
-        self.hidden_size = hidden_size
-
-        self.gru = nn.GRU(input_size, hidden_size)
-
-    def forward(self, input, hidden):
-        output, hidden = self.gru(input, hidden)
-        return output, hidden
-
-    def initHidden(self):
-        #return torch.zeros(1, 1, self.hidden_size, device=device)
-        h = torch.empty(1, 1, self.hidden_size, device=device)
-        nn.init.xavier_normal_(h)
-        return h
 
 class Classifier(nn.Module):
     def __init__(self, hidden_size, output_size):
