@@ -13,7 +13,6 @@ from data import Lang
 import model
 
 def trainEntry(input1_tensor, input2_tensor, target_label, encoder, classifier, encoder_optimizer, classifier_optimizer, criterion, device):
-
     input1_length = input1_tensor.size(0)
     input2_length = input2_tensor.size(0)
 
@@ -97,12 +96,11 @@ def train(dataset, encoder, classifier, device, learning_rate=0.01, print_every=
         prediction = int(topi.view(1)[0])
         if prediction!=entry[2]:
             loss.backward()
+            print_loss_total += loss
+            plot_loss_total += loss
 
         encoder_optimizer.step()
         classifier_optimizer.step()
-                     
-        print_loss_total += loss
-        plot_loss_total += loss
 
         if iter % print_every == 0:
             print_loss_avg = print_loss_total / print_every
@@ -118,17 +116,18 @@ def train(dataset, encoder, classifier, device, learning_rate=0.01, print_every=
     return plot_losses
 
 if __name__=='__main__':
-
   #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
   device = torch.device("cpu")
   print('Loading data')
   print(device)
-  print('Ignoring:',sys.argv[2:])
+  #print('Ignoring:',sys.argv[2:])
   #lang, entries = data.load(sys.argv[1],exclude=sys.argv[2:],cache=False)
-  lang, entries = data.load(sys.argv[1],include="473.astar 433.milc".split(),cache=False)
+  lang, entries = data.load(sys.argv[1],cache=False)
+  #lang, entries = data.load(sys.argv[1],include="473.astar 462.libquantum ".split(),cache=False)
   
   #n_iters = 30000
   #dataset = data.balanced(entries, n_iters)
+  print(len(entries))
   dataset=entries
 
   print('Training')
@@ -138,7 +137,7 @@ if __name__=='__main__':
   encoder1 = model.Encoder(lang.n_words, embedded_size, hidden_size, 3).to(device)
   classifier1 = model.Classifier(hidden_size,2).to(device)
 
-  train(dataset, encoder1, classifier1, device=device, print_every=2000)
+  train(dataset, encoder1, classifier1, device=device, print_every=1000)
 
   print('Caching trained model')
   torch.save(encoder1, 'encoder.pt')
