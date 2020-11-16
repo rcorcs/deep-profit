@@ -14,9 +14,6 @@ import model
 
 def trainEntry(input1_tensor, input2_tensor, target_label, encoder, classifier, encoder_optimizer, classifier_optimizer, criterion, device):
 
-    encoder_optimizer.zero_grad()
-    classifier_optimizer.zero_grad()
-
     input1_length = input1_tensor.size(0)
     input2_length = input2_tensor.size(0)
 
@@ -33,12 +30,8 @@ def trainEntry(input1_tensor, input2_tensor, target_label, encoder, classifier, 
     classifier_output = classifier(encoded1_tensor, encoded2_tensor) 
 
     loss = criterion(classifier_output, target_label)
-    loss.backward()
 
-    encoder_optimizer.step()
-    classifier_optimizer.step()
-
-    return loss.item()
+    return loss, classifier_output
 
 ######################################################################
 # This is a helper function to print time elapsed and estimated time
@@ -94,8 +87,19 @@ def train(dataset, encoder, classifier, device, learning_rate=0.01, print_every=
         
         target_tensor = torch.tensor([entry[2]], dtype=torch.long, device=device)
         
-        loss = trainEntry(input1_tensor, input2_tensor, target_tensor, encoder,
+        encoder_optimizer.zero_grad()
+        classifier_optimizer.zero_grad()
+
+        loss, output = trainEntry(input1_tensor, input2_tensor, target_tensor, encoder,
                      classifier, encoder_optimizer, classifier_optimizer, criterion, device)
+
+        topv, topi = output.data.topk(1)
+        prediction = int(topi.view(1)[0])
+        if prediction!=entry[2]:
+            loss.backward()
+
+        encoder_optimizer.step()
+        classifier_optimizer.step()
                      
         print_loss_total += loss
         plot_loss_total += loss
@@ -120,8 +124,8 @@ if __name__=='__main__':
   print('Loading data')
   print(device)
   print('Ignoring:',sys.argv[2:])
-  lang, entries = data.load(sys.argv[1],exclude=sys.argv[2:],cache=False)
-  #lang, entries = data.load(sys.argv[1],include="473.astar 433.milc 462.libquantum 444.namd 429.mcf 456.hmmer".split(),cache=False)
+  #lang, entries = data.load(sys.argv[1],exclude=sys.argv[2:],cache=False)
+  lang, entries = data.load(sys.argv[1],include="473.astar 433.milc".split(),cache=False)
   
   #n_iters = 30000
   #dataset = data.balanced(entries, n_iters)
