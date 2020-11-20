@@ -69,7 +69,7 @@ def readLangs(filename,exclude,include,lang):
           if len(include)>0 and line[1:].strip() not in include:
               skip = True
               continue
-          print(line)
+          #print(line)
           continue
         if skip:
           continue

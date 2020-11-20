@@ -67,11 +67,11 @@ def evaluateAll(dataset, encoder, classifier, threshold, device):
         if prediction==pair[2]:
             correctWith['baseline'][pair[2]] += 1
             correct['baseline'] += 1
-        print(output)
+        #print(output)
         diff = float(output[0][1]-output[0][0])
-        print(diff)
-        thPred = int(diff>=threshold)
-        print(str(prediction)+'|'+str(pair[2]), str(thPred)+'|'+str(pair[2]))
+        #print(diff)
+        thPred = int(diff>=threshold) if threshold else prediction
+        #print(str(prediction)+'|'+str(pair[2]), str(thPred)+'|'+str(pair[2]))
         totalWith['threshold'][pair[2]] += 1
         if thPred==pair[2]:
             correctWith['threshold'][pair[2]] += 1
@@ -84,13 +84,34 @@ def evaluateAll(dataset, encoder, classifier, threshold, device):
         print( 'Accuracy 1: %f' % (float(correctWith[v][1])/float(totalWith[v][1])),  totalWith[v][1])
     return correct['threshold']
 
+thresholds = {}
+thresholds['473.astar'] = 0.753
+thresholds['433.milc'] = 0.61
+thresholds['462.libquantum'] = 0.22
+thresholds['470.lbm'] = 0.6
+thresholds['401.bzip2'] = 0.485
+thresholds['450.soplex'] = 0.39
+thresholds['471.omnetpp'] = 0.52
+thresholds['482.sphinx3'] = 0.55
+thresholds['400.perlbench'] = 0.18 # None
+thresholds['447.dealII'] = 0.6
+thresholds['464.h264ref'] = 0.62
+thresholds['456.hmmer'] = None
+thresholds['453.povray'] = None
+thresholds['445.gobmk'] = 0.65
+thresholds['403.gcc'] = 0.505
+thresholds['444.namd'] = 0.257
+thresholds['429.mcf'] = 0.65
+thresholds['458.sjeng'] = None
+thresholds['483.xalancbmk'] = 0.69
+
 if __name__=='__main__':
 
   #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
   device = torch.device("cpu")
   print('Loading data')
-  print('Including:',sys.argv[2:])
-  lang, entries = data.load(sys.argv[1],include=sys.argv[2:],cache=False)
+  print('Including:',[sys.argv[2]])
+  lang, entries = data.load(sys.argv[1],include=[sys.argv[2]],cache=False)
   
   #n_iters = 250000
   #dataset = data.balanced(entries, n_iters)
@@ -103,9 +124,4 @@ if __name__=='__main__':
   encoder1 = torch.load('/home/rodrigo/ml/deepopt/test-4/'+sys.argv[2]+'/encoder.pt')
   classifier1 = torch.load('/home/rodrigo/ml/deepopt/test-4/'+sys.argv[2]+'/classifier.pt')
 
-  bestT = 0
-  bestV = 0
-  threshold = 0.61
-  #while threshold < 1.5:
-  v = evaluateAll(dataset, encoder1, classifier1, threshold, device)
-  threshold += 0.05
+  evaluateAll(dataset, encoder1, classifier1, thresholds[sys.argv[2]], device)

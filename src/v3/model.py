@@ -59,8 +59,9 @@ class Classifier(nn.Module):
         self.fc2 = nn.Linear(hidden_size, int(hidden_size/2))
         self.relu2 = nn.LeakyReLU()
         self.fc3 = nn.Linear(int(hidden_size/2), output_size)
-        self.softmax = nn.LogSoftmax(dim=1)
-        self.sigmoid = nn.Sigmoid()
+        self.softmax = nn.Softmax(dim=1)
+        #self.softmax = nn.LogSoftmax(dim=1)
+        #self.sigmoid = nn.Sigmoid()
 
     def forward(self, input1, input2):
         input = torch.cat( (input1,input2) , dim=1 )
@@ -70,6 +71,6 @@ class Classifier(nn.Module):
         output = self.relu2(output)
         output = self.fc3(output)
         output = self.softmax(output)
-        output = self.sigmoid(output)
+        #output = self.sigmoid(output)
         return output
 

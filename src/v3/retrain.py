@@ -137,14 +137,17 @@ if __name__=='__main__':
   #n_iters = 30000
   #dataset = data.balanced(entries, n_iters)
   print(len(entries))
+  random.shuffle(entries)
   dataset=entries
 
   print('Training')
 
   embedded_size = 64
   hidden_size = 128
-  encoder1 = model.Encoder(lang.n_words, embedded_size, hidden_size, 3).to(device)
-  classifier1 = model.Classifier(hidden_size,2).to(device)
+  #encoder1 = model.Encoder(lang.n_words, embedded_size, hidden_size, 3).to(device)
+  #classifier1 = model.Classifier(hidden_size,2).to(device)
+  encoder1 = torch.load('/home/rodrigo/ml/deepopt/test-fM-4/encoder5.pt')
+  classifier1 = torch.load('/home/rodrigo/ml/deepopt/test-fM-4/classifier5.pt')
 
   train(dataset, encoder1, classifier1, device=device, print_every=1000)
 
